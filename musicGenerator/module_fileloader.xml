@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_fileloader" default="compile.module.fileloader">
+  <dirname property="module.fileloader.basedir" file="${ant.file.module_fileloader}"/>
+  
+  <property name="module.jdk.home.fileloader" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.fileloader" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.fileloader" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.fileloader" value="-encoding UTF-8 -source 8 -target 8 ${compiler.args}"/>
+  
+  <property name="fileloader.output.dir" value="${module.fileloader.basedir}/out/production/FileLoader"/>
+  <property name="fileloader.testoutput.dir" value="${module.fileloader.basedir}/out/test/FileLoader"/>
+  
+  <path id="fileloader.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="fileloader.module.production.classpath">
+    <path refid="${module.jdk.classpath.fileloader}"/>
+  </path>
+  
+  <path id="fileloader.runtime.production.module.classpath">
+    <pathelement location="${fileloader.output.dir}"/>
+  </path>
+  
+  <path id="fileloader.module.classpath">
+    <path refid="${module.jdk.classpath.fileloader}"/>
+    <pathelement location="${fileloader.output.dir}"/>
+  </path>
+  
+  <path id="fileloader.runtime.module.classpath">
+    <pathelement location="${fileloader.testoutput.dir}"/>
+    <pathelement location="${fileloader.output.dir}"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.fileloader">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.fileloader">
+    <patternset refid="excluded.from.module.fileloader"/>
+  </patternset>
+  
+  <path id="fileloader.module.sourcepath">
+    <dirset dir="${module.fileloader.basedir}">
+      <include name="src"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.fileloader" depends="compile.module.fileloader.production,compile.module.fileloader.tests" description="Compile module FileLoader"/>
+  
+  <target name="compile.module.fileloader.production" depends="register.custom.compilers" description="Compile module FileLoader; production classes">
+    <mkdir dir="${fileloader.output.dir}"/>
+    <javac2 destdir="${fileloader.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.fileloader}/javac">
+      <compilerarg line="${compiler.args.fileloader}"/>
+      <bootclasspath refid="fileloader.module.bootclasspath"/>
+      <classpath refid="fileloader.module.production.classpath"/>
+      <src refid="fileloader.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.fileloader"/>
+    </javac2>
+    
+    <copy todir="${fileloader.output.dir}">
+      <fileset dir="${module.fileloader.basedir}/src">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.fileloader.tests" depends="register.custom.compilers,compile.module.fileloader.production" description="compile module FileLoader; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.fileloader" description="cleanup module">
+    <delete dir="${fileloader.output.dir}"/>
+    <delete dir="${fileloader.testoutput.dir}"/>
+  </target>
+</project>

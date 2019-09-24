@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="FileLoader:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/FileLoader_jar</output-path>
+    <root id="archive" name="FileLoader.jar">
+      <element id="module-output" name="FileLoader" />
+    </root>
+  </artifact>
+</component>
