@@ -1,0 +1,623 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.73 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.73 secs
+ 
+--> Reading design: Nexysdemo.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Nexysdemo.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Nexysdemo"
+Output Format                      : NGC
+Target Device                      : xc3s400-4-ft256
+
+---- Source Options
+Top Module Name                    : Nexysdemo
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/word2hurdle.vhd" in Library work.
+Entity <word2hurdle> compiled.
+Entity <word2hurdle> (Architecture <behavioral>) compiled.
+Compiling vhdl file "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/clock2pulse.vhd" in Library work.
+Entity <clock2pulse> compiled.
+Entity <clock2pulse> (Architecture <behavioral>) compiled.
+Compiling vhdl file "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/Nexysdemo.vhd" in Library work.
+Architecture behavioral of Entity nexysdemo is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <Nexysdemo> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <word2hurdle> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <clock2pulse> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <Nexysdemo> in library <work> (Architecture <behavioral>).
+Entity <Nexysdemo> analyzed. Unit <Nexysdemo> generated.
+
+Analyzing Entity <word2hurdle> in library <work> (Architecture <behavioral>).
+Entity <word2hurdle> analyzed. Unit <word2hurdle> generated.
+
+Analyzing Entity <clock2pulse> in library <work> (Architecture <behavioral>).
+WARNING:Xst:819 - "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/clock2pulse.vhd" line 46: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <noise_on_trigger>
+Entity <clock2pulse> analyzed. Unit <clock2pulse> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <word2hurdle>.
+    Related source file is "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/word2hurdle.vhd".
+    Found 32x20-bit ROM for signal <hurdle>.
+    Summary:
+	inferred   1 ROM(s).
+Unit <word2hurdle> synthesized.
+
+
+Synthesizing Unit <clock2pulse>.
+    Related source file is "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/clock2pulse.vhd".
+    Found 1-bit register for signal <pulse>.
+    Found 20-bit up counter for signal <clock_counter>.
+    Found 20-bit comparator greater for signal <clock_counter$cmp_gt0000> created at line 50.
+    Found 2-bit up counter for signal <last>.
+    Summary:
+	inferred   2 Counter(s).
+	inferred   1 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <clock2pulse> synthesized.
+
+
+Synthesizing Unit <Nexysdemo>.
+    Related source file is "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/Nexysdemo.vhd".
+WARNING:Xst:647 - Input <swt<6:5>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 16x7-bit ROM for signal <dig>.
+    Found 25-bit up counter for signal <clkdiv>.
+    Found 4-bit up counter for signal <cntr>.
+    Found 8-bit up counter for signal <test_pulse>.
+    Summary:
+	inferred   1 ROM(s).
+	inferred   3 Counter(s).
+Unit <Nexysdemo> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 2
+ 16x7-bit ROM                                          : 1
+ 32x20-bit ROM                                         : 1
+# Counters                                             : 5
+ 2-bit up counter                                      : 1
+ 20-bit up counter                                     : 1
+ 25-bit up counter                                     : 1
+ 4-bit up counter                                      : 1
+ 8-bit up counter                                      : 1
+# Registers                                            : 1
+ 1-bit register                                        : 1
+# Comparators                                          : 1
+ 20-bit comparator greater                             : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 2
+ 16x7-bit ROM                                          : 1
+ 32x20-bit ROM                                         : 1
+# Counters                                             : 5
+ 2-bit up counter                                      : 1
+ 20-bit up counter                                     : 1
+ 25-bit up counter                                     : 1
+ 4-bit up counter                                      : 1
+ 8-bit up counter                                      : 1
+# Registers                                            : 1
+ Flip-Flops                                            : 1
+# Comparators                                          : 1
+ 20-bit comparator greater                             : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:2677 - Node <pulse_generator/last_1> of sequential type is unconnected in block <Nexysdemo>.
+
+Optimizing unit <Nexysdemo> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Nexysdemo, actual ratio is 2.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 59
+ Flip-Flops                                            : 59
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : Nexysdemo.ngr
+Top Level Output File Name         : Nexysdemo
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 34
+
+Cell Usage :
+# BELS                             : 267
+#      GND                         : 1
+#      INV                         : 5
+#      LUT1                        : 31
+#      LUT2                        : 33
+#      LUT3                        : 14
+#      LUT4                        : 51
+#      MUXCY                       : 70
+#      MUXF5                       : 8
+#      VCC                         : 1
+#      XORCY                       : 53
+# FlipFlops/Latches                : 59
+#      FD                          : 33
+#      FDC                         : 20
+#      FDCE                        : 1
+#      FDE                         : 1
+#      FDR                         : 4
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 31
+#      IBUF                        : 10
+#      OBUF                        : 21
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s400ft256-4 
+
+ Number of Slices:                       69  out of   3584     1%  
+ Number of Slice Flip Flops:             59  out of   7168     0%  
+ Number of 4 input LUTs:                134  out of   7168     1%  
+ Number of IOs:                          34
+ Number of bonded IOBs:                  32  out of    173    18%  
+ Number of GCLKs:                         1  out of      8    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+mclk                               | BUFGP                  | 47    |
+pulse_generator/pulse              | NONE(test_pulse_0)     | 8     |
+clkdiv_24                          | NONE(cntr_0)           | 4     |
+-----------------------------------+------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------------------------------------------------------+--------------------------------------+-------+
+Control Signal                                                                     | Buffer(FF name)                      | Load  |
+-----------------------------------------------------------------------------------+--------------------------------------+-------+
+pulse_generator/noise_on_trigger_inv(pulse_generator/noise_on_trigger_inv1_INV_0:O)| NONE(pulse_generator/clock_counter_0)| 21    |
+-----------------------------------------------------------------------------------+--------------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 9.265ns (Maximum Frequency: 107.933MHz)
+   Minimum input arrival time before clock: 12.549ns
+   Maximum output required time after clock: 9.199ns
+   Maximum combinational path delay: 7.266ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'mclk'
+  Clock period: 9.265ns (frequency: 107.933MHz)
+  Total number of paths / destination ports: 5177 / 49
+-------------------------------------------------------------------------
+Delay:               9.265ns (Levels of Logic = 42)
+  Source:            pulse_generator/clock_counter_0 (FF)
+  Destination:       pulse_generator/clock_counter_19 (FF)
+  Source Clock:      mclk rising
+  Destination Clock: mclk rising
+
+  Data Path: pulse_generator/clock_counter_0 to pulse_generator/clock_counter_19
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.720   1.072  pulse_generator/clock_counter_0 (pulse_generator/clock_counter_0)
+     LUT2:I1->O            1   0.551   0.000  pulse_generator/Mcompar_clock_counter_cmp_gt0000_lut<0> (pulse_generator/Mcompar_clock_counter_cmp_gt0000_lut<0>)
+     MUXCY:S->O            1   0.500   0.000  pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<0> (pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<0>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<1> (pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<1>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<2> (pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<2>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<3> (pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<3>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<4> (pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<4>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<5> (pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<5>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<6> (pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<6>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<7> (pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<7>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<8> (pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<8>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<9> (pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<9>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<10> (pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<10>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<11> (pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<11>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<12> (pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<12>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<13> (pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<13>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<14> (pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<14>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<15> (pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<15>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<16> (pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<16>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<17> (pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<17>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<18> (pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<18>)
+     MUXCY:CI->O          23   0.064   1.896  pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<19> (pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<19>)
+     LUT2:I1->O            1   0.551   0.000  pulse_generator/Mcount_clock_counter_lut<0> (pulse_generator/Mcount_clock_counter_lut<0>)
+     MUXCY:S->O            1   0.500   0.000  pulse_generator/Mcount_clock_counter_cy<0> (pulse_generator/Mcount_clock_counter_cy<0>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcount_clock_counter_cy<1> (pulse_generator/Mcount_clock_counter_cy<1>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcount_clock_counter_cy<2> (pulse_generator/Mcount_clock_counter_cy<2>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcount_clock_counter_cy<3> (pulse_generator/Mcount_clock_counter_cy<3>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcount_clock_counter_cy<4> (pulse_generator/Mcount_clock_counter_cy<4>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcount_clock_counter_cy<5> (pulse_generator/Mcount_clock_counter_cy<5>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcount_clock_counter_cy<6> (pulse_generator/Mcount_clock_counter_cy<6>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcount_clock_counter_cy<7> (pulse_generator/Mcount_clock_counter_cy<7>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcount_clock_counter_cy<8> (pulse_generator/Mcount_clock_counter_cy<8>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcount_clock_counter_cy<9> (pulse_generator/Mcount_clock_counter_cy<9>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcount_clock_counter_cy<10> (pulse_generator/Mcount_clock_counter_cy<10>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcount_clock_counter_cy<11> (pulse_generator/Mcount_clock_counter_cy<11>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcount_clock_counter_cy<12> (pulse_generator/Mcount_clock_counter_cy<12>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcount_clock_counter_cy<13> (pulse_generator/Mcount_clock_counter_cy<13>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcount_clock_counter_cy<14> (pulse_generator/Mcount_clock_counter_cy<14>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcount_clock_counter_cy<15> (pulse_generator/Mcount_clock_counter_cy<15>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcount_clock_counter_cy<16> (pulse_generator/Mcount_clock_counter_cy<16>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcount_clock_counter_cy<17> (pulse_generator/Mcount_clock_counter_cy<17>)
+     MUXCY:CI->O           0   0.064   0.000  pulse_generator/Mcount_clock_counter_cy<18> (pulse_generator/Mcount_clock_counter_cy<18>)
+     XORCY:CI->O           1   0.904   0.000  pulse_generator/Mcount_clock_counter_xor<19> (pulse_generator/Mcount_clock_counter19)
+     FDC:D                     0.203          pulse_generator/clock_counter_19
+    ----------------------------------------
+    Total                      9.265ns (6.297ns logic, 2.968ns route)
+                                       (68.0% logic, 32.0% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'pulse_generator/pulse'
+  Clock period: 4.414ns (frequency: 226.552MHz)
+  Total number of paths / destination ports: 36 / 8
+-------------------------------------------------------------------------
+Delay:               4.414ns (Levels of Logic = 8)
+  Source:            test_pulse_1 (FF)
+  Destination:       test_pulse_7 (FF)
+  Source Clock:      pulse_generator/pulse rising
+  Destination Clock: pulse_generator/pulse rising
+
+  Data Path: test_pulse_1 to test_pulse_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.720   1.216  test_pulse_1 (test_pulse_1)
+     LUT1:I0->O            1   0.551   0.000  Mcount_test_pulse_cy<1>_rt (Mcount_test_pulse_cy<1>_rt)
+     MUXCY:S->O            1   0.500   0.000  Mcount_test_pulse_cy<1> (Mcount_test_pulse_cy<1>)
+     MUXCY:CI->O           1   0.064   0.000  Mcount_test_pulse_cy<2> (Mcount_test_pulse_cy<2>)
+     MUXCY:CI->O           1   0.064   0.000  Mcount_test_pulse_cy<3> (Mcount_test_pulse_cy<3>)
+     MUXCY:CI->O           1   0.064   0.000  Mcount_test_pulse_cy<4> (Mcount_test_pulse_cy<4>)
+     MUXCY:CI->O           1   0.064   0.000  Mcount_test_pulse_cy<5> (Mcount_test_pulse_cy<5>)
+     MUXCY:CI->O           0   0.064   0.000  Mcount_test_pulse_cy<6> (Mcount_test_pulse_cy<6>)
+     XORCY:CI->O           1   0.904   0.000  Mcount_test_pulse_xor<7> (Result<7>1)
+     FD:D                      0.203          test_pulse_7
+    ----------------------------------------
+    Total                      4.414ns (3.198ns logic, 1.216ns route)
+                                       (72.5% logic, 27.5% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clkdiv_24'
+  Clock period: 4.671ns (frequency: 214.087MHz)
+  Total number of paths / destination ports: 26 / 8
+-------------------------------------------------------------------------
+Delay:               4.671ns (Levels of Logic = 1)
+  Source:            cntr_0 (FF)
+  Destination:       cntr_0 (FF)
+  Source Clock:      clkdiv_24 rising
+  Destination Clock: clkdiv_24 rising
+
+  Data Path: cntr_0 to cntr_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q             12   0.720   1.457  cntr_0 (cntr_0)
+     LUT4:I0->O            4   0.551   0.917  cntr_cmp_eq00001 (cntr_cmp_eq0000)
+     FDR:R                     1.026          cntr_0
+    ----------------------------------------
+    Total                      4.671ns (2.297ns logic, 2.374ns route)
+                                       (49.2% logic, 50.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'mclk'
+  Total number of paths / destination ports: 77025 / 22
+-------------------------------------------------------------------------
+Offset:              12.549ns (Levels of Logic = 45)
+  Source:            swt<4> (PAD)
+  Destination:       pulse_generator/clock_counter_19 (FF)
+  Destination Clock: mclk rising
+
+  Data Path: swt<4> to pulse_generator/clock_counter_19
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            34   0.821   2.204  swt_4_IBUF (swt_4_IBUF)
+     LUT4:I0->O            1   0.551   0.000  word_mapping/Mrom_hurdle1_F (N61)
+     MUXF5:I0->O           1   0.360   1.140  word_mapping/Mrom_hurdle1 (note_on_hurdle<0>)
+     LUT2:I0->O            1   0.551   0.000  pulse_generator/Mcompar_clock_counter_cmp_gt0000_lut<0> (pulse_generator/Mcompar_clock_counter_cmp_gt0000_lut<0>)
+     MUXCY:S->O            1   0.500   0.000  pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<0> (pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<0>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<1> (pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<1>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<2> (pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<2>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<3> (pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<3>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<4> (pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<4>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<5> (pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<5>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<6> (pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<6>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<7> (pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<7>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<8> (pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<8>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<9> (pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<9>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<10> (pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<10>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<11> (pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<11>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<12> (pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<12>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<13> (pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<13>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<14> (pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<14>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<15> (pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<15>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<16> (pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<16>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<17> (pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<17>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<18> (pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<18>)
+     MUXCY:CI->O          23   0.064   1.896  pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<19> (pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<19>)
+     LUT2:I1->O            1   0.551   0.000  pulse_generator/Mcount_clock_counter_lut<0> (pulse_generator/Mcount_clock_counter_lut<0>)
+     MUXCY:S->O            1   0.500   0.000  pulse_generator/Mcount_clock_counter_cy<0> (pulse_generator/Mcount_clock_counter_cy<0>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcount_clock_counter_cy<1> (pulse_generator/Mcount_clock_counter_cy<1>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcount_clock_counter_cy<2> (pulse_generator/Mcount_clock_counter_cy<2>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcount_clock_counter_cy<3> (pulse_generator/Mcount_clock_counter_cy<3>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcount_clock_counter_cy<4> (pulse_generator/Mcount_clock_counter_cy<4>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcount_clock_counter_cy<5> (pulse_generator/Mcount_clock_counter_cy<5>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcount_clock_counter_cy<6> (pulse_generator/Mcount_clock_counter_cy<6>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcount_clock_counter_cy<7> (pulse_generator/Mcount_clock_counter_cy<7>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcount_clock_counter_cy<8> (pulse_generator/Mcount_clock_counter_cy<8>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcount_clock_counter_cy<9> (pulse_generator/Mcount_clock_counter_cy<9>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcount_clock_counter_cy<10> (pulse_generator/Mcount_clock_counter_cy<10>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcount_clock_counter_cy<11> (pulse_generator/Mcount_clock_counter_cy<11>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcount_clock_counter_cy<12> (pulse_generator/Mcount_clock_counter_cy<12>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcount_clock_counter_cy<13> (pulse_generator/Mcount_clock_counter_cy<13>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcount_clock_counter_cy<14> (pulse_generator/Mcount_clock_counter_cy<14>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcount_clock_counter_cy<15> (pulse_generator/Mcount_clock_counter_cy<15>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcount_clock_counter_cy<16> (pulse_generator/Mcount_clock_counter_cy<16>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcount_clock_counter_cy<17> (pulse_generator/Mcount_clock_counter_cy<17>)
+     MUXCY:CI->O           0   0.064   0.000  pulse_generator/Mcount_clock_counter_cy<18> (pulse_generator/Mcount_clock_counter_cy<18>)
+     XORCY:CI->O           1   0.904   0.000  pulse_generator/Mcount_clock_counter_xor<19> (pulse_generator/Mcount_clock_counter19)
+     FDC:D                     0.203          pulse_generator/clock_counter_19
+    ----------------------------------------
+    Total                     12.549ns (7.309ns logic, 5.240ns route)
+                                       (58.2% logic, 41.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'mclk'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              7.488ns (Levels of Logic = 1)
+  Source:            pulse_generator/pulse (FF)
+  Destination:       aout (PAD)
+  Source Clock:      mclk rising
+
+  Data Path: pulse_generator/pulse to aout
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             9   0.720   1.124  pulse_generator/pulse (pulse_generator/pulse)
+     OBUF:I->O                 5.644          aout_OBUF (aout)
+    ----------------------------------------
+    Total                      7.488ns (6.364ns logic, 1.124ns route)
+                                       (85.0% logic, 15.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clkdiv_24'
+  Total number of paths / destination ports: 28 / 7
+-------------------------------------------------------------------------
+Offset:              9.199ns (Levels of Logic = 2)
+  Source:            cntr_1 (FF)
+  Destination:       ssg<6> (PAD)
+  Source Clock:      clkdiv_24 rising
+
+  Data Path: cntr_1 to ssg<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q             11   0.720   1.483  cntr_1 (cntr_1)
+     LUT4:I0->O            1   0.551   0.801  ssg_4_not00001 (ssg_4_OBUF)
+     OBUF:I->O                 5.644          ssg_4_OBUF (ssg<4>)
+    ----------------------------------------
+    Total                      9.199ns (6.915ns logic, 2.284ns route)
+                                       (75.2% logic, 24.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'pulse_generator/pulse'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              7.241ns (Levels of Logic = 1)
+  Source:            test_pulse_7 (FF)
+  Destination:       led<7> (PAD)
+  Source Clock:      pulse_generator/pulse rising
+
+  Data Path: test_pulse_7 to led<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.720   0.877  test_pulse_7 (test_pulse_7)
+     OBUF:I->O                 5.644          led_7_OBUF (led<7>)
+    ----------------------------------------
+    Total                      7.241ns (6.364ns logic, 0.877ns route)
+                                       (87.9% logic, 12.1% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Delay:               7.266ns (Levels of Logic = 2)
+  Source:            btn<3> (PAD)
+  Destination:       an<3> (PAD)
+
+  Data Path: btn<3> to an<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   0.821   0.801  btn_3_IBUF (an_3_OBUF)
+     OBUF:I->O                 5.644          an_3_OBUF (an<3>)
+    ----------------------------------------
+    Total                      7.266ns (6.465ns logic, 0.801ns route)
+                                       (89.0% logic, 11.0% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 8.00 secs
+Total CPU time to Xst completion: 7.64 secs
+ 
+--> 
+
+Total memory usage is 256200 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    3 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

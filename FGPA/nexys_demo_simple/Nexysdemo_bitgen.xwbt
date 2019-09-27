@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=Z:\comp3601\nexys_demo_simple\Nexysdemo.ncd
+OUTFILE=Z:\comp3601\nexys_demo_simple\Nexysdemo.bit
+FAMILY=Spartan3
+PART=xc3s400-4ft256
+WORKINGDIR=Z:\comp3601\nexys_demo_simple
+LICENSE=ISE
+USER_INFO=176080079_176910363_210559698_406

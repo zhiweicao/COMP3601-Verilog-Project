@@ -1,0 +1,3 @@
+vhdl work "word2hurdle.vhd"
+vhdl work "clock2pulse.vhd"
+vhdl work "Nexysdemo.vhd"

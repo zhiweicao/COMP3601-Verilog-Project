@@ -1,0 +1,5 @@
+xst -intstyle ise -ifn "Z:/comp3601/nexys_demo_simple/IO.xst" -ofn "Z:/comp3601/nexys_demo_simple/IO.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexysdemo.ucf -p xc3s400-ft256-4 IO.ngc IO.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexysdemo.ucf -p xc3s400-ft256-4 IO.ngc IO.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexysdemo.ucf -p xc3s400-ft256-4 IO.ngc IO.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexysdemo.ucf -p xc3s400-ft256-4 IO.ngc IO.ngd  

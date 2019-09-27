@@ -1,0 +1,226 @@
+Release 14.7 ngdbuild P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe
+-intstyle ise -dd _ngo -nt timestamp -uc nexysdemo.ucf -p xc3s400-ft256-4 IO.ngc
+IO.ngd
+
+Reading NGO file "Z:/comp3601/nexys_demo_simple/IO.ngc" ...
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file "nexysdemo.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+ERROR:ConstraintSystem:59 - Constraint <NET "mclk" 	 LOC = "A8";>
+   [nexysdemo.ucf(1)]: NET "mclk" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "mclk" 	 LOC = "A8";> [nexysdemo.ucf(1)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "swt<0>" LOC = "N15";>
+   [nexysdemo.ucf(7)]: NET "swt<0>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "swt<0>" LOC = "N15";> [nexysdemo.ucf(7)]' could not be found and so
+   the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "swt<1>" LOC = "J16";>
+   [nexysdemo.ucf(8)]: NET "swt<1>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "swt<1>" LOC = "J16";> [nexysdemo.ucf(8)]' could not be found and so
+   the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "swt<2>" LOC = "K16";>
+   [nexysdemo.ucf(9)]: NET "swt<2>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "swt<2>" LOC = "K16";> [nexysdemo.ucf(9)]' could not be found and so
+   the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "swt<3>" LOC = "K15";>
+   [nexysdemo.ucf(10)]: NET "swt<3>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "swt<3>" LOC = "K15";> [nexysdemo.ucf(10)]' could not be found and so
+   the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "swt<4>" LOC = "L15";>
+   [nexysdemo.ucf(11)]: NET "swt<4>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "swt<4>" LOC = "L15";> [nexysdemo.ucf(11)]' could not be found and so
+   the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "swt<5>" LOC = "M16";>
+   [nexysdemo.ucf(12)]: NET "swt<5>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "swt<5>" LOC = "M16";> [nexysdemo.ucf(12)]' could not be found and so
+   the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "swt<6>" LOC = "M15";>
+   [nexysdemo.ucf(13)]: NET "swt<6>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "swt<6>" LOC = "M15";> [nexysdemo.ucf(13)]' could not be found and so
+   the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "swt<7>" LOC = "N16";>
+   [nexysdemo.ucf(14)]: NET "swt<7>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "swt<7>" LOC = "N16";> [nexysdemo.ucf(14)]' could not be found and so
+   the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "an<0>"  LOC = "G14";>
+   [nexysdemo.ucf(16)]: NET "an<0>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "an<0>"  LOC = "G14";> [nexysdemo.ucf(16)]' could not be found and so
+   the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "an<1>"  LOC = "G12";>
+   [nexysdemo.ucf(17)]: NET "an<1>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "an<1>"  LOC = "G12";> [nexysdemo.ucf(17)]' could not be found and so
+   the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "an<2>"  LOC = "G13";>
+   [nexysdemo.ucf(18)]: NET "an<2>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "an<2>"  LOC = "G13";> [nexysdemo.ucf(18)]' could not be found and so
+   the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "an<3>"  LOC = "F12";>
+   [nexysdemo.ucf(19)]: NET "an<3>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "an<3>"  LOC = "F12";> [nexysdemo.ucf(19)]' could not be found and so
+   the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "ssg<0>" LOC = "F13";>
+   [nexysdemo.ucf(20)]: NET "ssg<0>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "ssg<0>" LOC = "F13";> [nexysdemo.ucf(20)]' could not be found and so
+   the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "ssg<1>" LOC = "E13";>
+   [nexysdemo.ucf(21)]: NET "ssg<1>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "ssg<1>" LOC = "E13";> [nexysdemo.ucf(21)]' could not be found and so
+   the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "ssg<2>" LOC = "G15";>
+   [nexysdemo.ucf(22)]: NET "ssg<2>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "ssg<2>" LOC = "G15";> [nexysdemo.ucf(22)]' could not be found and so
+   the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "ssg<3>" LOC = "H13";>
+   [nexysdemo.ucf(23)]: NET "ssg<3>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "ssg<3>" LOC = "H13";> [nexysdemo.ucf(23)]' could not be found and so
+   the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "ssg<4>" LOC = "J14";>
+   [nexysdemo.ucf(24)]: NET "ssg<4>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "ssg<4>" LOC = "J14";> [nexysdemo.ucf(24)]' could not be found and so
+   the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "ssg<5>" LOC = "E14";>
+   [nexysdemo.ucf(25)]: NET "ssg<5>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "ssg<5>" LOC = "E14";> [nexysdemo.ucf(25)]' could not be found and so
+   the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "ssg<6>" LOC = "G16";>
+   [nexysdemo.ucf(26)]: NET "ssg<6>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "ssg<6>" LOC = "G16";> [nexysdemo.ucf(26)]' could not be found and so
+   the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "ssg<7>" LOC = "H14";>
+   [nexysdemo.ucf(27)]: NET "ssg<7>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "ssg<7>" LOC = "H14";> [nexysdemo.ucf(27)]' could not be found and so
+   the Locate constraint will be removed.
+
+Done...
+
+Checking expanded design ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:    21
+  Number of warnings:  21
+
+Total memory usage is 152744 kilobytes
+
+Total REAL time to NGDBUILD completion:  3 sec
+Total CPU time to NGDBUILD completion:   3 sec
+
+One or more errors were found during NGDBUILD.  No NGD file will be written.
+
+Writing NGDBUILD log file "IO.bld"...
