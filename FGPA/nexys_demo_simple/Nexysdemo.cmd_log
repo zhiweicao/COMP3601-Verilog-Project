@@ -228,3 +228,367 @@ ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexysdemo.ucf -p xc3s400-ft256
 map -intstyle ise -p xc3s400-ft256-4 -cm area -ir off -pr off -c 100 -o Nexysdemo_map.ncd Nexysdemo.ngd Nexysdemo.pcf 
 par -w -intstyle ise -ol high -t 1 Nexysdemo_map.ncd Nexysdemo.ncd Nexysdemo.pcf 
 trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Nexysdemo.twx Nexysdemo.ncd -o Nexysdemo.twr Nexysdemo.pcf -ucf nexysdemo.ucf 
+xst -intstyle ise -ifn "Z:/comp3601/nexys_demo_simple/Nexysdemo.xst" -ofn "Z:/comp3601/nexys_demo_simple/Nexysdemo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexysdemo.ucf -p xc3s400-ft256-4 Nexysdemo.ngc Nexysdemo.ngd  
+map -intstyle ise -p xc3s400-ft256-4 -cm area -ir off -pr off -c 100 -o Nexysdemo_map.ncd Nexysdemo.ngd Nexysdemo.pcf 
+par -w -intstyle ise -ol high -t 1 Nexysdemo_map.ncd Nexysdemo.ncd Nexysdemo.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Nexysdemo.twx Nexysdemo.ncd -o Nexysdemo.twr Nexysdemo.pcf -ucf nexysdemo.ucf 
+bitgen -intstyle ise -f Nexysdemo.ut Nexysdemo.ncd 
+xst -intstyle ise -ifn "Z:/comp3601/nexys_demo_simple/Nexysdemo.xst" -ofn "Z:/comp3601/nexys_demo_simple/Nexysdemo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexysdemo.ucf -p xc3s400-ft256-4 Nexysdemo.ngc Nexysdemo.ngd  
+map -intstyle ise -p xc3s400-ft256-4 -cm area -ir off -pr off -c 100 -o Nexysdemo_map.ncd Nexysdemo.ngd Nexysdemo.pcf 
+par -w -intstyle ise -ol high -t 1 Nexysdemo_map.ncd Nexysdemo.ncd Nexysdemo.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Nexysdemo.twx Nexysdemo.ncd -o Nexysdemo.twr Nexysdemo.pcf -ucf nexysdemo.ucf 
+bitgen -intstyle ise -f Nexysdemo.ut Nexysdemo.ncd 
+xst -intstyle ise -ifn "Z:/comp3601/nexys_demo_simple/Nexysdemo.xst" -ofn "Z:/comp3601/nexys_demo_simple/Nexysdemo.syr" 
+xst -intstyle ise -ifn "Z:/comp3601/nexys_demo_simple/Nexysdemo.xst" -ofn "Z:/comp3601/nexys_demo_simple/Nexysdemo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexysdemo.ucf -p xc3s400-ft256-4 Nexysdemo.ngc Nexysdemo.ngd  
+map -intstyle ise -p xc3s400-ft256-4 -cm area -ir off -pr off -c 100 -o Nexysdemo_map.ncd Nexysdemo.ngd Nexysdemo.pcf 
+par -w -intstyle ise -ol high -t 1 Nexysdemo_map.ncd Nexysdemo.ncd Nexysdemo.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Nexysdemo.twx Nexysdemo.ncd -o Nexysdemo.twr Nexysdemo.pcf -ucf nexysdemo.ucf 
+bitgen -intstyle ise -f Nexysdemo.ut Nexysdemo.ncd 
+xst -intstyle ise -ifn "Z:/comp3601/nexys_demo_simple/Nexysdemo.xst" -ofn "Z:/comp3601/nexys_demo_simple/Nexysdemo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexysdemo.ucf -p xc3s400-ft256-4 Nexysdemo.ngc Nexysdemo.ngd  
+map -intstyle ise -p xc3s400-ft256-4 -cm area -ir off -pr off -c 100 -o Nexysdemo_map.ncd Nexysdemo.ngd Nexysdemo.pcf 
+par -w -intstyle ise -ol high -t 1 Nexysdemo_map.ncd Nexysdemo.ncd Nexysdemo.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Nexysdemo.twx Nexysdemo.ncd -o Nexysdemo.twr Nexysdemo.pcf -ucf nexysdemo.ucf 
+bitgen -intstyle ise -f Nexysdemo.ut Nexysdemo.ncd 
+xst -intstyle ise -ifn "Z:/comp3601/nexys_demo_simple/Nexysdemo.xst" -ofn "Z:/comp3601/nexys_demo_simple/Nexysdemo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexysdemo.ucf -p xc3s400-ft256-4 Nexysdemo.ngc Nexysdemo.ngd  
+map -intstyle ise -p xc3s400-ft256-4 -cm area -ir off -pr off -c 100 -o Nexysdemo_map.ncd Nexysdemo.ngd Nexysdemo.pcf 
+par -w -intstyle ise -ol high -t 1 Nexysdemo_map.ncd Nexysdemo.ncd Nexysdemo.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Nexysdemo.twx Nexysdemo.ncd -o Nexysdemo.twr Nexysdemo.pcf -ucf nexysdemo.ucf 
+bitgen -intstyle ise -f Nexysdemo.ut Nexysdemo.ncd 
+xst -intstyle ise -ifn "Z:/comp3601/nexys_demo_simple/Nexysdemo.xst" -ofn "Z:/comp3601/nexys_demo_simple/Nexysdemo.syr" 
+xst -intstyle ise -ifn "Z:/comp3601/nexys_demo_simple/Nexysdemo.xst" -ofn "Z:/comp3601/nexys_demo_simple/Nexysdemo.syr" 
+xst -intstyle ise -ifn "Z:/comp3601/nexys_demo_simple/Nexysdemo.xst" -ofn "Z:/comp3601/nexys_demo_simple/Nexysdemo.syr" 
+xst -intstyle ise -ifn "Z:/comp3601/nexys_demo_simple/Nexysdemo.xst" -ofn "Z:/comp3601/nexys_demo_simple/Nexysdemo.syr" 
+xst -intstyle ise -ifn "Z:/comp3601/nexys_demo_simple/Nexysdemo.xst" -ofn "Z:/comp3601/nexys_demo_simple/Nexysdemo.syr" 
+xst -intstyle ise -ifn "Z:/comp3601/nexys_demo_simple/Nexysdemo.xst" -ofn "Z:/comp3601/nexys_demo_simple/Nexysdemo.syr" 
+xst -intstyle ise -ifn "Z:/comp3601/nexys_demo_simple/Nexysdemo.xst" -ofn "Z:/comp3601/nexys_demo_simple/Nexysdemo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexysdemo.ucf -p xc3s400-ft256-4 Nexysdemo.ngc Nexysdemo.ngd  
+map -intstyle ise -p xc3s400-ft256-4 -cm area -ir off -pr off -c 100 -o Nexysdemo_map.ncd Nexysdemo.ngd Nexysdemo.pcf 
+par -w -intstyle ise -ol high -t 1 Nexysdemo_map.ncd Nexysdemo.ncd Nexysdemo.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Nexysdemo.twx Nexysdemo.ncd -o Nexysdemo.twr Nexysdemo.pcf -ucf nexysdemo.ucf 
+bitgen -intstyle ise -f Nexysdemo.ut Nexysdemo.ncd 
+xst -intstyle ise -ifn "Z:/comp3601/nexys_demo_simple/Nexysdemo.xst" -ofn "Z:/comp3601/nexys_demo_simple/Nexysdemo.syr" 
+xst -intstyle ise -ifn "Z:/comp3601/nexys_demo_simple/Nexysdemo.xst" -ofn "Z:/comp3601/nexys_demo_simple/Nexysdemo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexysdemo.ucf -p xc3s400-ft256-4 Nexysdemo.ngc Nexysdemo.ngd  
+map -intstyle ise -p xc3s400-ft256-4 -cm area -ir off -pr off -c 100 -o Nexysdemo_map.ncd Nexysdemo.ngd Nexysdemo.pcf 
+par -w -intstyle ise -ol high -t 1 Nexysdemo_map.ncd Nexysdemo.ncd Nexysdemo.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Nexysdemo.twx Nexysdemo.ncd -o Nexysdemo.twr Nexysdemo.pcf -ucf nexysdemo.ucf 
+bitgen -intstyle ise -f Nexysdemo.ut Nexysdemo.ncd 
+xst -intstyle ise -ifn "Z:/comp3601/nexys_demo_simple/Nexysdemo.xst" -ofn "Z:/comp3601/nexys_demo_simple/Nexysdemo.syr" 
+xst -intstyle ise -ifn "Z:/comp3601/nexys_demo_simple/Nexysdemo.xst" -ofn "Z:/comp3601/nexys_demo_simple/Nexysdemo.syr" 
+xst -intstyle ise -ifn "Z:/comp3601/nexys_demo_simple/Nexysdemo.xst" -ofn "Z:/comp3601/nexys_demo_simple/Nexysdemo.syr" 
+xst -intstyle ise -ifn "Z:/comp3601/nexys_demo_simple/Nexysdemo.xst" -ofn "Z:/comp3601/nexys_demo_simple/Nexysdemo.syr" 
+xst -intstyle ise -ifn "Z:/comp3601/nexys_demo_simple/Nexysdemo.xst" -ofn "Z:/comp3601/nexys_demo_simple/Nexysdemo.syr" 
+xst -intstyle ise -ifn "Z:/comp3601/nexys_demo_simple/Nexysdemo.xst" -ofn "Z:/comp3601/nexys_demo_simple/Nexysdemo.syr" 
+xst -intstyle ise -ifn "Z:/comp3601/nexys_demo_simple/Nexysdemo.xst" -ofn "Z:/comp3601/nexys_demo_simple/Nexysdemo.syr" 
+xst -intstyle ise -ifn "Z:/comp3601/nexys_demo_simple/Nexysdemo.xst" -ofn "Z:/comp3601/nexys_demo_simple/Nexysdemo.syr" 
+xst -intstyle ise -ifn "Z:/comp3601/nexys_demo_simple/Nexysdemo.xst" -ofn "Z:/comp3601/nexys_demo_simple/Nexysdemo.syr" 
+xst -intstyle ise -ifn "Z:/comp3601/nexys_demo_simple/Nexysdemo.xst" -ofn "Z:/comp3601/nexys_demo_simple/Nexysdemo.syr" 
+xst -intstyle ise -ifn "Z:/comp3601/nexys_demo_simple/Nexysdemo.xst" -ofn "Z:/comp3601/nexys_demo_simple/Nexysdemo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexysdemo.ucf -p xc3s400-ft256-4 Nexysdemo.ngc Nexysdemo.ngd  
+map -intstyle ise -p xc3s400-ft256-4 -cm area -ir off -pr off -c 100 -o Nexysdemo_map.ncd Nexysdemo.ngd Nexysdemo.pcf 
+par -w -intstyle ise -ol high -t 1 Nexysdemo_map.ncd Nexysdemo.ncd Nexysdemo.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Nexysdemo.twx Nexysdemo.ncd -o Nexysdemo.twr Nexysdemo.pcf -ucf nexysdemo.ucf 
+bitgen -intstyle ise -f Nexysdemo.ut Nexysdemo.ncd 
+xst -intstyle ise -ifn "Z:/comp3601/nexys_demo_simple/Nexysdemo.xst" -ofn "Z:/comp3601/nexys_demo_simple/Nexysdemo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexysdemo.ucf -p xc3s400-ft256-4 Nexysdemo.ngc Nexysdemo.ngd  
+map -intstyle ise -p xc3s400-ft256-4 -cm area -ir off -pr off -c 100 -o Nexysdemo_map.ncd Nexysdemo.ngd Nexysdemo.pcf 
+par -w -intstyle ise -ol high -t 1 Nexysdemo_map.ncd Nexysdemo.ncd Nexysdemo.pcf 
+bitgen -intstyle ise -f Nexysdemo.ut Nexysdemo.ncd 
+xst -intstyle ise -ifn "Z:/comp3601/nexys_demo_simple/Nexysdemo.xst" -ofn "Z:/comp3601/nexys_demo_simple/Nexysdemo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexysdemo.ucf -p xc3s400-ft256-4 Nexysdemo.ngc Nexysdemo.ngd  
+map -intstyle ise -p xc3s400-ft256-4 -cm area -ir off -pr off -c 100 -o Nexysdemo_map.ncd Nexysdemo.ngd Nexysdemo.pcf 
+par -w -intstyle ise -ol high -t 1 Nexysdemo_map.ncd Nexysdemo.ncd Nexysdemo.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Nexysdemo.twx Nexysdemo.ncd -o Nexysdemo.twr Nexysdemo.pcf -ucf nexysdemo.ucf 
+bitgen -intstyle ise -f Nexysdemo.ut Nexysdemo.ncd 
+xst -intstyle ise -ifn "Z:/comp3601/nexys_demo_simple/Nexysdemo.xst" -ofn "Z:/comp3601/nexys_demo_simple/Nexysdemo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexysdemo.ucf -p xc3s400-ft256-4 Nexysdemo.ngc Nexysdemo.ngd  
+map -intstyle ise -p xc3s400-ft256-4 -cm area -ir off -pr off -c 100 -o Nexysdemo_map.ncd Nexysdemo.ngd Nexysdemo.pcf 
+par -w -intstyle ise -ol high -t 1 Nexysdemo_map.ncd Nexysdemo.ncd Nexysdemo.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Nexysdemo.twx Nexysdemo.ncd -o Nexysdemo.twr Nexysdemo.pcf -ucf nexysdemo.ucf 
+bitgen -intstyle ise -f Nexysdemo.ut Nexysdemo.ncd 
+xst -intstyle ise -ifn "Z:/comp3601/nexys_demo_simple/Nexysdemo.xst" -ofn "Z:/comp3601/nexys_demo_simple/Nexysdemo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexysdemo.ucf -p xc3s400-ft256-4 Nexysdemo.ngc Nexysdemo.ngd  
+map -intstyle ise -p xc3s400-ft256-4 -cm area -ir off -pr off -c 100 -o Nexysdemo_map.ncd Nexysdemo.ngd Nexysdemo.pcf 
+par -w -intstyle ise -ol high -t 1 Nexysdemo_map.ncd Nexysdemo.ncd Nexysdemo.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Nexysdemo.twx Nexysdemo.ncd -o Nexysdemo.twr Nexysdemo.pcf -ucf nexysdemo.ucf 
+bitgen -intstyle ise -f Nexysdemo.ut Nexysdemo.ncd 
+xst -intstyle ise -ifn "Z:/comp3601/nexys_demo_simple/Nexysdemo.xst" -ofn "Z:/comp3601/nexys_demo_simple/Nexysdemo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexysdemo.ucf -p xc3s400-ft256-4 Nexysdemo.ngc Nexysdemo.ngd  
+map -intstyle ise -p xc3s400-ft256-4 -cm area -ir off -pr off -c 100 -o Nexysdemo_map.ncd Nexysdemo.ngd Nexysdemo.pcf 
+par -w -intstyle ise -ol high -t 1 Nexysdemo_map.ncd Nexysdemo.ncd Nexysdemo.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Nexysdemo.twx Nexysdemo.ncd -o Nexysdemo.twr Nexysdemo.pcf -ucf nexysdemo.ucf 
+bitgen -intstyle ise -f Nexysdemo.ut Nexysdemo.ncd 
+xst -intstyle ise -ifn "Z:/comp3601/nexys_demo_simple/Nexysdemo.xst" -ofn "Z:/comp3601/nexys_demo_simple/Nexysdemo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexysdemo.ucf -p xc3s400-ft256-4 Nexysdemo.ngc Nexysdemo.ngd  
+map -intstyle ise -p xc3s400-ft256-4 -cm area -ir off -pr off -c 100 -o Nexysdemo_map.ncd Nexysdemo.ngd Nexysdemo.pcf 
+par -w -intstyle ise -ol high -t 1 Nexysdemo_map.ncd Nexysdemo.ncd Nexysdemo.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Nexysdemo.twx Nexysdemo.ncd -o Nexysdemo.twr Nexysdemo.pcf -ucf nexysdemo.ucf 
+bitgen -intstyle ise -f Nexysdemo.ut Nexysdemo.ncd 
+xst -intstyle ise -ifn "Z:/comp3601/nexys_demo_simple/Nexysdemo.xst" -ofn "Z:/comp3601/nexys_demo_simple/Nexysdemo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexysdemo.ucf -p xc3s400-ft256-4 Nexysdemo.ngc Nexysdemo.ngd  
+map -intstyle ise -p xc3s400-ft256-4 -cm area -ir off -pr off -c 100 -o Nexysdemo_map.ncd Nexysdemo.ngd Nexysdemo.pcf 
+par -w -intstyle ise -ol high -t 1 Nexysdemo_map.ncd Nexysdemo.ncd Nexysdemo.pcf 
+bitgen -intstyle ise -f Nexysdemo.ut Nexysdemo.ncd 
+xst -intstyle ise -ifn "Z:/comp3601/nexys_demo_simple/Nexysdemo.xst" -ofn "Z:/comp3601/nexys_demo_simple/Nexysdemo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexysdemo.ucf -p xc3s400-ft256-4 Nexysdemo.ngc Nexysdemo.ngd  
+map -intstyle ise -p xc3s400-ft256-4 -cm area -ir off -pr off -c 100 -o Nexysdemo_map.ncd Nexysdemo.ngd Nexysdemo.pcf 
+par -w -intstyle ise -ol high -t 1 Nexysdemo_map.ncd Nexysdemo.ncd Nexysdemo.pcf 
+bitgen -intstyle ise -f Nexysdemo.ut Nexysdemo.ncd 
+xst -intstyle ise -ifn "Z:/comp3601/nexys_demo_simple/Nexysdemo.xst" -ofn "Z:/comp3601/nexys_demo_simple/Nexysdemo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexysdemo.ucf -p xc3s400-ft256-4 Nexysdemo.ngc Nexysdemo.ngd  
+map -intstyle ise -p xc3s400-ft256-4 -cm area -ir off -pr off -c 100 -o Nexysdemo_map.ncd Nexysdemo.ngd Nexysdemo.pcf 
+par -w -intstyle ise -ol high -t 1 Nexysdemo_map.ncd Nexysdemo.ncd Nexysdemo.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Nexysdemo.twx Nexysdemo.ncd -o Nexysdemo.twr Nexysdemo.pcf -ucf nexysdemo.ucf 
+bitgen -intstyle ise -f Nexysdemo.ut Nexysdemo.ncd 
+xst -intstyle ise -ifn "Z:/comp3601/nexys_demo_simple/Nexysdemo.xst" -ofn "Z:/comp3601/nexys_demo_simple/Nexysdemo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexysdemo.ucf -p xc3s400-ft256-4 Nexysdemo.ngc Nexysdemo.ngd  
+map -intstyle ise -p xc3s400-ft256-4 -cm area -ir off -pr off -c 100 -o Nexysdemo_map.ncd Nexysdemo.ngd Nexysdemo.pcf 
+par -w -intstyle ise -ol high -t 1 Nexysdemo_map.ncd Nexysdemo.ncd Nexysdemo.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Nexysdemo.twx Nexysdemo.ncd -o Nexysdemo.twr Nexysdemo.pcf -ucf nexysdemo.ucf 
+bitgen -intstyle ise -f Nexysdemo.ut Nexysdemo.ncd 
+xst -intstyle ise -ifn "Z:/comp3601/nexys_demo_simple/Nexysdemo.xst" -ofn "Z:/comp3601/nexys_demo_simple/Nexysdemo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexysdemo.ucf -p xc3s400-ft256-4 Nexysdemo.ngc Nexysdemo.ngd  
+map -intstyle ise -p xc3s400-ft256-4 -cm area -ir off -pr off -c 100 -o Nexysdemo_map.ncd Nexysdemo.ngd Nexysdemo.pcf 
+par -w -intstyle ise -ol high -t 1 Nexysdemo_map.ncd Nexysdemo.ncd Nexysdemo.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Nexysdemo.twx Nexysdemo.ncd -o Nexysdemo.twr Nexysdemo.pcf -ucf nexysdemo.ucf 
+bitgen -intstyle ise -f Nexysdemo.ut Nexysdemo.ncd 
+xst -intstyle ise -ifn "Z:/comp3601/nexys_demo_simple/Nexysdemo.xst" -ofn "Z:/comp3601/nexys_demo_simple/Nexysdemo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexysdemo.ucf -p xc3s400-ft256-4 Nexysdemo.ngc Nexysdemo.ngd  
+map -intstyle ise -p xc3s400-ft256-4 -cm area -ir off -pr off -c 100 -o Nexysdemo_map.ncd Nexysdemo.ngd Nexysdemo.pcf 
+par -w -intstyle ise -ol high -t 1 Nexysdemo_map.ncd Nexysdemo.ncd Nexysdemo.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Nexysdemo.twx Nexysdemo.ncd -o Nexysdemo.twr Nexysdemo.pcf -ucf nexysdemo.ucf 
+bitgen -intstyle ise -f Nexysdemo.ut Nexysdemo.ncd 
+xst -intstyle ise -ifn "Z:/comp3601/nexys_demo_simple/Nexysdemo.xst" -ofn "Z:/comp3601/nexys_demo_simple/Nexysdemo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexysdemo.ucf -p xc3s400-ft256-4 Nexysdemo.ngc Nexysdemo.ngd  
+map -intstyle ise -p xc3s400-ft256-4 -cm area -ir off -pr off -c 100 -o Nexysdemo_map.ncd Nexysdemo.ngd Nexysdemo.pcf 
+par -w -intstyle ise -ol high -t 1 Nexysdemo_map.ncd Nexysdemo.ncd Nexysdemo.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Nexysdemo.twx Nexysdemo.ncd -o Nexysdemo.twr Nexysdemo.pcf -ucf nexysdemo.ucf 
+bitgen -intstyle ise -f Nexysdemo.ut Nexysdemo.ncd 
+xst -intstyle ise -ifn "Z:/comp3601/nexys_demo_simple/Nexysdemo.xst" -ofn "Z:/comp3601/nexys_demo_simple/Nexysdemo.syr" 
+xst -intstyle ise -ifn "Z:/comp3601/nexys_demo_simple/Nexysdemo.xst" -ofn "Z:/comp3601/nexys_demo_simple/Nexysdemo.syr" 
+xst -intstyle ise -ifn "Z:/comp3601/nexys_demo_simple/Nexysdemo.xst" -ofn "Z:/comp3601/nexys_demo_simple/Nexysdemo.syr" 
+xst -intstyle ise -ifn "Z:/comp3601/nexys_demo_simple/Nexysdemo.xst" -ofn "Z:/comp3601/nexys_demo_simple/Nexysdemo.syr" 
+xst -intstyle ise -ifn "Z:/comp3601/nexys_demo_simple/Nexysdemo.xst" -ofn "Z:/comp3601/nexys_demo_simple/Nexysdemo.syr" 
+xst -intstyle ise -ifn "Z:/comp3601/nexys_demo_simple/Nexysdemo.xst" -ofn "Z:/comp3601/nexys_demo_simple/Nexysdemo.syr" 
+xst -intstyle ise -ifn "Z:/comp3601/nexys_demo_simple/Nexysdemo.xst" -ofn "Z:/comp3601/nexys_demo_simple/Nexysdemo.syr" 
+xst -intstyle ise -ifn "Z:/comp3601/nexys_demo_simple/Nexysdemo.xst" -ofn "Z:/comp3601/nexys_demo_simple/Nexysdemo.syr" 
+xst -intstyle ise -ifn "Z:/comp3601/nexys_demo_simple/Nexysdemo.xst" -ofn "Z:/comp3601/nexys_demo_simple/Nexysdemo.syr" 
+xst -intstyle ise -ifn "Z:/comp3601/nexys_demo_simple/Nexysdemo.xst" -ofn "Z:/comp3601/nexys_demo_simple/Nexysdemo.syr" 
+xst -intstyle ise -ifn "Z:/comp3601/nexys_demo_simple/Nexysdemo.xst" -ofn "Z:/comp3601/nexys_demo_simple/Nexysdemo.syr" 
+xst -intstyle ise -ifn "Z:/comp3601/nexys_demo_simple/Nexysdemo.xst" -ofn "Z:/comp3601/nexys_demo_simple/Nexysdemo.syr" 
+xst -intstyle ise -ifn "Z:/comp3601/nexys_demo_simple/Nexysdemo.xst" -ofn "Z:/comp3601/nexys_demo_simple/Nexysdemo.syr" 
+xst -intstyle ise -ifn "Z:/comp3601/nexys_demo_simple/Nexysdemo.xst" -ofn "Z:/comp3601/nexys_demo_simple/Nexysdemo.syr" 
+xst -intstyle ise -ifn "Z:/comp3601/nexys_demo_simple/Nexysdemo.xst" -ofn "Z:/comp3601/nexys_demo_simple/Nexysdemo.syr" 
+xst -intstyle ise -ifn "Z:/comp3601/nexys_demo_simple/Nexysdemo.xst" -ofn "Z:/comp3601/nexys_demo_simple/Nexysdemo.syr" 
+xst -intstyle ise -ifn "Z:/comp3601/nexys_demo_simple/Nexysdemo.xst" -ofn "Z:/comp3601/nexys_demo_simple/Nexysdemo.syr" 
+xst -intstyle ise -ifn "Z:/comp3601/nexys_demo_simple/Nexysdemo.xst" -ofn "Z:/comp3601/nexys_demo_simple/Nexysdemo.syr" 
+xst -intstyle ise -ifn "Z:/comp3601/nexys_demo_simple/Nexysdemo.xst" -ofn "Z:/comp3601/nexys_demo_simple/Nexysdemo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexysdemo.ucf -p xc3s400-ft256-4 Nexysdemo.ngc Nexysdemo.ngd  
+map -intstyle ise -p xc3s400-ft256-4 -cm area -ir off -pr off -c 100 -o Nexysdemo_map.ncd Nexysdemo.ngd Nexysdemo.pcf 
+par -w -intstyle ise -ol high -t 1 Nexysdemo_map.ncd Nexysdemo.ncd Nexysdemo.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Nexysdemo.twx Nexysdemo.ncd -o Nexysdemo.twr Nexysdemo.pcf -ucf nexysdemo.ucf 
+bitgen -intstyle ise -f Nexysdemo.ut Nexysdemo.ncd 
+xst -intstyle ise -ifn "Z:/comp3601/nexys_demo_simple/Nexysdemo.xst" -ofn "Z:/comp3601/nexys_demo_simple/Nexysdemo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexysdemo.ucf -p xc3s400-ft256-4 Nexysdemo.ngc Nexysdemo.ngd  
+map -intstyle ise -p xc3s400-ft256-4 -cm area -ir off -pr off -c 100 -o Nexysdemo_map.ncd Nexysdemo.ngd Nexysdemo.pcf 
+par -w -intstyle ise -ol high -t 1 Nexysdemo_map.ncd Nexysdemo.ncd Nexysdemo.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Nexysdemo.twx Nexysdemo.ncd -o Nexysdemo.twr Nexysdemo.pcf -ucf nexysdemo.ucf 
+bitgen -intstyle ise -f Nexysdemo.ut Nexysdemo.ncd 
+xst -intstyle ise -ifn "Z:/comp3601/nexys_demo_simple/Nexysdemo.xst" -ofn "Z:/comp3601/nexys_demo_simple/Nexysdemo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexysdemo.ucf -p xc3s400-ft256-4 Nexysdemo.ngc Nexysdemo.ngd  
+map -intstyle ise -p xc3s400-ft256-4 -cm area -ir off -pr off -c 100 -o Nexysdemo_map.ncd Nexysdemo.ngd Nexysdemo.pcf 
+par -w -intstyle ise -ol high -t 1 Nexysdemo_map.ncd Nexysdemo.ncd Nexysdemo.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Nexysdemo.twx Nexysdemo.ncd -o Nexysdemo.twr Nexysdemo.pcf -ucf nexysdemo.ucf 
+bitgen -intstyle ise -f Nexysdemo.ut Nexysdemo.ncd 
+xst -intstyle ise -ifn "Z:/comp3601/nexys_demo_simple/Nexysdemo.xst" -ofn "Z:/comp3601/nexys_demo_simple/Nexysdemo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexysdemo.ucf -p xc3s400-ft256-4 Nexysdemo.ngc Nexysdemo.ngd  
+map -intstyle ise -p xc3s400-ft256-4 -cm area -ir off -pr off -c 100 -o Nexysdemo_map.ncd Nexysdemo.ngd Nexysdemo.pcf 
+par -w -intstyle ise -ol high -t 1 Nexysdemo_map.ncd Nexysdemo.ncd Nexysdemo.pcf 
+bitgen -intstyle ise -f Nexysdemo.ut Nexysdemo.ncd 
+xst -intstyle ise -ifn "Z:/comp3601/nexys_demo_simple/Nexysdemo.xst" -ofn "Z:/comp3601/nexys_demo_simple/Nexysdemo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexysdemo.ucf -p xc3s400-ft256-4 Nexysdemo.ngc Nexysdemo.ngd  
+map -intstyle ise -p xc3s400-ft256-4 -cm area -ir off -pr off -c 100 -o Nexysdemo_map.ncd Nexysdemo.ngd Nexysdemo.pcf 
+par -w -intstyle ise -ol high -t 1 Nexysdemo_map.ncd Nexysdemo.ncd Nexysdemo.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Nexysdemo.twx Nexysdemo.ncd -o Nexysdemo.twr Nexysdemo.pcf -ucf nexysdemo.ucf 
+bitgen -intstyle ise -f Nexysdemo.ut Nexysdemo.ncd 
+xst -intstyle ise -ifn "Z:/comp3601/nexys_demo_simple/Nexysdemo.xst" -ofn "Z:/comp3601/nexys_demo_simple/Nexysdemo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexysdemo.ucf -p xc3s400-ft256-4 Nexysdemo.ngc Nexysdemo.ngd  
+map -intstyle ise -p xc3s400-ft256-4 -cm area -ir off -pr off -c 100 -o Nexysdemo_map.ncd Nexysdemo.ngd Nexysdemo.pcf 
+par -w -intstyle ise -ol high -t 1 Nexysdemo_map.ncd Nexysdemo.ncd Nexysdemo.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Nexysdemo.twx Nexysdemo.ncd -o Nexysdemo.twr Nexysdemo.pcf -ucf nexysdemo.ucf 
+bitgen -intstyle ise -f Nexysdemo.ut Nexysdemo.ncd 
+xst -intstyle ise -ifn "Z:/comp3601/nexys_demo_simple/Nexysdemo.xst" -ofn "Z:/comp3601/nexys_demo_simple/Nexysdemo.syr" 
+xst -intstyle ise -ifn "Z:/comp3601/nexys_demo_simple/Nexysdemo.xst" -ofn "Z:/comp3601/nexys_demo_simple/Nexysdemo.syr" 
+xst -intstyle ise -ifn "Z:/comp3601/nexys_demo_simple/Nexysdemo.xst" -ofn "Z:/comp3601/nexys_demo_simple/Nexysdemo.syr" 
+xst -intstyle ise -ifn "Z:/comp3601/nexys_demo_simple/Nexysdemo.xst" -ofn "Z:/comp3601/nexys_demo_simple/Nexysdemo.syr" 
+xst -intstyle ise -ifn "Z:/comp3601/nexys_demo_simple/Nexysdemo.xst" -ofn "Z:/comp3601/nexys_demo_simple/Nexysdemo.syr" 
+xst -intstyle ise -ifn "Z:/comp3601/nexys_demo_simple/Nexysdemo.xst" -ofn "Z:/comp3601/nexys_demo_simple/Nexysdemo.syr" 
+xst -intstyle ise -ifn "Z:/comp3601/nexys_demo_simple/Nexysdemo.xst" -ofn "Z:/comp3601/nexys_demo_simple/Nexysdemo.syr" 
+xst -intstyle ise -ifn "Z:/comp3601/nexys_demo_simple/Nexysdemo.xst" -ofn "Z:/comp3601/nexys_demo_simple/Nexysdemo.syr" 
+xst -intstyle ise -ifn "Z:/comp3601/nexys_demo_simple/Nexysdemo.xst" -ofn "Z:/comp3601/nexys_demo_simple/Nexysdemo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexysdemo.ucf -p xc3s400-ft256-4 Nexysdemo.ngc Nexysdemo.ngd  
+map -intstyle ise -p xc3s400-ft256-4 -cm area -ir off -pr off -c 100 -o Nexysdemo_map.ncd Nexysdemo.ngd Nexysdemo.pcf 
+par -w -intstyle ise -ol high -t 1 Nexysdemo_map.ncd Nexysdemo.ncd Nexysdemo.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Nexysdemo.twx Nexysdemo.ncd -o Nexysdemo.twr Nexysdemo.pcf -ucf nexysdemo.ucf 
+bitgen -intstyle ise -f Nexysdemo.ut Nexysdemo.ncd 
+xst -intstyle ise -ifn "Z:/comp3601/nexys_demo_simple/Nexysdemo.xst" -ofn "Z:/comp3601/nexys_demo_simple/Nexysdemo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexysdemo.ucf -p xc3s400-ft256-4 Nexysdemo.ngc Nexysdemo.ngd  
+map -intstyle ise -p xc3s400-ft256-4 -cm area -ir off -pr off -c 100 -o Nexysdemo_map.ncd Nexysdemo.ngd Nexysdemo.pcf 
+par -w -intstyle ise -ol high -t 1 Nexysdemo_map.ncd Nexysdemo.ncd Nexysdemo.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Nexysdemo.twx Nexysdemo.ncd -o Nexysdemo.twr Nexysdemo.pcf -ucf nexysdemo.ucf 
+bitgen -intstyle ise -f Nexysdemo.ut Nexysdemo.ncd 
+xst -intstyle ise -ifn "Z:/comp3601/nexys_demo_simple/Nexysdemo.xst" -ofn "Z:/comp3601/nexys_demo_simple/Nexysdemo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexysdemo.ucf -p xc3s400-ft256-4 Nexysdemo.ngc Nexysdemo.ngd  
+map -intstyle ise -p xc3s400-ft256-4 -cm area -ir off -pr off -c 100 -o Nexysdemo_map.ncd Nexysdemo.ngd Nexysdemo.pcf 
+par -w -intstyle ise -ol high -t 1 Nexysdemo_map.ncd Nexysdemo.ncd Nexysdemo.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Nexysdemo.twx Nexysdemo.ncd -o Nexysdemo.twr Nexysdemo.pcf -ucf nexysdemo.ucf 
+bitgen -intstyle ise -f Nexysdemo.ut Nexysdemo.ncd 
+xst -intstyle ise -ifn "Z:/comp3601/nexys_demo_simple/Nexysdemo.xst" -ofn "Z:/comp3601/nexys_demo_simple/Nexysdemo.syr" 
+xst -intstyle ise -ifn "Z:/comp3601/nexys_demo_simple/Nexysdemo.xst" -ofn "Z:/comp3601/nexys_demo_simple/Nexysdemo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexysdemo.ucf -p xc3s400-ft256-4 Nexysdemo.ngc Nexysdemo.ngd  
+map -intstyle ise -p xc3s400-ft256-4 -cm area -ir off -pr off -c 100 -o Nexysdemo_map.ncd Nexysdemo.ngd Nexysdemo.pcf 
+par -w -intstyle ise -ol high -t 1 Nexysdemo_map.ncd Nexysdemo.ncd Nexysdemo.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Nexysdemo.twx Nexysdemo.ncd -o Nexysdemo.twr Nexysdemo.pcf -ucf nexysdemo.ucf 
+bitgen -intstyle ise -f Nexysdemo.ut Nexysdemo.ncd 
+xst -intstyle ise -ifn "Z:/comp3601/nexys_demo_simple/Nexysdemo.xst" -ofn "Z:/comp3601/nexys_demo_simple/Nexysdemo.syr" 
+xst -intstyle ise -ifn "Z:/comp3601/nexys_demo_simple/Nexysdemo.xst" -ofn "Z:/comp3601/nexys_demo_simple/Nexysdemo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexysdemo.ucf -p xc3s400-ft256-4 Nexysdemo.ngc Nexysdemo.ngd  
+map -intstyle ise -p xc3s400-ft256-4 -cm area -ir off -pr off -c 100 -o Nexysdemo_map.ncd Nexysdemo.ngd Nexysdemo.pcf 
+par -w -intstyle ise -ol high -t 1 Nexysdemo_map.ncd Nexysdemo.ncd Nexysdemo.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Nexysdemo.twx Nexysdemo.ncd -o Nexysdemo.twr Nexysdemo.pcf -ucf nexysdemo.ucf 
+bitgen -intstyle ise -f Nexysdemo.ut Nexysdemo.ncd 
+xst -intstyle ise -ifn "Z:/comp3601/nexys_demo_simple/Nexysdemo.xst" -ofn "Z:/comp3601/nexys_demo_simple/Nexysdemo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexysdemo.ucf -p xc3s400-ft256-4 Nexysdemo.ngc Nexysdemo.ngd  
+map -intstyle ise -p xc3s400-ft256-4 -cm area -ir off -pr off -c 100 -o Nexysdemo_map.ncd Nexysdemo.ngd Nexysdemo.pcf 
+par -w -intstyle ise -ol high -t 1 Nexysdemo_map.ncd Nexysdemo.ncd Nexysdemo.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Nexysdemo.twx Nexysdemo.ncd -o Nexysdemo.twr Nexysdemo.pcf -ucf nexysdemo.ucf 
+bitgen -intstyle ise -f Nexysdemo.ut Nexysdemo.ncd 
+xst -intstyle ise -ifn "Z:/comp3601/nexys_demo_simple/Nexysdemo.xst" -ofn "Z:/comp3601/nexys_demo_simple/Nexysdemo.syr" 
+xst -intstyle ise -ifn "Z:/comp3601/nexys_demo_simple/Nexysdemo.xst" -ofn "Z:/comp3601/nexys_demo_simple/Nexysdemo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexysdemo.ucf -p xc3s400-ft256-4 Nexysdemo.ngc Nexysdemo.ngd  
+map -intstyle ise -p xc3s400-ft256-4 -cm area -ir off -pr off -c 100 -o Nexysdemo_map.ncd Nexysdemo.ngd Nexysdemo.pcf 
+par -w -intstyle ise -ol high -t 1 Nexysdemo_map.ncd Nexysdemo.ncd Nexysdemo.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Nexysdemo.twx Nexysdemo.ncd -o Nexysdemo.twr Nexysdemo.pcf -ucf nexysdemo.ucf 
+bitgen -intstyle ise -f Nexysdemo.ut Nexysdemo.ncd 
+xst -intstyle ise -ifn "Z:/comp3601/nexys_demo_simple/Nexysdemo.xst" -ofn "Z:/comp3601/nexys_demo_simple/Nexysdemo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexysdemo.ucf -p xc3s400-ft256-4 Nexysdemo.ngc Nexysdemo.ngd  
+map -intstyle ise -p xc3s400-ft256-4 -cm area -ir off -pr off -c 100 -o Nexysdemo_map.ncd Nexysdemo.ngd Nexysdemo.pcf 
+par -w -intstyle ise -ol high -t 1 Nexysdemo_map.ncd Nexysdemo.ncd Nexysdemo.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Nexysdemo.twx Nexysdemo.ncd -o Nexysdemo.twr Nexysdemo.pcf -ucf nexysdemo.ucf 
+bitgen -intstyle ise -f Nexysdemo.ut Nexysdemo.ncd 
+xst -intstyle ise -ifn "Z:/comp3601/nexys_demo_simple/Nexysdemo.xst" -ofn "Z:/comp3601/nexys_demo_simple/Nexysdemo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexysdemo.ucf -p xc3s400-ft256-4 Nexysdemo.ngc Nexysdemo.ngd  
+map -intstyle ise -p xc3s400-ft256-4 -cm area -ir off -pr off -c 100 -o Nexysdemo_map.ncd Nexysdemo.ngd Nexysdemo.pcf 
+par -w -intstyle ise -ol high -t 1 Nexysdemo_map.ncd Nexysdemo.ncd Nexysdemo.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Nexysdemo.twx Nexysdemo.ncd -o Nexysdemo.twr Nexysdemo.pcf -ucf nexysdemo.ucf 
+bitgen -intstyle ise -f Nexysdemo.ut Nexysdemo.ncd 
+xst -intstyle ise -ifn "Z:/comp3601/nexys_demo_simple/Nexysdemo.xst" -ofn "Z:/comp3601/nexys_demo_simple/Nexysdemo.syr" 
+xst -intstyle ise -ifn "Z:/comp3601/nexys_demo_simple/Nexysdemo.xst" -ofn "Z:/comp3601/nexys_demo_simple/Nexysdemo.syr" 
+xst -intstyle ise -ifn "Z:/comp3601/nexys_demo_simple/Nexysdemo.xst" -ofn "Z:/comp3601/nexys_demo_simple/Nexysdemo.syr" 
+xst -intstyle ise -ifn "Z:/comp3601/nexys_demo_simple/Nexysdemo.xst" -ofn "Z:/comp3601/nexys_demo_simple/Nexysdemo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexysdemo.ucf -p xc3s400-ft256-4 Nexysdemo.ngc Nexysdemo.ngd  
+map -intstyle ise -p xc3s400-ft256-4 -cm area -ir off -pr off -c 100 -o Nexysdemo_map.ncd Nexysdemo.ngd Nexysdemo.pcf 
+par -w -intstyle ise -ol high -t 1 Nexysdemo_map.ncd Nexysdemo.ncd Nexysdemo.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Nexysdemo.twx Nexysdemo.ncd -o Nexysdemo.twr Nexysdemo.pcf -ucf nexysdemo.ucf 
+bitgen -intstyle ise -f Nexysdemo.ut Nexysdemo.ncd 
+xst -intstyle ise -ifn "Z:/comp3601/nexys_demo_simple/Nexysdemo.xst" -ofn "Z:/comp3601/nexys_demo_simple/Nexysdemo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexysdemo.ucf -p xc3s400-ft256-4 Nexysdemo.ngc Nexysdemo.ngd  
+map -intstyle ise -p xc3s400-ft256-4 -cm area -ir off -pr off -c 100 -o Nexysdemo_map.ncd Nexysdemo.ngd Nexysdemo.pcf 
+par -w -intstyle ise -ol high -t 1 Nexysdemo_map.ncd Nexysdemo.ncd Nexysdemo.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Nexysdemo.twx Nexysdemo.ncd -o Nexysdemo.twr Nexysdemo.pcf -ucf nexysdemo.ucf 
+bitgen -intstyle ise -f Nexysdemo.ut Nexysdemo.ncd 
+xst -intstyle ise -ifn "Z:/comp3601/nexys_demo_simple/Nexysdemo.xst" -ofn "Z:/comp3601/nexys_demo_simple/Nexysdemo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexysdemo.ucf -p xc3s400-ft256-4 Nexysdemo.ngc Nexysdemo.ngd  
+map -intstyle ise -p xc3s400-ft256-4 -cm area -ir off -pr off -c 100 -o Nexysdemo_map.ncd Nexysdemo.ngd Nexysdemo.pcf 
+par -w -intstyle ise -ol high -t 1 Nexysdemo_map.ncd Nexysdemo.ncd Nexysdemo.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Nexysdemo.twx Nexysdemo.ncd -o Nexysdemo.twr Nexysdemo.pcf -ucf nexysdemo.ucf 
+bitgen -intstyle ise -f Nexysdemo.ut Nexysdemo.ncd 
+xst -intstyle ise -ifn "Z:/comp3601/nexys_demo_simple/Nexysdemo.xst" -ofn "Z:/comp3601/nexys_demo_simple/Nexysdemo.syr" 
+xst -intstyle ise -ifn "Z:/comp3601/nexys_demo_simple/Nexysdemo.xst" -ofn "Z:/comp3601/nexys_demo_simple/Nexysdemo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexysdemo.ucf -p xc3s400-ft256-4 Nexysdemo.ngc Nexysdemo.ngd  
+map -intstyle ise -p xc3s400-ft256-4 -cm area -ir off -pr off -c 100 -o Nexysdemo_map.ncd Nexysdemo.ngd Nexysdemo.pcf 
+par -w -intstyle ise -ol high -t 1 Nexysdemo_map.ncd Nexysdemo.ncd Nexysdemo.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Nexysdemo.twx Nexysdemo.ncd -o Nexysdemo.twr Nexysdemo.pcf -ucf nexysdemo.ucf 
+bitgen -intstyle ise -f Nexysdemo.ut Nexysdemo.ncd 
+xst -intstyle ise -ifn "Z:/comp3601/nexys_demo_simple/Nexysdemo.xst" -ofn "Z:/comp3601/nexys_demo_simple/Nexysdemo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexysdemo.ucf -p xc3s400-ft256-4 Nexysdemo.ngc Nexysdemo.ngd  
+map -intstyle ise -p xc3s400-ft256-4 -cm area -ir off -pr off -c 100 -o Nexysdemo_map.ncd Nexysdemo.ngd Nexysdemo.pcf 
+par -w -intstyle ise -ol high -t 1 Nexysdemo_map.ncd Nexysdemo.ncd Nexysdemo.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Nexysdemo.twx Nexysdemo.ncd -o Nexysdemo.twr Nexysdemo.pcf -ucf nexysdemo.ucf 
+bitgen -intstyle ise -f Nexysdemo.ut Nexysdemo.ncd 
+xst -intstyle ise -ifn "Z:/comp3601/nexys_demo_simple/Nexysdemo.xst" -ofn "Z:/comp3601/nexys_demo_simple/Nexysdemo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexysdemo.ucf -p xc3s400-ft256-4 Nexysdemo.ngc Nexysdemo.ngd  
+map -intstyle ise -p xc3s400-ft256-4 -cm area -ir off -pr off -c 100 -o Nexysdemo_map.ncd Nexysdemo.ngd Nexysdemo.pcf 
+par -w -intstyle ise -ol high -t 1 Nexysdemo_map.ncd Nexysdemo.ncd Nexysdemo.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Nexysdemo.twx Nexysdemo.ncd -o Nexysdemo.twr Nexysdemo.pcf -ucf nexysdemo.ucf 
+bitgen -intstyle ise -f Nexysdemo.ut Nexysdemo.ncd 
+xst -intstyle ise -ifn "Z:/comp3601/nexys_demo_simple/Nexysdemo.xst" -ofn "Z:/comp3601/nexys_demo_simple/Nexysdemo.syr" 
+xst -intstyle ise -ifn "Z:/comp3601/nexys_demo_simple/Nexysdemo.xst" -ofn "Z:/comp3601/nexys_demo_simple/Nexysdemo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexysdemo.ucf -p xc3s400-ft256-4 Nexysdemo.ngc Nexysdemo.ngd  
+map -intstyle ise -p xc3s400-ft256-4 -cm area -ir off -pr off -c 100 -o Nexysdemo_map.ncd Nexysdemo.ngd Nexysdemo.pcf 
+par -w -intstyle ise -ol high -t 1 Nexysdemo_map.ncd Nexysdemo.ncd Nexysdemo.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Nexysdemo.twx Nexysdemo.ncd -o Nexysdemo.twr Nexysdemo.pcf -ucf nexysdemo.ucf 
+bitgen -intstyle ise -f Nexysdemo.ut Nexysdemo.ncd 
+xst -intstyle ise -ifn "Z:/comp3601/nexys_demo_simple/Nexysdemo.xst" -ofn "Z:/comp3601/nexys_demo_simple/Nexysdemo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexysdemo.ucf -p xc3s400-ft256-4 Nexysdemo.ngc Nexysdemo.ngd  
+map -intstyle ise -p xc3s400-ft256-4 -cm area -ir off -pr off -c 100 -o Nexysdemo_map.ncd Nexysdemo.ngd Nexysdemo.pcf 
+par -w -intstyle ise -ol high -t 1 Nexysdemo_map.ncd Nexysdemo.ncd Nexysdemo.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Nexysdemo.twx Nexysdemo.ncd -o Nexysdemo.twr Nexysdemo.pcf -ucf nexysdemo.ucf 
+bitgen -intstyle ise -f Nexysdemo.ut Nexysdemo.ncd 
+xst -intstyle ise -ifn "Z:/comp3601/nexys_demo_simple/Nexysdemo.xst" -ofn "Z:/comp3601/nexys_demo_simple/Nexysdemo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexysdemo.ucf -p xc3s400-ft256-4 Nexysdemo.ngc Nexysdemo.ngd  
+map -intstyle ise -p xc3s400-ft256-4 -cm area -ir off -pr off -c 100 -o Nexysdemo_map.ncd Nexysdemo.ngd Nexysdemo.pcf 
+par -w -intstyle ise -ol high -t 1 Nexysdemo_map.ncd Nexysdemo.ncd Nexysdemo.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Nexysdemo.twx Nexysdemo.ncd -o Nexysdemo.twr Nexysdemo.pcf -ucf nexysdemo.ucf 
+bitgen -intstyle ise -f Nexysdemo.ut Nexysdemo.ncd 
+xst -intstyle ise -ifn "Z:/comp3601/nexys_demo_simple/Nexysdemo.xst" -ofn "Z:/comp3601/nexys_demo_simple/Nexysdemo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexysdemo.ucf -p xc3s400-ft256-4 Nexysdemo.ngc Nexysdemo.ngd  
+map -intstyle ise -p xc3s400-ft256-4 -cm area -ir off -pr off -c 100 -o Nexysdemo_map.ncd Nexysdemo.ngd Nexysdemo.pcf 
+par -w -intstyle ise -ol high -t 1 Nexysdemo_map.ncd Nexysdemo.ncd Nexysdemo.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Nexysdemo.twx Nexysdemo.ncd -o Nexysdemo.twr Nexysdemo.pcf -ucf nexysdemo.ucf 
+bitgen -intstyle ise -f Nexysdemo.ut Nexysdemo.ncd 
+xst -intstyle ise -ifn "Z:/comp3601/nexys_demo_simple/Nexysdemo.xst" -ofn "Z:/comp3601/nexys_demo_simple/Nexysdemo.syr" 
+xst -intstyle ise -ifn "Z:/comp3601/nexys_demo_simple/Nexysdemo.xst" -ofn "Z:/comp3601/nexys_demo_simple/Nexysdemo.syr" 
+xst -intstyle ise -ifn "Z:/comp3601/nexys_demo_simple/Nexysdemo.xst" -ofn "Z:/comp3601/nexys_demo_simple/Nexysdemo.syr" 
+xst -intstyle ise -ifn "Z:/comp3601/nexys_demo_simple/Nexysdemo.xst" -ofn "Z:/comp3601/nexys_demo_simple/Nexysdemo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexysdemo.ucf -p xc3s400-ft256-4 Nexysdemo.ngc Nexysdemo.ngd  
+map -intstyle ise -p xc3s400-ft256-4 -cm area -ir off -pr off -c 100 -o Nexysdemo_map.ncd Nexysdemo.ngd Nexysdemo.pcf 
+par -w -intstyle ise -ol high -t 1 Nexysdemo_map.ncd Nexysdemo.ncd Nexysdemo.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Nexysdemo.twx Nexysdemo.ncd -o Nexysdemo.twr Nexysdemo.pcf -ucf nexysdemo.ucf 
+bitgen -intstyle ise -f Nexysdemo.ut Nexysdemo.ncd 
+xst -intstyle ise -ifn "Z:/comp3601/nexys_demo_simple/Nexysdemo.xst" -ofn "Z:/comp3601/nexys_demo_simple/Nexysdemo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexysdemo.ucf -p xc3s400-ft256-4 Nexysdemo.ngc Nexysdemo.ngd  
+map -intstyle ise -p xc3s400-ft256-4 -cm area -ir off -pr off -c 100 -o Nexysdemo_map.ncd Nexysdemo.ngd Nexysdemo.pcf 
+par -w -intstyle ise -ol high -t 1 Nexysdemo_map.ncd Nexysdemo.ncd Nexysdemo.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Nexysdemo.twx Nexysdemo.ncd -o Nexysdemo.twr Nexysdemo.pcf -ucf nexysdemo.ucf 
+bitgen -intstyle ise -f Nexysdemo.ut Nexysdemo.ncd 
+xst -intstyle ise -ifn "Z:/comp3601/nexys_demo_simple/Nexysdemo.xst" -ofn "Z:/comp3601/nexys_demo_simple/Nexysdemo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexysdemo.ucf -p xc3s400-ft256-4 Nexysdemo.ngc Nexysdemo.ngd  
+map -intstyle ise -p xc3s400-ft256-4 -cm area -ir off -pr off -c 100 -o Nexysdemo_map.ncd Nexysdemo.ngd Nexysdemo.pcf 
+par -w -intstyle ise -ol high -t 1 Nexysdemo_map.ncd Nexysdemo.ncd Nexysdemo.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Nexysdemo.twx Nexysdemo.ncd -o Nexysdemo.twr Nexysdemo.pcf -ucf nexysdemo.ucf 
+bitgen -intstyle ise -f Nexysdemo.ut Nexysdemo.ncd 
+xst -intstyle ise -ifn "Z:/comp3601/nexys_demo_simple/Nexysdemo.xst" -ofn "Z:/comp3601/nexys_demo_simple/Nexysdemo.syr" 
+xst -intstyle ise -ifn "Z:/comp3601/nexys_demo_simple/Nexysdemo.xst" -ofn "Z:/comp3601/nexys_demo_simple/Nexysdemo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexysdemo.ucf -p xc3s400-ft256-4 Nexysdemo.ngc Nexysdemo.ngd  
+map -intstyle ise -p xc3s400-ft256-4 -cm area -ir off -pr off -c 100 -o Nexysdemo_map.ncd Nexysdemo.ngd Nexysdemo.pcf 
+par -w -intstyle ise -ol high -t 1 Nexysdemo_map.ncd Nexysdemo.ncd Nexysdemo.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Nexysdemo.twx Nexysdemo.ncd -o Nexysdemo.twr Nexysdemo.pcf -ucf nexysdemo.ucf 
+bitgen -intstyle ise -f Nexysdemo.ut Nexysdemo.ncd 
+xst -intstyle ise -ifn "Z:/comp3601/nexys_demo_simple/Nexysdemo.xst" -ofn "Z:/comp3601/nexys_demo_simple/Nexysdemo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexysdemo.ucf -p xc3s400-ft256-4 Nexysdemo.ngc Nexysdemo.ngd  
+map -intstyle ise -p xc3s400-ft256-4 -cm area -ir off -pr off -c 100 -o Nexysdemo_map.ncd Nexysdemo.ngd Nexysdemo.pcf 
+par -w -intstyle ise -ol high -t 1 Nexysdemo_map.ncd Nexysdemo.ncd Nexysdemo.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Nexysdemo.twx Nexysdemo.ncd -o Nexysdemo.twr Nexysdemo.pcf -ucf nexysdemo.ucf 
+bitgen -intstyle ise -f Nexysdemo.ut Nexysdemo.ncd 
+xst -intstyle ise -ifn "Z:/comp3601/nexys_demo_simple/Nexysdemo.xst" -ofn "Z:/comp3601/nexys_demo_simple/Nexysdemo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc nexysdemo.ucf -p xc3s400-ft256-4 Nexysdemo.ngc Nexysdemo.ngd  
+map -intstyle ise -p xc3s400-ft256-4 -cm area -ir off -pr off -c 100 -o Nexysdemo_map.ncd Nexysdemo.ngd Nexysdemo.pcf 
+par -w -intstyle ise -ol high -t 1 Nexysdemo_map.ncd Nexysdemo.ncd Nexysdemo.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Nexysdemo.twx Nexysdemo.ncd -o Nexysdemo.twr Nexysdemo.pcf -ucf nexysdemo.ucf 
+bitgen -intstyle ise -f Nexysdemo.ut Nexysdemo.ncd 

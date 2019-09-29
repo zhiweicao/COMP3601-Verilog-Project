@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "Z:/comp3601/nexys_demo_simple/fsm_test_isim_beh.exe" -prj "Z:/comp3601/nexys_demo_simple/fsm_test_beh.prj" "fsm_test" 

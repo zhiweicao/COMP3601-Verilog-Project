@@ -41,5 +41,5 @@ NET "led<7>" LOC = "R16";
 #NET "noise<3>" LOC = "R12";
 
 #The speaker output Mapping!!!
-#NET "aout" LOC = "T14";
+NET "speaker_signal" LOC = "T14";
 

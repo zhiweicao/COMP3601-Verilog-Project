@@ -35,7 +35,7 @@ entity Nexysdemo is
         led     : out std_logic_vector(7 downto 0);
         an      : out std_logic_vector(3 downto 0);
         ssg     : out std_logic_vector(7 downto 0);
-		  aout	 : out std_logic);
+		  speaker_signal	 : out std_logic);
 end Nexysdemo;
 
 architecture Behavioral of Nexysdemo is
@@ -43,117 +43,148 @@ architecture Behavioral of Nexysdemo is
 	------------------------------------------------------------------------
 	-- Component Declarations
 	------------------------------------------------------------------------
-	component word2hurdle is
-		Port ( word : in  STD_LOGIC_VECTOR (4 downto 0);
-				 hurdle : out  STD_LOGIC_VECTOR (19 downto 0));
+	
+	component speakerPulseGenerator is
+	Port (clk							: in  std_logic;
+			beat_pluse					: in  std_logic;
+			reset							: in 	std_logic;
+			current_note				: in  std_logic_vector(7 downto 0);
+			note_length					: in  std_logic_vector(7 downto 0);
+			note_pass_led				: out std_logic_vector(7 downto 0);
+			note_done					: out std_logic;
+			pulse 						: out std_logic);
 	end component;
 	
-	component clock2pulse is
-		Port ( hurdle : in  STD_LOGIC_VECTOR (19 downto 0);
-				 noise_on_trigger   : in  STD_LOGIC;
-				 clock : in  STD_LOGIC;
-				 pulse : out  STD_LOGIC);
+	component display is
+    Port ( clk						: in std_logic;
+			  current_note 		: in  STD_LOGIC_VECTOR (7 downto 0);
+           note_length  		: in  STD_LOGIC_VECTOR (7 downto 0);
+           anSel 					: out STD_LOGIC_VECTOR (3 downto 0);
+			  ssg						: out STD_LOGIC_VECTOR (7 downto 0)
+			  );
+	end component;
+	
+	component memoryManager is
+	PORT (clk 							: in std_logic;
+			reset							: in std_logic;
+			download_mode				: in std_logic;
+			data_addr					: in std_logic_vector(15 downto 0);
+			current_note				: out std_logic_vector(7 downto 0);
+			note_length					: out std_logic_vector(7 downto 0)
+			);
+	end component;
+	
+	component beatsManager is
+	Port (  clk								: in  std_logic;
+			  reset							: in	std_logic;
+			  beats_per_second			: in  std_logic_vector(7 downto 0);
+			  beat_pluse					: out std_logic
+			  );
+	end component;
+	
+	component controller is
+    Port ( clk									: in  std_logic;
+			  reset								: in	std_logic;
+			  note_done							: in 	std_logic;
+			  download_mode					: in 	std_logic;
+			  data_addr							: out std_logic_vector(15 downto 0);
+			  speaker_restart					: out std_logic
+			  );
 	end component;
 	------------------------------------------------------------------------
 	-- Signal Declarations
 	------------------------------------------------------------------------
 
-	signal clkdiv  : std_logic_vector(24 downto 0);
-	signal cntr    : std_logic_vector(3 downto 0);
-	signal cclk    : std_logic;
-	signal dig     : std_logic_vector(6 downto 0);
-	signal wave	   : std_logic;
+	signal clkdiv  				 : std_logic_vector(24 downto 0);
+	signal cntr    				 : std_logic_vector(3 downto 0);
+	signal cclk    				 : std_logic;
 
-	signal note_choice_switch   : std_logic_vector(4 downto 0);
-	signal note_on_hurdle       : std_logic_vector(19 downto 0);
-	signal noise_on_trigger     : std_logic;
-	signal test_pulse           : std_logic_vector(7 downto 0);
-	------------------------------------------------------------------------
+	signal reset					 : std_logic;
+	
+	signal current_note 			 : STD_LOGIC_VECTOR(7 downto 0);
+	signal note_length			 : STD_LOGIC_VECTOR(7 downto 0);
+	
+	signal beats_per_second		 : STD_LOGIC_VECTOR(7 downto 0);
+	signal note_done				 : std_logic;
+	signal beat_pluse		 		 : std_logic;
+	
+	signal download_mode			 : std_logic;
+	signal speaker_restart		 : std_logic;
+	signal speaker_reset			 : std_logic;
+	signal data_addr				 : std_logic_vector(15 downto 0);
+	signal temp_led				 : STD_LOGIC_VECTOR(7 downto 0);
+
+  ------------------------------------------------------------------------
 	-- Module Implementation
 	------------------------------------------------------------------------
 
 	begin
-
-	
-	dig <=    
-         "0111111" when cntr = "0000" else
-			"0000110" when cntr = "0001" else
-			"1011011" when cntr = "0010" else
-			"1001111" when cntr = "0011" else
-			"1100110" when cntr = "0100" else
-			"1101101" when cntr = "0101" else
-			"1111101" when cntr = "0110" else
-			"0000111" when cntr = "0111" else
-			"1111111" when cntr = "1000" else
-			"1101111" when cntr = "1001" else
-			"0000000";
-
-   ssg(6 downto 0) <= not dig;
-	led <= test_pulse;
-	an <= btn;
-	aout <= wave;
-	ssg(7) <= '0';
-	note_choice_switch <= swt(4 downto 0);
-	noise_on_trigger <= swt(7);
+	beats_per_second(7) <= '0';
+	beats_per_second(6 downto 0) <= swt(6 downto 0);
+	reset <= not swt(7);
+	speaker_reset	<= reset or speaker_restart;
+	download_mode <= '0';
+	led(6 downto 0) <= temp_led(6 downto 0);
+	led(7)			<= note_done;
 	-- Divide the master clock (100Mhz) down to a lower frequency.
 	process (mclk)
 		begin
 			if mclk = '1' and mclk'Event then
 				clkdiv <= clkdiv + 1;
 			end if;
-		end process;
-
-	-- The hurdle for triggering speaker
-	word_mapping :  word2hurdle
-	 port map ( word      			   => note_choice_switch,
-					hurdle  				   => note_on_hurdle
-					);
-
---	 pulse generator
-	pulse_generator :  clock2pulse
-	 port map ( hurdle 					=> note_on_hurdle,
-				   noise_on_trigger     => noise_on_trigger,
-				   clock                => mclk,
-				   pulse                => wave
-					);	
-				
-	process(wave)
-		begin
-			if wave = '1' and wave'Event then
-				test_pulse <= test_pulse + 1;
-			end if;
 	end process;
---	process(mclk)
---		begin
---			if mclk = '1' and mclk'Event then
---				if noise_on = '1' then
---					if clock_counter > note_on_hurdle then
---						clock_counter <= "000000000000";
---						wave <= '1';
---					end if;
---				else 
---					wave <= '0';
---					clock_counter <= clock_counter + 1;
---				end if;
---			end if;
---	end process;
---	process (swt) 
---		begin
---		case swt is 
---			when "00000000" =>
---				wave <= clkdiv(0);
---			when "00000001" =>
---				wave <= clkdiv(10);
---			when "00000011" =>
---				wave <= clkdiv(15);
---			when others =>
---				wave <= clkdiv(25);
---		end case;
---	end process;
-	
 
-	
-	
+	------------------------------------------------------------------------
+	-- load module
+	------------------------------------------------------------------------
+	-- The hurdle for triggering speaker
+
+	--	 pulse generator
+	pulse_generator :  speakerPulseGenerator
+	 port map ( clk							=>	mclk,
+					beat_pluse					=>	beat_pluse,
+					reset							=>	speaker_reset,
+					current_note				=>	current_note,
+					note_length					=>	note_length,
+					note_pass_led				=>	temp_led,
+					note_done					=> note_done,
+					pulse 						=>	speaker_signal 
+					);
+						
+	-- display mapping
+	display_map : display
+    port map  (  clk							=>	mclk,
+					  current_note 			=> current_note,
+					  note_length  			=> note_length,
+					  anSel 						=> an,
+					  ssg							=> ssg
+					 );
+	-- Memory Manager
+	memory_Manager : memoryManager
+    port map  (  clk							=>	mclk,
+					  reset						=> reset,
+					  download_mode			=> download_mode,
+					  data_addr					=> data_addr,
+					  current_note				=> current_note,
+					  note_length				=> note_length
+					);
+	beats_Manager : beatsManager
+    port map  ( clk							=> mclk,
+					reset							=> reset,
+					beats_per_second			=> beats_per_second,
+					beat_pluse					=> beat_pluse
+					);
+	signal_controller : controller
+    port map  (clk							=> mclk,
+					reset							=> reset,
+					note_done					=> note_done,
+					download_mode				=> download_mode,
+					data_addr					=> data_addr,
+					speaker_restart			=> speaker_restart
+					);
+			  
+
+
 	
 	cclk <= clkdiv(24);
 	process (cclk)

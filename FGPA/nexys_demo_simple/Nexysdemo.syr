@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.73 secs
+Total CPU time to Xst completion: 0.75 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.73 secs
+Total CPU time to Xst completion: 0.75 secs
  
 --> Reading design: Nexysdemo.prj
 
@@ -104,12 +104,32 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
-Compiling vhdl file "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/word2hurdle.vhd" in Library work.
-Entity <word2hurdle> compiled.
-Entity <word2hurdle> (Architecture <behavioral>) compiled.
+Compiling vhdl file "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/segment7.vhd" in Library work.
+Architecture behavioral of Entity segment7 is up to date.
+Compiling vhdl file "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/beatsHurdleCalculator.vhd" in Library work.
+Architecture behavioral of Entity beatshurdlecalculator is up to date.
 Compiling vhdl file "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/clock2pulse.vhd" in Library work.
-Entity <clock2pulse> compiled.
-Entity <clock2pulse> (Architecture <behavioral>) compiled.
+Architecture behavioral of Entity clock2pulse is up to date.
+Compiling vhdl file "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/blockRam.vhd" in Library work.
+Architecture syn of Entity blockram is up to date.
+Compiling vhdl file "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/note2segment.vhd" in Library work.
+Architecture behavioral of Entity note2segment is up to date.
+Compiling vhdl file "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/word2hurdle.vhd" in Library work.
+Architecture behavioral of Entity word2hurdle is up to date.
+Compiling vhdl file "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/mux_3_to_8.vhd" in Library work.
+Entity <mux_3_to_8> compiled.
+Entity <mux_3_to_8> (Architecture <behavioral>) compiled.
+Compiling vhdl file "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/speakerPulseGenerator.vhd" in Library work.
+Entity <speakerpulsegenerator> compiled.
+Entity <speakerpulsegenerator> (Architecture <behavioral>) compiled.
+Compiling vhdl file "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/display.vhd" in Library work.
+Architecture behavioral of Entity display is up to date.
+Compiling vhdl file "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/memoryManager.vhd" in Library work.
+Architecture behavioral of Entity memorymanager is up to date.
+Compiling vhdl file "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/beatsManager.vhd" in Library work.
+Architecture behavioral of Entity beatsmanager is up to date.
+Compiling vhdl file "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/controller.vhd" in Library work.
+Architecture behavioral of Entity controller is up to date.
 Compiling vhdl file "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/Nexysdemo.vhd" in Library work.
 Architecture behavioral of Entity nexysdemo is up to date.
 
@@ -118,9 +138,29 @@ Architecture behavioral of Entity nexysdemo is up to date.
 =========================================================================
 Analyzing hierarchy for entity <Nexysdemo> in library <work> (architecture <behavioral>).
 
+Analyzing hierarchy for entity <speakerPulseGenerator> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <display> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <memoryManager> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <beatsManager> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <controller> in library <work> (architecture <behavioral>).
+
 Analyzing hierarchy for entity <word2hurdle> in library <work> (architecture <behavioral>).
 
 Analyzing hierarchy for entity <clock2pulse> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux_3_to_8> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <note2segment> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <blockRam> in library <work> (architecture <syn>).
+
+Analyzing hierarchy for entity <beatsHurdleCalculator> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <segment7> in library <work> (architecture <behavioral>).
 
 
 =========================================================================
@@ -128,6 +168,11 @@ Analyzing hierarchy for entity <clock2pulse> in library <work> (architecture <be
 =========================================================================
 Analyzing Entity <Nexysdemo> in library <work> (Architecture <behavioral>).
 Entity <Nexysdemo> analyzed. Unit <Nexysdemo> generated.
+
+Analyzing Entity <speakerPulseGenerator> in library <work> (Architecture <behavioral>).
+WARNING:Xst:819 - "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/speakerPulseGenerator.vhd" line 93: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <reset>
+Entity <speakerPulseGenerator> analyzed. Unit <speakerPulseGenerator> generated.
 
 Analyzing Entity <word2hurdle> in library <work> (Architecture <behavioral>).
 Entity <word2hurdle> analyzed. Unit <word2hurdle> generated.
@@ -137,6 +182,42 @@ WARNING:Xst:819 - "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/
    <noise_on_trigger>
 Entity <clock2pulse> analyzed. Unit <clock2pulse> generated.
 
+Analyzing Entity <mux_3_to_8> in library <work> (Architecture <behavioral>).
+Entity <mux_3_to_8> analyzed. Unit <mux_3_to_8> generated.
+
+Analyzing Entity <display> in library <work> (Architecture <behavioral>).
+INFO:Xst:1561 - "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/display.vhd" line 91: Mux is complete : default of case is discarded
+WARNING:Xst:819 - "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/display.vhd" line 77: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <all_ssgs>
+Entity <display> analyzed. Unit <display> generated.
+
+Analyzing Entity <note2segment> in library <work> (Architecture <behavioral>).
+Entity <note2segment> analyzed. Unit <note2segment> generated.
+
+Analyzing Entity <segment7> in library <work> (Architecture <behavioral>).
+Entity <segment7> analyzed. Unit <segment7> generated.
+
+Analyzing Entity <memoryManager> in library <work> (Architecture <behavioral>).
+Entity <memoryManager> analyzed. Unit <memoryManager> generated.
+
+Analyzing Entity <blockRam> in library <work> (Architecture <syn>).
+WARNING:Xst:819 - "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/blockRam.vhd" line 20: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <reset>
+Entity <blockRam> analyzed. Unit <blockRam> generated.
+
+Analyzing Entity <beatsManager> in library <work> (Architecture <behavioral>).
+Entity <beatsManager> analyzed. Unit <beatsManager> generated.
+
+Analyzing Entity <beatsHurdleCalculator> in library <work> (Architecture <behavioral>).
+WARNING:Xst:819 - "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/beatsHurdleCalculator.vhd" line 52: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <reset>
+Entity <beatsHurdleCalculator> analyzed. Unit <beatsHurdleCalculator> generated.
+
+Analyzing Entity <controller> in library <work> (Architecture <behavioral>).
+WARNING:Xst:819 - "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/controller.vhd" line 93: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <reset>
+Entity <controller> analyzed. Unit <controller> generated.
+
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -144,9 +225,36 @@ Entity <clock2pulse> analyzed. Unit <clock2pulse> generated.
 
 Performing bidirectional port resolution...
 
+Synthesizing Unit <controller>.
+    Related source file is "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/controller.vhd".
+WARNING:Xst:647 - Input <download_mode> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1780 - Signal <next_state> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Found finite state machine <FSM_0> for signal <current_state>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 6                                              |
+    | Inputs             | 1                                              |
+    | Outputs            | 4                                              |
+    | Clock              | clk                       (rising_edge)        |
+    | Reset              | reset                     (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | s0_init                                        |
+    | Power Up State     | s0_init                                        |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+WARNING:Xst:737 - Found 1-bit latch for signal <speaker_restart>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+    Found 16-bit up counter for signal <next_addr>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   1 Counter(s).
+Unit <controller> synthesized.
+
+
 Synthesizing Unit <word2hurdle>.
     Related source file is "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/word2hurdle.vhd".
-    Found 32x20-bit ROM for signal <hurdle>.
+    Found 32x32-bit ROM for signal <hurdle>.
     Summary:
 	inferred   1 ROM(s).
 Unit <word2hurdle> synthesized.
@@ -155,9 +263,9 @@ Unit <word2hurdle> synthesized.
 Synthesizing Unit <clock2pulse>.
     Related source file is "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/clock2pulse.vhd".
     Found 1-bit register for signal <pulse>.
-    Found 20-bit up counter for signal <clock_counter>.
-    Found 20-bit comparator greater for signal <clock_counter$cmp_gt0000> created at line 50.
+    Found 32-bit up counter for signal <clock_counter>.
     Found 2-bit up counter for signal <last>.
+    Found 32-bit comparator greater for signal <last$cmp_gt0000> created at line 50.
     Summary:
 	inferred   2 Counter(s).
 	inferred   1 D-type flip-flop(s).
@@ -165,16 +273,112 @@ Synthesizing Unit <clock2pulse>.
 Unit <clock2pulse> synthesized.
 
 
-Synthesizing Unit <Nexysdemo>.
-    Related source file is "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/Nexysdemo.vhd".
-WARNING:Xst:647 - Input <swt<6:5>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-    Found 16x7-bit ROM for signal <dig>.
-    Found 25-bit up counter for signal <clkdiv>.
-    Found 4-bit up counter for signal <cntr>.
-    Found 8-bit up counter for signal <test_pulse>.
+Synthesizing Unit <mux_3_to_8>.
+    Related source file is "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/mux_3_to_8.vhd".
+    Found 16x8-bit ROM for signal <output>.
     Summary:
 	inferred   1 ROM(s).
+Unit <mux_3_to_8> synthesized.
+
+
+Synthesizing Unit <segment7>.
+    Related source file is "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/segment7.vhd".
+    Found 16x7-bit ROM for signal <temp>.
+    Summary:
+	inferred   1 ROM(s).
+Unit <segment7> synthesized.
+
+
+Synthesizing Unit <blockRam>.
+    Related source file is "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/blockRam.vhd".
+    Found 16-bit register for signal <data_out>.
+    Found 16-bit 64-to-1 multiplexer for signal <$varindex0000> created at line 55.
+    Found 1024-bit register for signal <RAM>.
+INFO:Xst:738 - HDL ADVISOR - 1024 flip-flops were inferred for signal <RAM>. You may be trying to describe a RAM in a way that is incompatible with block and distributed RAM resources available on Xilinx devices, or with a specific template that is not supported. Please review the Xilinx resources documentation and the XST user manual for coding guidelines. Taking advantage of RAM resources will lead to improved device usage and reduced synthesis time.
+    Summary:
+	inferred 640 D-type flip-flop(s).
+	inferred  16 Multiplexer(s).
+Unit <blockRam> synthesized.
+
+
+Synthesizing Unit <beatsHurdleCalculator>.
+    Related source file is "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/beatsHurdleCalculator.vhd".
+    Found 1-bit register for signal <calculation_done>.
+    Found 8-bit up counter for signal <frequency_runner>.
+    Found 32-bit comparator less for signal <frequency_runner$cmp_lt0000> created at line 61.
+    Found 8-bit comparator less for signal <frequency_runner$cmp_lt0001> created at line 63.
+    Found 32-bit up counter for signal <period_counter>.
+    Found 32-bit up counter for signal <times_of_beat_within_period_counter>.
+    Found 32-bit comparator greatequal for signal <times_of_beat_within_period_counter$cmp_ge0000> created at line 61.
+    Summary:
 	inferred   3 Counter(s).
+	inferred   1 D-type flip-flop(s).
+	inferred   3 Comparator(s).
+Unit <beatsHurdleCalculator> synthesized.
+
+
+Synthesizing Unit <speakerPulseGenerator>.
+    Related source file is "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/speakerPulseGenerator.vhd".
+WARNING:Xst:647 - Input <current_note<7:5>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit register for signal <note_done>.
+    Found 8-bit up counter for signal <note_pass_length>.
+    Found 8-bit comparator less for signal <note_pass_length$cmp_lt0000> created at line 99.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <speakerPulseGenerator> synthesized.
+
+
+Synthesizing Unit <memoryManager>.
+    Related source file is "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/memoryManager.vhd".
+WARNING:Xst:647 - Input <download_mode> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <data_addr<15:6>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1780 - Signal <memory_position> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <data_in> is used but never assigned. This sourceless signal will be automatically connected to value 0000000000000000.
+Unit <memoryManager> synthesized.
+
+
+Synthesizing Unit <beatsManager>.
+    Related source file is "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/beatsManager.vhd".
+WARNING:Xst:646 - Signal <times_of_beat_within_period<31:24>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <one_beats_taken_clk_frequency<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <clkHurdle> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <beatsManager> synthesized.
+
+
+Synthesizing Unit <note2segment>.
+    Related source file is "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/note2segment.vhd".
+WARNING:Xst:647 - Input <note_length<7:4>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 32x8-bit ROM for signal <$rom0000>.
+    Summary:
+	inferred   1 ROM(s).
+Unit <note2segment> synthesized.
+
+
+Synthesizing Unit <display>.
+    Related source file is "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/display.vhd".
+    Found 8-bit 4-to-1 multiplexer for signal <ssg>.
+    Found 1-of-4 decoder for signal <anSel>.
+    Found 17-bit up counter for signal <counter>.
+    Found 2-bit up counter for signal <curr_digit>.
+    Found 17-bit comparator greatequal for signal <curr_digit$cmp_ge0000> created at line 66.
+    Summary:
+	inferred   2 Counter(s).
+	inferred   1 Comparator(s).
+	inferred   8 Multiplexer(s).
+	inferred   1 Decoder(s).
+Unit <display> synthesized.
+
+
+Synthesizing Unit <Nexysdemo>.
+    Related source file is "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/Nexysdemo.vhd".
+WARNING:Xst:647 - Input <btn> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:646 - Signal <temp_led<7>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 25-bit up counter for signal <clkdiv>.
+    Found 4-bit up counter for signal <cntr>.
+    Summary:
+	inferred   2 Counter(s).
 Unit <Nexysdemo> synthesized.
 
 
@@ -182,19 +386,35 @@ Unit <Nexysdemo> synthesized.
 HDL Synthesis Report
 
 Macro Statistics
-# ROMs                                                 : 2
- 16x7-bit ROM                                          : 1
- 32x20-bit ROM                                         : 1
-# Counters                                             : 5
- 2-bit up counter                                      : 1
- 20-bit up counter                                     : 1
+# ROMs                                                 : 7
+ 16x7-bit ROM                                          : 4
+ 16x8-bit ROM                                          : 1
+ 32x32-bit ROM                                         : 1
+ 32x8-bit ROM                                          : 1
+# Counters                                             : 13
+ 16-bit up counter                                     : 1
+ 17-bit up counter                                     : 1
+ 2-bit up counter                                      : 3
  25-bit up counter                                     : 1
+ 32-bit up counter                                     : 4
  4-bit up counter                                      : 1
- 8-bit up counter                                      : 1
-# Registers                                            : 1
- 1-bit register                                        : 1
-# Comparators                                          : 1
- 20-bit comparator greater                             : 1
+ 8-bit up counter                                      : 2
+# Registers                                            : 69
+ 1-bit register                                        : 4
+ 16-bit register                                       : 65
+# Latches                                              : 1
+ 1-bit latch                                           : 1
+# Comparators                                          : 7
+ 17-bit comparator greatequal                          : 1
+ 32-bit comparator greatequal                          : 1
+ 32-bit comparator greater                             : 2
+ 32-bit comparator less                                : 1
+ 8-bit comparator less                                 : 2
+# Multiplexers                                         : 2
+ 16-bit 64-to-1 multiplexer                            : 1
+ 8-bit 4-to-1 multiplexer                              : 1
+# Decoders                                             : 1
+ 1-of-4 decoder                                        : 1
 
 =========================================================================
 
@@ -202,37 +422,661 @@ Macro Statistics
 *                       Advanced HDL Synthesis                          *
 =========================================================================
 
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <signal_controller/current_state/FSM> on signal <current_state[1:2]> with user encoding.
+-------------------------------
+ State             | Encoding
+-------------------------------
+ s0_init           | 00
+ s1_wait           | 01
+ s2_addr_inc_start | 10
+ s3_addr_inc_end   | 11
+-------------------------------
+INFO:Xst:2261 - The FF/Latch <RAM_0_0> in Unit <blockMemory> is equivalent to the following 15 FFs/Latches, which will be removed : <RAM_0_1> <RAM_0_2> <RAM_0_3> <RAM_0_4> <RAM_0_5> <RAM_0_6> <RAM_0_7> <RAM_0_8> <RAM_0_9> <RAM_0_10> <RAM_0_11> <RAM_0_12> <RAM_0_13> <RAM_0_14> <RAM_0_15> 
+INFO:Xst:2261 - The FF/Latch <RAM_30_0> in Unit <blockMemory> is equivalent to the following 607 FFs/Latches, which will be removed : <RAM_30_1> <RAM_30_2> <RAM_30_3> <RAM_30_4> <RAM_30_5> <RAM_30_6> <RAM_30_7> <RAM_30_8> <RAM_30_9> <RAM_30_10> <RAM_30_11> <RAM_30_12> <RAM_30_13> <RAM_30_14> <RAM_30_15> <RAM_27_0> <RAM_27_1> <RAM_27_2> <RAM_27_3> <RAM_27_4> <RAM_27_5> <RAM_27_6> <RAM_27_7> <RAM_27_8> <RAM_27_9> <RAM_27_10> <RAM_27_11> <RAM_27_12> <RAM_27_13> <RAM_27_14> <RAM_27_15> <RAM_26_0> <RAM_26_1> <RAM_26_2> <RAM_26_3> <RAM_26_4> <RAM_26_5> <RAM_26_6> <RAM_26_7> <RAM_26_8> <RAM_26_9> <RAM_26_10> <RAM_26_11> <RAM_26_12> <RAM_26_13> <RAM_26_14> <RAM_26_15> <RAM_31_0> <RAM_31_1> <RAM_31_2> <RAM_31_3> <RAM_31_4> <RAM_31_5> <RAM_31_6> <RAM_31_7> <RAM_31_8> <RAM_31_9> <RAM_31_10> <RAM_31_11> <RAM_31_12> <RAM_31_13> <RAM_31_14> <RAM_31_15> <RAM_33_0> <RAM_33_1> <RAM_33_2> <RAM_33_3> <RAM_33_4> <RAM_33_5> <RAM_33_6> <RAM_33_7> <RAM_33_8> <RAM_33_9> <RAM_33_10> <RAM_33_11> <RAM_33_12> <RAM_33_13> <RAM_33_14>
+   <RAM_33_15> <RAM_32_0> <RAM_32_1> <RAM_32_2> <RAM_32_3> <RAM_32_4> <RAM_32_5> <RAM_32_6> <RAM_32_7> <RAM_32_8> <RAM_32_9> <RAM_32_10> <RAM_32_11> <RAM_32_12> <RAM_32_13> <RAM_32_14> <RAM_32_15> <RAM_28_0> <RAM_28_1> <RAM_28_2> <RAM_28_3> <RAM_28_4> <RAM_28_5> <RAM_28_6> <RAM_28_7> <RAM_28_8> <RAM_28_9> <RAM_28_10> <RAM_28_11> <RAM_28_12> <RAM_28_13> <RAM_28_14> <RAM_28_15> <RAM_29_0> <RAM_29_1> <RAM_29_2> <RAM_29_3> <RAM_29_4> <RAM_29_5> <RAM_29_6> <RAM_29_7> <RAM_29_8> <RAM_29_9> <RAM_29_10> <RAM_29_11> <RAM_29_12> <RAM_29_13> <RAM_29_14> <RAM_29_15> <RAM_34_0> <RAM_34_1> <RAM_34_2> <RAM_34_3> <RAM_34_4> <RAM_34_5> <RAM_34_6> <RAM_34_7> <RAM_34_8> <RAM_34_9> <RAM_34_10> <RAM_34_11> <RAM_34_12> <RAM_34_13> <RAM_34_14> <RAM_34_15> <RAM_36_0> <RAM_36_1> <RAM_36_2> <RAM_36_3> <RAM_36_4> <RAM_36_5> <RAM_36_6> <RAM_36_7> <RAM_36_8> <RAM_36_9> <RAM_36_10> <RAM_36_11> <RAM_36_12> <RAM_36_13> <RAM_36_14> <RAM_36_15> <RAM_35_0> <RAM_35_1> <RAM_35_2> <RAM_35_3> <RAM_35_4> <RAM_35_5> <RAM_35_6> <RAM_35_7> <RAM_35_8>
+   <RAM_35_9> <RAM_35_10> <RAM_35_11> <RAM_35_12> <RAM_35_13> <RAM_35_14> <RAM_35_15> <RAM_40_0> <RAM_40_1> <RAM_40_2> <RAM_40_3> <RAM_40_4> <RAM_40_5> <RAM_40_6> <RAM_40_7> <RAM_40_8> <RAM_40_9> <RAM_40_10> <RAM_40_11> <RAM_40_12> <RAM_40_13> <RAM_40_14> <RAM_40_15> <RAM_41_0> <RAM_41_1> <RAM_41_2> <RAM_41_3> <RAM_41_4> <RAM_41_5> <RAM_41_6> <RAM_41_7> <RAM_41_8> <RAM_41_9> <RAM_41_10> <RAM_41_11> <RAM_41_12> <RAM_41_13> <RAM_41_14> <RAM_41_15> <RAM_37_0> <RAM_37_1> <RAM_37_2> <RAM_37_3> <RAM_37_4> <RAM_37_5> <RAM_37_6> <RAM_37_7> <RAM_37_8> <RAM_37_9> <RAM_37_10> <RAM_37_11> <RAM_37_12> <RAM_37_13> <RAM_37_14> <RAM_37_15> <RAM_43_0> <RAM_43_1> <RAM_43_2> <RAM_43_3> <RAM_43_4> <RAM_43_5> <RAM_43_6> <RAM_43_7> <RAM_43_8> <RAM_43_9> <RAM_43_10> <RAM_43_11> <RAM_43_12> <RAM_43_13> <RAM_43_14> <RAM_43_15> <RAM_42_0> <RAM_42_1> <RAM_42_2> <RAM_42_3> <RAM_42_4> <RAM_42_5> <RAM_42_6> <RAM_42_7> <RAM_42_8> <RAM_42_9> <RAM_42_10> <RAM_42_11> <RAM_42_12> <RAM_42_13> <RAM_42_14> <RAM_42_15> <RAM_38_0> <RAM_38_1>
+   <RAM_38_2> <RAM_38_3> <RAM_38_4> <RAM_38_5> <RAM_38_6> <RAM_38_7> <RAM_38_8> <RAM_38_9> <RAM_38_10> <RAM_38_11> <RAM_38_12> <RAM_38_13> <RAM_38_14> <RAM_38_15> <RAM_44_0> <RAM_44_1> <RAM_44_2> <RAM_44_3> <RAM_44_4> <RAM_44_5> <RAM_44_6> <RAM_44_7> <RAM_44_8> <RAM_44_9> <RAM_44_10> <RAM_44_11> <RAM_44_12> <RAM_44_13> <RAM_44_14> <RAM_44_15> <RAM_39_0> <RAM_39_1> <RAM_39_2> <RAM_39_3> <RAM_39_4> <RAM_39_5> <RAM_39_6> <RAM_39_7> <RAM_39_8> <RAM_39_9> <RAM_39_10> <RAM_39_11> <RAM_39_12> <RAM_39_13> <RAM_39_14> <RAM_39_15> <RAM_51_0> <RAM_51_1> <RAM_51_2> <RAM_51_3> <RAM_51_4> <RAM_51_5> <RAM_51_6> <RAM_51_7> <RAM_51_8> <RAM_51_9> <RAM_51_10> <RAM_51_11> <RAM_51_12> <RAM_51_13> <RAM_51_14> <RAM_51_15> <RAM_50_0> <RAM_50_1> <RAM_50_2> <RAM_50_3> <RAM_50_4> <RAM_50_5> <RAM_50_6> <RAM_50_7> <RAM_50_8> <RAM_50_9> <RAM_50_10> <RAM_50_11> <RAM_50_12> <RAM_50_13> <RAM_50_14> <RAM_50_15> <RAM_45_0> <RAM_45_1> <RAM_45_2> <RAM_45_3> <RAM_45_4> <RAM_45_5> <RAM_45_6> <RAM_45_7> <RAM_45_8> <RAM_45_9> <RAM_45_10> <RAM_45_11>
+   <RAM_45_12> <RAM_45_13> <RAM_45_14> <RAM_45_15> <RAM_46_0> <RAM_46_1> <RAM_46_2> <RAM_46_3> <RAM_46_4> <RAM_46_5> <RAM_46_6> <RAM_46_7> <RAM_46_8> <RAM_46_9> <RAM_46_10> <RAM_46_11> <RAM_46_12> <RAM_46_13> <RAM_46_14> <RAM_46_15> <RAM_52_0> <RAM_52_1> <RAM_52_2> <RAM_52_3> <RAM_52_4> <RAM_52_5> <RAM_52_6> <RAM_52_7> <RAM_52_8> <RAM_52_9> <RAM_52_10> <RAM_52_11> <RAM_52_12> <RAM_52_13> <RAM_52_14> <RAM_52_15> <RAM_48_0> <RAM_48_1> <RAM_48_2> <RAM_48_3> <RAM_48_4> <RAM_48_5> <RAM_48_6> <RAM_48_7> <RAM_48_8> <RAM_48_9> <RAM_48_10> <RAM_48_11> <RAM_48_12> <RAM_48_13> <RAM_48_14> <RAM_48_15> <RAM_47_0> <RAM_47_1> <RAM_47_2> <RAM_47_3> <RAM_47_4> <RAM_47_5> <RAM_47_6> <RAM_47_7> <RAM_47_8> <RAM_47_9> <RAM_47_10> <RAM_47_11> <RAM_47_12> <RAM_47_13> <RAM_47_14> <RAM_47_15> <RAM_53_0> <RAM_53_1> <RAM_53_2> <RAM_53_3> <RAM_53_4> <RAM_53_5> <RAM_53_6> <RAM_53_7> <RAM_53_8> <RAM_53_9> <RAM_53_10> <RAM_53_11> <RAM_53_12> <RAM_53_13> <RAM_53_14> <RAM_53_15> <RAM_54_0> <RAM_54_1> <RAM_54_2> <RAM_54_3> <RAM_54_4>
+   <RAM_54_5> <RAM_54_6> <RAM_54_7> <RAM_54_8> <RAM_54_9> <RAM_54_10> <RAM_54_11> <RAM_54_12> <RAM_54_13> <RAM_54_14> <RAM_54_15> <RAM_49_0> <RAM_49_1> <RAM_49_2> <RAM_49_3> <RAM_49_4> <RAM_49_5> <RAM_49_6> <RAM_49_7> <RAM_49_8> <RAM_49_9> <RAM_49_10> <RAM_49_11> <RAM_49_12> <RAM_49_13> <RAM_49_14> <RAM_49_15> <RAM_61_0> <RAM_61_1> <RAM_61_2> <RAM_61_3> <RAM_61_4> <RAM_61_5> <RAM_61_6> <RAM_61_7> <RAM_61_8> <RAM_61_9> <RAM_61_10> <RAM_61_11> <RAM_61_12> <RAM_61_13> <RAM_61_14> <RAM_61_15> <RAM_60_0> <RAM_60_1> <RAM_60_2> <RAM_60_3> <RAM_60_4> <RAM_60_5> <RAM_60_6> <RAM_60_7> <RAM_60_8> <RAM_60_9> <RAM_60_10> <RAM_60_11> <RAM_60_12> <RAM_60_13> <RAM_60_14> <RAM_60_15> <RAM_55_0> <RAM_55_1> <RAM_55_2> <RAM_55_3> <RAM_55_4> <RAM_55_5> <RAM_55_6> <RAM_55_7> <RAM_55_8> <RAM_55_9> <RAM_55_10> <RAM_55_11> <RAM_55_12> <RAM_55_13> <RAM_55_14> <RAM_55_15> <RAM_56_0> <RAM_56_1> <RAM_56_2> <RAM_56_3> <RAM_56_4> <RAM_56_5> <RAM_56_6> <RAM_56_7> <RAM_56_8> <RAM_56_9> <RAM_56_10> <RAM_56_11> <RAM_56_12> <RAM_56_13>
+   <RAM_56_14> <RAM_56_15> <RAM_62_0> <RAM_62_1> <RAM_62_2> <RAM_62_3> <RAM_62_4> <RAM_62_5> <RAM_62_6> <RAM_62_7> <RAM_62_8> <RAM_62_9> <RAM_62_10> <RAM_62_11> <RAM_62_12> <RAM_62_13> <RAM_62_14> <RAM_62_15> <RAM_58_0> <RAM_58_1> <RAM_58_2> <RAM_58_3> <RAM_58_4> <RAM_58_5> <RAM_58_6> <RAM_58_7> <RAM_58_8> <RAM_58_9> <RAM_58_10> <RAM_58_11> <RAM_58_12> <RAM_58_13> <RAM_58_14> <RAM_58_15> <RAM_57_0> <RAM_57_1> <RAM_57_2> <RAM_57_3> <RAM_57_4> <RAM_57_5> <RAM_57_6> <RAM_57_7> <RAM_57_8> <RAM_57_9> <RAM_57_10> <RAM_57_11> <RAM_57_12> <RAM_57_13> <RAM_57_14> <RAM_57_15> <RAM_63_0> <RAM_63_1> <RAM_63_2> <RAM_63_3> <RAM_63_4> <RAM_63_5> <RAM_63_6> <RAM_63_7> <RAM_63_8> <RAM_63_9> <RAM_63_10> <RAM_63_11> <RAM_63_12> <RAM_63_13> <RAM_63_14> <RAM_63_15> <RAM_59_0> <RAM_59_1> <RAM_59_2> <RAM_59_3> <RAM_59_4> <RAM_59_5> <RAM_59_6> <RAM_59_7> <RAM_59_8> <RAM_59_9> <RAM_59_10> <RAM_59_11> <RAM_59_12> <RAM_59_13> <RAM_59_14> <RAM_59_15>
+WARNING:Xst:1710 - FF/Latch <3> (without init value) has a constant value of 0 in block <RAM_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <2> (without init value) has a constant value of 0 in block <RAM_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <1> (without init value) has a constant value of 1 in block <RAM_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <RAM_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <15> (without init value) has a constant value of 0 in block <RAM_25>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <14> (without init value) has a constant value of 0 in block <RAM_25>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <13> (without init value) has a constant value of 0 in block <RAM_25>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <12> (without init value) has a constant value of 0 in block <RAM_25>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <11> (without init value) has a constant value of 0 in block <RAM_25>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <10> (without init value) has a constant value of 0 in block <RAM_25>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <9> (without init value) has a constant value of 0 in block <RAM_25>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <8> (without init value) has a constant value of 1 in block <RAM_25>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <7> (without init value) has a constant value of 0 in block <RAM_25>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <6> (without init value) has a constant value of 0 in block <RAM_25>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <5> (without init value) has a constant value of 0 in block <RAM_25>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <4> (without init value) has a constant value of 1 in block <RAM_25>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <3> (without init value) has a constant value of 1 in block <RAM_25>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <2> (without init value) has a constant value of 0 in block <RAM_25>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <1> (without init value) has a constant value of 0 in block <RAM_25>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 1 in block <RAM_25>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <15> (without init value) has a constant value of 0 in block <RAM_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <14> (without init value) has a constant value of 0 in block <RAM_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <13> (without init value) has a constant value of 0 in block <RAM_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <12> (without init value) has a constant value of 0 in block <RAM_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <11> (without init value) has a constant value of 0 in block <RAM_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <12> (without init value) has a constant value of 0 in block <RAM_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <11> (without init value) has a constant value of 0 in block <RAM_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <10> (without init value) has a constant value of 0 in block <RAM_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <9> (without init value) has a constant value of 1 in block <RAM_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <8> (without init value) has a constant value of 1 in block <RAM_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <7> (without init value) has a constant value of 0 in block <RAM_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <6> (without init value) has a constant value of 0 in block <RAM_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <5> (without init value) has a constant value of 0 in block <RAM_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <4> (without init value) has a constant value of 0 in block <RAM_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <3> (without init value) has a constant value of 0 in block <RAM_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <2> (without init value) has a constant value of 0 in block <RAM_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <1> (without init value) has a constant value of 1 in block <RAM_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 1 in block <RAM_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <15> (without init value) has a constant value of 0 in block <RAM_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <14> (without init value) has a constant value of 0 in block <RAM_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <13> (without init value) has a constant value of 0 in block <RAM_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <12> (without init value) has a constant value of 0 in block <RAM_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <11> (without init value) has a constant value of 0 in block <RAM_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <10> (without init value) has a constant value of 0 in block <RAM_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <9> (without init value) has a constant value of 1 in block <RAM_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <8> (without init value) has a constant value of 0 in block <RAM_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <7> (without init value) has a constant value of 0 in block <RAM_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <6> (without init value) has a constant value of 0 in block <RAM_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <5> (without init value) has a constant value of 0 in block <RAM_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <4> (without init value) has a constant value of 0 in block <RAM_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <1> (without init value) has a constant value of 1 in block <RAM_19>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 1 in block <RAM_19>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <15> (without init value) has a constant value of 0 in block <RAM_24>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <14> (without init value) has a constant value of 0 in block <RAM_24>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <13> (without init value) has a constant value of 0 in block <RAM_24>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <12> (without init value) has a constant value of 0 in block <RAM_24>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <11> (without init value) has a constant value of 0 in block <RAM_24>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <10> (without init value) has a constant value of 1 in block <RAM_24>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <9> (without init value) has a constant value of 1 in block <RAM_24>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <8> (without init value) has a constant value of 0 in block <RAM_24>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <7> (without init value) has a constant value of 0 in block <RAM_24>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <6> (without init value) has a constant value of 0 in block <RAM_24>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <5> (without init value) has a constant value of 0 in block <RAM_24>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <4> (without init value) has a constant value of 1 in block <RAM_24>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <3> (without init value) has a constant value of 1 in block <RAM_24>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <2> (without init value) has a constant value of 0 in block <RAM_24>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <1> (without init value) has a constant value of 0 in block <RAM_24>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <RAM_24>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <15> (without init value) has a constant value of 0 in block <RAM_23>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <14> (without init value) has a constant value of 0 in block <RAM_23>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <13> (without init value) has a constant value of 0 in block <RAM_23>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <12> (without init value) has a constant value of 0 in block <RAM_23>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <11> (without init value) has a constant value of 0 in block <RAM_23>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <10> (without init value) has a constant value of 1 in block <RAM_23>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <9> (without init value) has a constant value of 0 in block <RAM_23>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <10> (without init value) has a constant value of 0 in block <RAM_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <9> (without init value) has a constant value of 0 in block <RAM_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <8> (without init value) has a constant value of 1 in block <RAM_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <7> (without init value) has a constant value of 0 in block <RAM_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <6> (without init value) has a constant value of 0 in block <RAM_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <5> (without init value) has a constant value of 0 in block <RAM_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <4> (without init value) has a constant value of 0 in block <RAM_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <3> (without init value) has a constant value of 0 in block <RAM_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <2> (without init value) has a constant value of 0 in block <RAM_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <1> (without init value) has a constant value of 0 in block <RAM_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 1 in block <RAM_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <15> (without init value) has a constant value of 0 in block <RAM_19>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <14> (without init value) has a constant value of 0 in block <RAM_19>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <13> (without init value) has a constant value of 0 in block <RAM_19>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <12> (without init value) has a constant value of 0 in block <RAM_19>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <11> (without init value) has a constant value of 0 in block <RAM_19>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <10> (without init value) has a constant value of 0 in block <RAM_19>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <9> (without init value) has a constant value of 0 in block <RAM_19>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <8> (without init value) has a constant value of 1 in block <RAM_19>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <7> (without init value) has a constant value of 0 in block <RAM_19>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <6> (without init value) has a constant value of 0 in block <RAM_19>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <5> (without init value) has a constant value of 0 in block <RAM_19>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <4> (without init value) has a constant value of 1 in block <RAM_19>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <3> (without init value) has a constant value of 0 in block <RAM_19>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <2> (without init value) has a constant value of 0 in block <RAM_19>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <8> (without init value) has a constant value of 0 in block <RAM_8>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <7> (without init value) has a constant value of 0 in block <RAM_8>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <6> (without init value) has a constant value of 0 in block <RAM_8>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <5> (without init value) has a constant value of 0 in block <RAM_8>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <4> (without init value) has a constant value of 0 in block <RAM_8>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <3> (without init value) has a constant value of 1 in block <RAM_8>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <2> (without init value) has a constant value of 0 in block <RAM_8>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <1> (without init value) has a constant value of 0 in block <RAM_8>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <RAM_8>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <15> (without init value) has a constant value of 0 in block <RAM_7>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <14> (without init value) has a constant value of 0 in block <RAM_7>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <13> (without init value) has a constant value of 0 in block <RAM_7>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <12> (without init value) has a constant value of 0 in block <RAM_7>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <11> (without init value) has a constant value of 0 in block <RAM_7>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <10> (without init value) has a constant value of 0 in block <RAM_7>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <9> (without init value) has a constant value of 0 in block <RAM_7>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <8> (without init value) has a constant value of 1 in block <RAM_7>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <7> (without init value) has a constant value of 0 in block <RAM_7>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <6> (without init value) has a constant value of 0 in block <RAM_7>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <5> (without init value) has a constant value of 0 in block <RAM_7>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <4> (without init value) has a constant value of 0 in block <RAM_7>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <3> (without init value) has a constant value of 0 in block <RAM_7>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <2> (without init value) has a constant value of 1 in block <RAM_7>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <1> (without init value) has a constant value of 1 in block <RAM_7>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 1 in block <RAM_7>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <RAM_0_0> (without init value) has a constant value of 0 in block <blockMemory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <RAM_30_0> (without init value) has a constant value of 0 in block <blockMemory>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <15> (without init value) has a constant value of 0 in block <RAM_9>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <14> (without init value) has a constant value of 0 in block <RAM_9>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <13> (without init value) has a constant value of 0 in block <RAM_9>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <12> (without init value) has a constant value of 0 in block <RAM_9>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <11> (without init value) has a constant value of 0 in block <RAM_9>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <10> (without init value) has a constant value of 0 in block <RAM_9>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <9> (without init value) has a constant value of 1 in block <RAM_9>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <8> (without init value) has a constant value of 1 in block <RAM_9>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <7> (without init value) has a constant value of 0 in block <RAM_9>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <6> (without init value) has a constant value of 0 in block <RAM_9>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <5> (without init value) has a constant value of 0 in block <RAM_9>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <4> (without init value) has a constant value of 0 in block <RAM_9>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <3> (without init value) has a constant value of 1 in block <RAM_9>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <2> (without init value) has a constant value of 0 in block <RAM_9>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <1> (without init value) has a constant value of 0 in block <RAM_9>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 1 in block <RAM_9>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <15> (without init value) has a constant value of 0 in block <RAM_8>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <14> (without init value) has a constant value of 0 in block <RAM_8>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <13> (without init value) has a constant value of 0 in block <RAM_8>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <12> (without init value) has a constant value of 0 in block <RAM_8>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <11> (without init value) has a constant value of 0 in block <RAM_8>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <10> (without init value) has a constant value of 0 in block <RAM_8>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <9> (without init value) has a constant value of 1 in block <RAM_8>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <5> (without init value) has a constant value of 0 in block <RAM_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <4> (without init value) has a constant value of 0 in block <RAM_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <3> (without init value) has a constant value of 0 in block <RAM_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <2> (without init value) has a constant value of 1 in block <RAM_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <1> (without init value) has a constant value of 0 in block <RAM_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 1 in block <RAM_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <15> (without init value) has a constant value of 0 in block <RAM_4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <14> (without init value) has a constant value of 0 in block <RAM_4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <13> (without init value) has a constant value of 0 in block <RAM_4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <12> (without init value) has a constant value of 0 in block <RAM_4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <11> (without init value) has a constant value of 0 in block <RAM_4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <10> (without init value) has a constant value of 1 in block <RAM_4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <9> (without init value) has a constant value of 0 in block <RAM_4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <8> (without init value) has a constant value of 0 in block <RAM_4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <7> (without init value) has a constant value of 0 in block <RAM_4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <6> (without init value) has a constant value of 0 in block <RAM_4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <5> (without init value) has a constant value of 0 in block <RAM_4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <4> (without init value) has a constant value of 0 in block <RAM_4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <3> (without init value) has a constant value of 0 in block <RAM_4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <2> (without init value) has a constant value of 1 in block <RAM_4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <1> (without init value) has a constant value of 0 in block <RAM_4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <RAM_4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <15> (without init value) has a constant value of 0 in block <RAM_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <14> (without init value) has a constant value of 0 in block <RAM_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <13> (without init value) has a constant value of 0 in block <RAM_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <15> (without init value) has a constant value of 0 in block <RAM_6>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <14> (without init value) has a constant value of 0 in block <RAM_6>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <13> (without init value) has a constant value of 0 in block <RAM_6>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <12> (without init value) has a constant value of 0 in block <RAM_6>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <11> (without init value) has a constant value of 0 in block <RAM_6>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <10> (without init value) has a constant value of 1 in block <RAM_6>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <9> (without init value) has a constant value of 1 in block <RAM_6>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <8> (without init value) has a constant value of 0 in block <RAM_6>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <7> (without init value) has a constant value of 0 in block <RAM_6>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <6> (without init value) has a constant value of 0 in block <RAM_6>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <5> (without init value) has a constant value of 0 in block <RAM_6>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <4> (without init value) has a constant value of 0 in block <RAM_6>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <3> (without init value) has a constant value of 0 in block <RAM_6>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <2> (without init value) has a constant value of 1 in block <RAM_6>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <1> (without init value) has a constant value of 1 in block <RAM_6>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <RAM_6>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <15> (without init value) has a constant value of 0 in block <RAM_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <14> (without init value) has a constant value of 0 in block <RAM_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <13> (without init value) has a constant value of 0 in block <RAM_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <12> (without init value) has a constant value of 0 in block <RAM_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <11> (without init value) has a constant value of 0 in block <RAM_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <10> (without init value) has a constant value of 1 in block <RAM_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <9> (without init value) has a constant value of 0 in block <RAM_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <8> (without init value) has a constant value of 1 in block <RAM_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <7> (without init value) has a constant value of 0 in block <RAM_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <6> (without init value) has a constant value of 0 in block <RAM_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <10> (without init value) has a constant value of 0 in block <RAM_14>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <9> (without init value) has a constant value of 1 in block <RAM_14>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <8> (without init value) has a constant value of 0 in block <RAM_14>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <7> (without init value) has a constant value of 0 in block <RAM_14>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <6> (without init value) has a constant value of 0 in block <RAM_14>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <5> (without init value) has a constant value of 0 in block <RAM_14>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <4> (without init value) has a constant value of 0 in block <RAM_14>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <3> (without init value) has a constant value of 1 in block <RAM_14>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <2> (without init value) has a constant value of 1 in block <RAM_14>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <1> (without init value) has a constant value of 1 in block <RAM_14>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <RAM_14>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <15> (without init value) has a constant value of 0 in block <RAM_13>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <14> (without init value) has a constant value of 0 in block <RAM_13>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <13> (without init value) has a constant value of 0 in block <RAM_13>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <12> (without init value) has a constant value of 0 in block <RAM_13>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <11> (without init value) has a constant value of 0 in block <RAM_13>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <10> (without init value) has a constant value of 0 in block <RAM_13>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <9> (without init value) has a constant value of 0 in block <RAM_13>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <8> (without init value) has a constant value of 1 in block <RAM_13>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <7> (without init value) has a constant value of 0 in block <RAM_13>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <6> (without init value) has a constant value of 0 in block <RAM_13>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <5> (without init value) has a constant value of 0 in block <RAM_13>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <4> (without init value) has a constant value of 0 in block <RAM_13>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <3> (without init value) has a constant value of 1 in block <RAM_13>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <2> (without init value) has a constant value of 1 in block <RAM_13>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <3> (without init value) has a constant value of 0 in block <RAM_20>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <2> (without init value) has a constant value of 1 in block <RAM_20>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <1> (without init value) has a constant value of 0 in block <RAM_20>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <RAM_20>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <15> (without init value) has a constant value of 0 in block <RAM_15>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <14> (without init value) has a constant value of 0 in block <RAM_15>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <13> (without init value) has a constant value of 0 in block <RAM_15>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <12> (without init value) has a constant value of 0 in block <RAM_15>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <11> (without init value) has a constant value of 0 in block <RAM_15>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <10> (without init value) has a constant value of 0 in block <RAM_15>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <9> (without init value) has a constant value of 1 in block <RAM_15>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <8> (without init value) has a constant value of 1 in block <RAM_15>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <7> (without init value) has a constant value of 0 in block <RAM_15>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <6> (without init value) has a constant value of 0 in block <RAM_15>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <5> (without init value) has a constant value of 0 in block <RAM_15>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <4> (without init value) has a constant value of 0 in block <RAM_15>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <3> (without init value) has a constant value of 1 in block <RAM_15>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <2> (without init value) has a constant value of 1 in block <RAM_15>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <1> (without init value) has a constant value of 1 in block <RAM_15>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 1 in block <RAM_15>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <15> (without init value) has a constant value of 0 in block <RAM_14>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <14> (without init value) has a constant value of 0 in block <RAM_14>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <13> (without init value) has a constant value of 0 in block <RAM_14>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <12> (without init value) has a constant value of 0 in block <RAM_14>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <11> (without init value) has a constant value of 0 in block <RAM_14>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <8> (without init value) has a constant value of 1 in block <RAM_11>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <7> (without init value) has a constant value of 0 in block <RAM_11>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <6> (without init value) has a constant value of 0 in block <RAM_11>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <5> (without init value) has a constant value of 0 in block <RAM_11>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <4> (without init value) has a constant value of 0 in block <RAM_11>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <3> (without init value) has a constant value of 1 in block <RAM_11>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <2> (without init value) has a constant value of 0 in block <RAM_11>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <1> (without init value) has a constant value of 1 in block <RAM_11>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 1 in block <RAM_11>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <15> (without init value) has a constant value of 0 in block <RAM_10>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <14> (without init value) has a constant value of 0 in block <RAM_10>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <13> (without init value) has a constant value of 0 in block <RAM_10>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <12> (without init value) has a constant value of 0 in block <RAM_10>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <11> (without init value) has a constant value of 0 in block <RAM_10>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <10> (without init value) has a constant value of 1 in block <RAM_10>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <9> (without init value) has a constant value of 0 in block <RAM_10>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <8> (without init value) has a constant value of 0 in block <RAM_10>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <7> (without init value) has a constant value of 0 in block <RAM_10>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <6> (without init value) has a constant value of 0 in block <RAM_10>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <5> (without init value) has a constant value of 0 in block <RAM_10>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <4> (without init value) has a constant value of 0 in block <RAM_10>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <3> (without init value) has a constant value of 1 in block <RAM_10>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <2> (without init value) has a constant value of 0 in block <RAM_10>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <1> (without init value) has a constant value of 1 in block <RAM_10>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <RAM_10>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <1> (without init value) has a constant value of 0 in block <RAM_13>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 1 in block <RAM_13>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <15> (without init value) has a constant value of 0 in block <RAM_12>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <14> (without init value) has a constant value of 0 in block <RAM_12>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <13> (without init value) has a constant value of 0 in block <RAM_12>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <12> (without init value) has a constant value of 0 in block <RAM_12>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <11> (without init value) has a constant value of 0 in block <RAM_12>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <10> (without init value) has a constant value of 1 in block <RAM_12>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <9> (without init value) has a constant value of 1 in block <RAM_12>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <8> (without init value) has a constant value of 0 in block <RAM_12>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <7> (without init value) has a constant value of 0 in block <RAM_12>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <6> (without init value) has a constant value of 0 in block <RAM_12>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <5> (without init value) has a constant value of 0 in block <RAM_12>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <4> (without init value) has a constant value of 0 in block <RAM_12>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <3> (without init value) has a constant value of 1 in block <RAM_12>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <2> (without init value) has a constant value of 1 in block <RAM_12>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <1> (without init value) has a constant value of 0 in block <RAM_12>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <RAM_12>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <15> (without init value) has a constant value of 0 in block <RAM_11>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <14> (without init value) has a constant value of 0 in block <RAM_11>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <13> (without init value) has a constant value of 0 in block <RAM_11>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <12> (without init value) has a constant value of 0 in block <RAM_11>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <11> (without init value) has a constant value of 0 in block <RAM_11>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <10> (without init value) has a constant value of 1 in block <RAM_11>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <9> (without init value) has a constant value of 0 in block <RAM_11>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <15> (without init value) has a constant value of 0 in block <RAM_22>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <14> (without init value) has a constant value of 0 in block <RAM_22>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <13> (without init value) has a constant value of 0 in block <RAM_22>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <12> (without init value) has a constant value of 0 in block <RAM_22>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <11> (without init value) has a constant value of 0 in block <RAM_22>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <10> (without init value) has a constant value of 1 in block <RAM_22>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <9> (without init value) has a constant value of 0 in block <RAM_22>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <8> (without init value) has a constant value of 0 in block <RAM_22>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <7> (without init value) has a constant value of 0 in block <RAM_22>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <6> (without init value) has a constant value of 0 in block <RAM_22>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <5> (without init value) has a constant value of 0 in block <RAM_22>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <4> (without init value) has a constant value of 1 in block <RAM_22>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <3> (without init value) has a constant value of 0 in block <RAM_22>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <2> (without init value) has a constant value of 1 in block <RAM_22>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <1> (without init value) has a constant value of 1 in block <RAM_22>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <RAM_22>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <15> (without init value) has a constant value of 0 in block <RAM_17>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <14> (without init value) has a constant value of 0 in block <RAM_17>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <13> (without init value) has a constant value of 0 in block <RAM_17>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <12> (without init value) has a constant value of 0 in block <RAM_17>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <11> (without init value) has a constant value of 0 in block <RAM_17>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <10> (without init value) has a constant value of 1 in block <RAM_17>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <9> (without init value) has a constant value of 0 in block <RAM_17>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <8> (without init value) has a constant value of 1 in block <RAM_17>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <7> (without init value) has a constant value of 0 in block <RAM_17>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <8> (without init value) has a constant value of 1 in block <RAM_23>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <7> (without init value) has a constant value of 0 in block <RAM_23>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <6> (without init value) has a constant value of 0 in block <RAM_23>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <5> (without init value) has a constant value of 0 in block <RAM_23>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <4> (without init value) has a constant value of 1 in block <RAM_23>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <3> (without init value) has a constant value of 0 in block <RAM_23>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <2> (without init value) has a constant value of 1 in block <RAM_23>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <1> (without init value) has a constant value of 1 in block <RAM_23>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 1 in block <RAM_23>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <15> (without init value) has a constant value of 0 in block <RAM_18>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <14> (without init value) has a constant value of 0 in block <RAM_18>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <13> (without init value) has a constant value of 0 in block <RAM_18>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <12> (without init value) has a constant value of 0 in block <RAM_18>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <11> (without init value) has a constant value of 0 in block <RAM_18>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <10> (without init value) has a constant value of 1 in block <RAM_18>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <9> (without init value) has a constant value of 1 in block <RAM_18>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <8> (without init value) has a constant value of 0 in block <RAM_18>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <7> (without init value) has a constant value of 0 in block <RAM_18>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <6> (without init value) has a constant value of 0 in block <RAM_18>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <5> (without init value) has a constant value of 0 in block <RAM_18>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <4> (without init value) has a constant value of 1 in block <RAM_18>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <3> (without init value) has a constant value of 0 in block <RAM_18>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <2> (without init value) has a constant value of 0 in block <RAM_18>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <1> (without init value) has a constant value of 1 in block <RAM_18>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <RAM_18>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <12> (without init value) has a constant value of 0 in block <RAM_16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <11> (without init value) has a constant value of 0 in block <RAM_16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <10> (without init value) has a constant value of 1 in block <RAM_16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <9> (without init value) has a constant value of 0 in block <RAM_16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <8> (without init value) has a constant value of 0 in block <RAM_16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <7> (without init value) has a constant value of 0 in block <RAM_16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <6> (without init value) has a constant value of 0 in block <RAM_16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <5> (without init value) has a constant value of 0 in block <RAM_16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <4> (without init value) has a constant value of 1 in block <RAM_16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <3> (without init value) has a constant value of 0 in block <RAM_16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <2> (without init value) has a constant value of 0 in block <RAM_16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <1> (without init value) has a constant value of 0 in block <RAM_16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <RAM_16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <15> (without init value) has a constant value of 0 in block <RAM_20>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <14> (without init value) has a constant value of 0 in block <RAM_20>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <13> (without init value) has a constant value of 0 in block <RAM_20>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <12> (without init value) has a constant value of 0 in block <RAM_20>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <11> (without init value) has a constant value of 0 in block <RAM_20>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <10> (without init value) has a constant value of 0 in block <RAM_20>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <9> (without init value) has a constant value of 1 in block <RAM_20>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <8> (without init value) has a constant value of 0 in block <RAM_20>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <7> (without init value) has a constant value of 0 in block <RAM_20>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <6> (without init value) has a constant value of 0 in block <RAM_20>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <5> (without init value) has a constant value of 0 in block <RAM_20>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <4> (without init value) has a constant value of 1 in block <RAM_20>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <6> (without init value) has a constant value of 0 in block <RAM_17>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <5> (without init value) has a constant value of 0 in block <RAM_17>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <4> (without init value) has a constant value of 1 in block <RAM_17>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <3> (without init value) has a constant value of 0 in block <RAM_17>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <2> (without init value) has a constant value of 0 in block <RAM_17>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <1> (without init value) has a constant value of 0 in block <RAM_17>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 1 in block <RAM_17>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <15> (without init value) has a constant value of 0 in block <RAM_21>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <14> (without init value) has a constant value of 0 in block <RAM_21>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <13> (without init value) has a constant value of 0 in block <RAM_21>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <12> (without init value) has a constant value of 0 in block <RAM_21>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <11> (without init value) has a constant value of 0 in block <RAM_21>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <10> (without init value) has a constant value of 0 in block <RAM_21>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <9> (without init value) has a constant value of 1 in block <RAM_21>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <8> (without init value) has a constant value of 1 in block <RAM_21>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <7> (without init value) has a constant value of 0 in block <RAM_21>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <6> (without init value) has a constant value of 0 in block <RAM_21>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <5> (without init value) has a constant value of 0 in block <RAM_21>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <4> (without init value) has a constant value of 1 in block <RAM_21>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <3> (without init value) has a constant value of 0 in block <RAM_21>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <2> (without init value) has a constant value of 1 in block <RAM_21>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <1> (without init value) has a constant value of 0 in block <RAM_21>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 1 in block <RAM_21>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <15> (without init value) has a constant value of 0 in block <RAM_16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <14> (without init value) has a constant value of 0 in block <RAM_16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <13> (without init value) has a constant value of 0 in block <RAM_16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2404 -  FFs/Latches <RAM_0<15:0>> (without init value) have a constant value of 0 in block <blockRam>.
+WARNING:Xst:2404 -  FFs/Latches <RAM_30<15:0>> (without init value) have a constant value of 0 in block <blockRam>.
+WARNING:Xst:2404 -  FFs/Latches <RAM_26<15:0>> (without init value) have a constant value of 0 in block <blockRam>.
+WARNING:Xst:2404 -  FFs/Latches <RAM_31<15:0>> (without init value) have a constant value of 0 in block <blockRam>.
+WARNING:Xst:2404 -  FFs/Latches <RAM_27<15:0>> (without init value) have a constant value of 0 in block <blockRam>.
+WARNING:Xst:2404 -  FFs/Latches <RAM_32<15:0>> (without init value) have a constant value of 0 in block <blockRam>.
+WARNING:Xst:2404 -  FFs/Latches <RAM_28<15:0>> (without init value) have a constant value of 0 in block <blockRam>.
+WARNING:Xst:2404 -  FFs/Latches <RAM_33<15:0>> (without init value) have a constant value of 0 in block <blockRam>.
+WARNING:Xst:2404 -  FFs/Latches <RAM_29<15:0>> (without init value) have a constant value of 0 in block <blockRam>.
+WARNING:Xst:2404 -  FFs/Latches <RAM_34<15:0>> (without init value) have a constant value of 0 in block <blockRam>.
+WARNING:Xst:2404 -  FFs/Latches <RAM_40<15:0>> (without init value) have a constant value of 0 in block <blockRam>.
+WARNING:Xst:2404 -  FFs/Latches <RAM_35<15:0>> (without init value) have a constant value of 0 in block <blockRam>.
+WARNING:Xst:2404 -  FFs/Latches <RAM_36<15:0>> (without init value) have a constant value of 0 in block <blockRam>.
+WARNING:Xst:2404 -  FFs/Latches <RAM_41<15:0>> (without init value) have a constant value of 0 in block <blockRam>.
+WARNING:Xst:2404 -  FFs/Latches <RAM_37<15:0>> (without init value) have a constant value of 0 in block <blockRam>.
+WARNING:Xst:2404 -  FFs/Latches <RAM_42<15:0>> (without init value) have a constant value of 0 in block <blockRam>.
+WARNING:Xst:2404 -  FFs/Latches <RAM_38<15:0>> (without init value) have a constant value of 0 in block <blockRam>.
+WARNING:Xst:2404 -  FFs/Latches <RAM_43<15:0>> (without init value) have a constant value of 0 in block <blockRam>.
+WARNING:Xst:2404 -  FFs/Latches <RAM_44<15:0>> (without init value) have a constant value of 0 in block <blockRam>.
+WARNING:Xst:2404 -  FFs/Latches <RAM_39<15:0>> (without init value) have a constant value of 0 in block <blockRam>.
+WARNING:Xst:2404 -  FFs/Latches <RAM_50<15:0>> (without init value) have a constant value of 0 in block <blockRam>.
+WARNING:Xst:2404 -  FFs/Latches <RAM_45<15:0>> (without init value) have a constant value of 0 in block <blockRam>.
+WARNING:Xst:2404 -  FFs/Latches <RAM_51<15:0>> (without init value) have a constant value of 0 in block <blockRam>.
+WARNING:Xst:2404 -  FFs/Latches <RAM_46<15:0>> (without init value) have a constant value of 0 in block <blockRam>.
+WARNING:Xst:2404 -  FFs/Latches <RAM_52<15:0>> (without init value) have a constant value of 0 in block <blockRam>.
+WARNING:Xst:2404 -  FFs/Latches <RAM_47<15:0>> (without init value) have a constant value of 0 in block <blockRam>.
+WARNING:Xst:2404 -  FFs/Latches <RAM_53<15:0>> (without init value) have a constant value of 0 in block <blockRam>.
+WARNING:Xst:2404 -  FFs/Latches <RAM_48<15:0>> (without init value) have a constant value of 0 in block <blockRam>.
+WARNING:Xst:2404 -  FFs/Latches <RAM_54<15:0>> (without init value) have a constant value of 0 in block <blockRam>.
+WARNING:Xst:2404 -  FFs/Latches <RAM_49<15:0>> (without init value) have a constant value of 0 in block <blockRam>.
+WARNING:Xst:2404 -  FFs/Latches <RAM_60<15:0>> (without init value) have a constant value of 0 in block <blockRam>.
+WARNING:Xst:2404 -  FFs/Latches <RAM_55<15:0>> (without init value) have a constant value of 0 in block <blockRam>.
+WARNING:Xst:2404 -  FFs/Latches <RAM_61<15:0>> (without init value) have a constant value of 0 in block <blockRam>.
+WARNING:Xst:2404 -  FFs/Latches <RAM_56<15:0>> (without init value) have a constant value of 0 in block <blockRam>.
+WARNING:Xst:2404 -  FFs/Latches <RAM_62<15:0>> (without init value) have a constant value of 0 in block <blockRam>.
+WARNING:Xst:2404 -  FFs/Latches <RAM_57<15:0>> (without init value) have a constant value of 0 in block <blockRam>.
+WARNING:Xst:2404 -  FFs/Latches <RAM_63<15:0>> (without init value) have a constant value of 0 in block <blockRam>.
+WARNING:Xst:2404 -  FFs/Latches <RAM_58<15:0>> (without init value) have a constant value of 0 in block <blockRam>.
+WARNING:Xst:2404 -  FFs/Latches <RAM_59<15:0>> (without init value) have a constant value of 0 in block <blockRam>.
+
+Synthesizing (advanced) Unit <Nexysdemo>.
+INFO:Xst:3044 - The ROM <pulse_generator/word_mapping/Mrom_hurdle> will be implemented as a read-only BLOCK RAM, absorbing the register: <memory_Manager/blockMemory/data_out>.
+INFO:Xst:3225 - The RAM <pulse_generator/word_mapping/Mrom_hurdle> will be implemented as BLOCK RAM
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 32-bit                    |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <mclk>          | rise     |
+    |     enA            | connected to signal <reset>         | low      |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to internal node          |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <pulse_generator/note_on_hurdle> |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <Nexysdemo> synthesized (advanced).
 
 =========================================================================
 Advanced HDL Synthesis Report
 
 Macro Statistics
-# ROMs                                                 : 2
- 16x7-bit ROM                                          : 1
- 32x20-bit ROM                                         : 1
-# Counters                                             : 5
- 2-bit up counter                                      : 1
- 20-bit up counter                                     : 1
- 25-bit up counter                                     : 1
- 4-bit up counter                                      : 1
- 8-bit up counter                                      : 1
-# Registers                                            : 1
- Flip-Flops                                            : 1
-# Comparators                                          : 1
- 20-bit comparator greater                             : 1
+# RAMs                                                 : 1
+ 32x32-bit single-port block RAM                       : 1
+# ROMs                                                 : 6
+ 16x7-bit ROM                                          : 4
+ 16x8-bit ROM                                          : 1
+ 32x8-bit ROM                                          : 1
+# Counters                                             : 11
+ 16-bit up counter                                     : 1
+ 17-bit up counter                                     : 1
+ 2-bit up counter                                      : 3
+ 32-bit up counter                                     : 4
+ 8-bit up counter                                      : 2
+# Registers                                            : 422
+ Flip-Flops                                            : 422
+# Latches                                              : 1
+ 1-bit latch                                           : 1
+# Comparators                                          : 7
+ 17-bit comparator greatequal                          : 1
+ 32-bit comparator greatequal                          : 1
+ 32-bit comparator greater                             : 2
+ 32-bit comparator less                                : 1
+ 8-bit comparator less                                 : 2
+# Multiplexers                                         : 2
+ 16-bit 64-to-1 multiplexer                            : 1
+ 8-bit 4-to-1 multiplexer                              : 1
+# Decoders                                             : 1
+ 1-of-4 decoder                                        : 1
 
 =========================================================================
 
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
-WARNING:Xst:2677 - Node <pulse_generator/last_1> of sequential type is unconnected in block <Nexysdemo>.
+INFO:Xst:2261 - The FF/Latch <1> in Unit <LPM_DFF_31> is equivalent to the following 11 FFs/Latches, which will be removed : <2> <4> <5> <6> <7> <10> <11> <12> <13> <14> <15> 
+INFO:Xst:2261 - The FF/Latch <0> in Unit <LPM_DFF_31> is equivalent to the following 3 FFs/Latches, which will be removed : <3> <8> <9> 
+INFO:Xst:2261 - The FF/Latch <0> in Unit <LPM_DFF_30> is equivalent to the following 13 FFs/Latches, which will be removed : <1> <2> <4> <5> <6> <7> <8> <10> <11> <12> <13> <14> <15> 
+INFO:Xst:2261 - The FF/Latch <3> in Unit <LPM_DFF_30> is equivalent to the following FF/Latch, which will be removed : <9> 
+INFO:Xst:2261 - The FF/Latch <3> in Unit <LPM_DFF_29> is equivalent to the following 11 FFs/Latches, which will be removed : <4> <5> <6> <7> <9> <10> <11> <12> <13> <14> <15> 
+INFO:Xst:2261 - The FF/Latch <0> in Unit <LPM_DFF_29> is equivalent to the following 3 FFs/Latches, which will be removed : <1> <2> <8> 
+INFO:Xst:2261 - The FF/Latch <0> in Unit <LPM_DFF_28> is equivalent to the following 11 FFs/Latches, which will be removed : <3> <4> <5> <6> <7> <8> <11> <12> <13> <14> <15> 
+INFO:Xst:2261 - The FF/Latch <1> in Unit <LPM_DFF_28> is equivalent to the following 3 FFs/Latches, which will be removed : <2> <9> <10> 
+INFO:Xst:2261 - The FF/Latch <1> in Unit <LPM_DFF_27> is equivalent to the following 11 FFs/Latches, which will be removed : <3> <4> <5> <6> <7> <9> <11> <12> <13> <14> <15> 
+INFO:Xst:2261 - The FF/Latch <0> in Unit <LPM_DFF_27> is equivalent to the following 3 FFs/Latches, which will be removed : <2> <8> <10> 
+INFO:Xst:2261 - The FF/Latch <0> in Unit <LPM_DFF_26> is equivalent to the following 13 FFs/Latches, which will be removed : <1> <3> <4> <5> <6> <7> <8> <9> <11> <12> <13> <14> <15> 
+INFO:Xst:2261 - The FF/Latch <2> in Unit <LPM_DFF_26> is equivalent to the following FF/Latch, which will be removed : <10> 
+INFO:Xst:2261 - The FF/Latch <2> in Unit <LPM_DFF_25> is equivalent to the following 11 FFs/Latches, which will be removed : <3> <4> <5> <6> <7> <10> <11> <12> <13> <14> <15> 
+INFO:Xst:2261 - The FF/Latch <0> in Unit <LPM_DFF_25> is equivalent to the following 3 FFs/Latches, which will be removed : <1> <8> <9> 
+INFO:Xst:2261 - The FF/Latch <0> in Unit <LPM_DFF_24> is equivalent to the following 13 FFs/Latches, which will be removed : <2> <3> <4> <5> <6> <7> <8> <10> <11> <12> <13> <14> <15> 
+INFO:Xst:2261 - The FF/Latch <1> in Unit <LPM_DFF_24> is equivalent to the following FF/Latch, which will be removed : <9> 
+INFO:Xst:2261 - The FF/Latch <1> in Unit <LPM_DFF_23> is equivalent to the following 11 FFs/Latches, which will be removed : <2> <5> <6> <7> <9> <10> <11> <12> <13> <14> <15> 
+INFO:Xst:2261 - The FF/Latch <0> in Unit <LPM_DFF_23> is equivalent to the following 3 FFs/Latches, which will be removed : <3> <4> <8> 
+INFO:Xst:2261 - The FF/Latch <1> in Unit <LPM_DFF_21> is equivalent to the following 13 FFs/Latches, which will be removed : <2> <3> <4> <5> <6> <7> <9> <10> <11> <12> <13> <14> <15> 
+INFO:Xst:2261 - The FF/Latch <0> in Unit <LPM_DFF_21> is equivalent to the following FF/Latch, which will be removed : <8> 
+INFO:Xst:2261 - The FF/Latch <2> in Unit <LPM_DFF_20> is equivalent to the following 11 FFs/Latches, which will be removed : <3> <5> <6> <7> <9> <10> <11> <12> <13> <14> <15> 
+INFO:Xst:2261 - The FF/Latch <0> in Unit <LPM_DFF_20> is equivalent to the following 3 FFs/Latches, which will be removed : <1> <4> <8> 
+INFO:Xst:2261 - The FF/Latch <0> in Unit <LPM_DFF_19> is equivalent to the following 11 FFs/Latches, which will be removed : <1> <2> <5> <6> <7> <8> <11> <12> <13> <14> <15> 
+INFO:Xst:2261 - The FF/Latch <3> in Unit <LPM_DFF_19> is equivalent to the following 3 FFs/Latches, which will be removed : <4> <9> <10> 
+INFO:Xst:2261 - The FF/Latch <3> in Unit <LPM_DFF_17> is equivalent to the following 9 FFs/Latches, which will be removed : <5> <6> <7> <9> <11> <12> <13> <14> <15> 
+INFO:Xst:2261 - The FF/Latch <0> in Unit <LPM_DFF_17> is equivalent to the following 5 FFs/Latches, which will be removed : <1> <2> <4> <8> <10> 
+INFO:Xst:2261 - The FF/Latch <0> in Unit <LPM_DFF_16> is equivalent to the following 11 FFs/Latches, which will be removed : <2> <3> <5> <6> <7> <8> <11> <12> <13> <14> <15> 
+INFO:Xst:2261 - The FF/Latch <1> in Unit <LPM_DFF_16> is equivalent to the following 3 FFs/Latches, which will be removed : <4> <9> <10> 
+INFO:Xst:2261 - The FF/Latch <0> in Unit <LPM_DFF_15> is equivalent to the following 11 FFs/Latches, which will be removed : <3> <5> <6> <7> <8> <9> <11> <12> <13> <14> <15> 
+INFO:Xst:2261 - The FF/Latch <1> in Unit <LPM_DFF_15> is equivalent to the following 3 FFs/Latches, which will be removed : <2> <4> <10> 
+INFO:Xst:2261 - The FF/Latch <1> in Unit <LPM_DFF_14> is equivalent to the following 11 FFs/Latches, which will be removed : <2> <3> <5> <6> <7> <9> <11> <12> <13> <14> <15> 
+INFO:Xst:2261 - The FF/Latch <0> in Unit <LPM_DFF_14> is equivalent to the following 3 FFs/Latches, which will be removed : <4> <8> <10> 
+INFO:Xst:2261 - The FF/Latch <1> in Unit <LPM_DFF_13> is equivalent to the following 10 FFs/Latches, which will be removed : <3> <5> <6> <7> <10> <11> <12> <13> <14> <15> 
+INFO:Xst:2261 - The FF/Latch <0> in Unit <LPM_DFF_13> is equivalent to the following 4 FFs/Latches, which will be removed : <2> <4> <8> <9> 
+INFO:Xst:2261 - The FF/Latch <0> in Unit <LPM_DFF_12> is equivalent to the following 13 FFs/Latches, which will be removed : <1> <2> <3> <5> <6> <7> <8> <9> <11> <12> <13> <14> <15> 
+INFO:Xst:2261 - The FF/Latch <4> in Unit <LPM_DFF_12> is equivalent to the following FF/Latch, which will be removed : <10> 
+INFO:Xst:2261 - The FF/Latch <0> in Unit <LPM_DFF_11> is equivalent to the following 12 FFs/Latches, which will be removed : <1> <3> <5> <6> <7> <8> <10> <11> <12> <13> <14> <15> 
+INFO:Xst:2261 - The FF/Latch <2> in Unit <LPM_DFF_11> is equivalent to the following 2 FFs/Latches, which will be removed : <4> <9> 
+INFO:Xst:2261 - The FF/Latch <4> in Unit <LPM_DFF_10> is equivalent to the following 9 FFs/Latches, which will be removed : <5> <6> <7> <10> <11> <12> <13> <14> <15> 
+INFO:Xst:2261 - The FF/Latch <0> in Unit <LPM_DFF_10> is equivalent to the following 5 FFs/Latches, which will be removed : <1> <2> <3> <8> <9> 
+INFO:Xst:2261 - The FF/Latch <0> in Unit <LPM_DFF_9> is equivalent to the following 11 FFs/Latches, which will be removed : <4> <5> <6> <7> <8> <10> <11> <12> <13> <14> <15> 
+INFO:Xst:2261 - The FF/Latch <1> in Unit <LPM_DFF_9> is equivalent to the following 3 FFs/Latches, which will be removed : <2> <3> <9> 
+INFO:Xst:2261 - The FF/Latch <1> in Unit <LPM_DFF_8> is equivalent to the following 11 FFs/Latches, which will be removed : <4> <5> <6> <7> <9> <10> <11> <12> <13> <14> <15> 
+INFO:Xst:2261 - The FF/Latch <0> in Unit <LPM_DFF_8> is equivalent to the following 3 FFs/Latches, which will be removed : <2> <3> <8> 
+INFO:Xst:2261 - The FF/Latch <0> in Unit <LPM_DFF_7> is equivalent to the following 11 FFs/Latches, which will be removed : <1> <4> <5> <6> <7> <8> <11> <12> <13> <14> <15> 
+INFO:Xst:2261 - The FF/Latch <2> in Unit <LPM_DFF_7> is equivalent to the following 3 FFs/Latches, which will be removed : <3> <9> <10> 
+INFO:Xst:2261 - The FF/Latch <2> in Unit <LPM_DFF_6> is equivalent to the following 10 FFs/Latches, which will be removed : <4> <5> <6> <7> <9> <11> <12> <13> <14> <15> 
+INFO:Xst:2261 - The FF/Latch <0> in Unit <LPM_DFF_6> is equivalent to the following 4 FFs/Latches, which will be removed : <1> <3> <8> <10> 
+INFO:Xst:2261 - The FF/Latch <0> in Unit <LPM_DFF_3> is equivalent to the following 12 FFs/Latches, which will be removed : <2> <4> <5> <6> <7> <8> <9> <11> <12> <13> <14> <15> 
+INFO:Xst:2261 - The FF/Latch <1> in Unit <LPM_DFF_3> is equivalent to the following 2 FFs/Latches, which will be removed : <3> <10> 
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 1 in block <LPM_DFF_31>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <1> (without init value) has a constant value of 0 in block <LPM_DFF_31>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <LPM_DFF_30>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <3> (without init value) has a constant value of 1 in block <LPM_DFF_30>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 1 in block <LPM_DFF_29>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <3> (without init value) has a constant value of 0 in block <LPM_DFF_29>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <LPM_DFF_28>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <1> (without init value) has a constant value of 1 in block <LPM_DFF_28>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 1 in block <LPM_DFF_27>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <1> (without init value) has a constant value of 0 in block <LPM_DFF_27>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <LPM_DFF_26>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <2> (without init value) has a constant value of 1 in block <LPM_DFF_26>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 1 in block <LPM_DFF_25>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <2> (without init value) has a constant value of 0 in block <LPM_DFF_25>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <LPM_DFF_24>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <1> (without init value) has a constant value of 1 in block <LPM_DFF_24>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 1 in block <LPM_DFF_23>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <1> (without init value) has a constant value of 0 in block <LPM_DFF_23>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 1 in block <LPM_DFF_21>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <1> (without init value) has a constant value of 0 in block <LPM_DFF_21>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 1 in block <LPM_DFF_20>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <2> (without init value) has a constant value of 0 in block <LPM_DFF_20>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <LPM_DFF_19>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <3> (without init value) has a constant value of 1 in block <LPM_DFF_19>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 1 in block <LPM_DFF_17>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <3> (without init value) has a constant value of 0 in block <LPM_DFF_17>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <LPM_DFF_16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <1> (without init value) has a constant value of 1 in block <LPM_DFF_16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <LPM_DFF_15>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <1> (without init value) has a constant value of 1 in block <LPM_DFF_15>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 1 in block <LPM_DFF_14>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <1> (without init value) has a constant value of 0 in block <LPM_DFF_14>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 1 in block <LPM_DFF_13>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <1> (without init value) has a constant value of 0 in block <LPM_DFF_13>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <LPM_DFF_12>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <4> (without init value) has a constant value of 1 in block <LPM_DFF_12>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <LPM_DFF_11>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <2> (without init value) has a constant value of 1 in block <LPM_DFF_11>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 1 in block <LPM_DFF_10>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <4> (without init value) has a constant value of 0 in block <LPM_DFF_10>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <LPM_DFF_9>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <1> (without init value) has a constant value of 1 in block <LPM_DFF_9>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 1 in block <LPM_DFF_8>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <1> (without init value) has a constant value of 0 in block <LPM_DFF_8>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <LPM_DFF_7>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <2> (without init value) has a constant value of 1 in block <LPM_DFF_7>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 1 in block <LPM_DFF_6>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <2> (without init value) has a constant value of 0 in block <LPM_DFF_6>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <LPM_DFF_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <1> (without init value) has a constant value of 1 in block <LPM_DFF_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <signal_controller/next_addr_6> of sequential type is unconnected in block <Nexysdemo>.
+WARNING:Xst:2677 - Node <signal_controller/next_addr_7> of sequential type is unconnected in block <Nexysdemo>.
+WARNING:Xst:2677 - Node <signal_controller/next_addr_8> of sequential type is unconnected in block <Nexysdemo>.
+WARNING:Xst:2677 - Node <signal_controller/next_addr_9> of sequential type is unconnected in block <Nexysdemo>.
+WARNING:Xst:2677 - Node <signal_controller/next_addr_10> of sequential type is unconnected in block <Nexysdemo>.
+WARNING:Xst:2677 - Node <signal_controller/next_addr_11> of sequential type is unconnected in block <Nexysdemo>.
+WARNING:Xst:2677 - Node <signal_controller/next_addr_12> of sequential type is unconnected in block <Nexysdemo>.
+WARNING:Xst:2677 - Node <signal_controller/next_addr_13> of sequential type is unconnected in block <Nexysdemo>.
+WARNING:Xst:2677 - Node <signal_controller/next_addr_14> of sequential type is unconnected in block <Nexysdemo>.
+WARNING:Xst:2677 - Node <signal_controller/next_addr_15> of sequential type is unconnected in block <Nexysdemo>.
+WARNING:Xst:2677 - Node <beats_Manager/pulse_generator/last_1> of sequential type is unconnected in block <Nexysdemo>.
+WARNING:Xst:2677 - Node <pulse_generator/pulse_generator/last_1> of sequential type is unconnected in block <Nexysdemo>.
+WARNING:Xst:1710 - FF/Latch <memory_Manager/blockMemory/data_out_5> (without init value) has a constant value of 0 in block <Nexysdemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <memory_Manager/blockMemory/data_out_6> (without init value) has a constant value of 0 in block <Nexysdemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <memory_Manager/blockMemory/data_out_7> (without init value) has a constant value of 0 in block <Nexysdemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <memory_Manager/blockMemory/data_out_11> (without init value) has a constant value of 0 in block <Nexysdemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <memory_Manager/blockMemory/data_out_12> (without init value) has a constant value of 0 in block <Nexysdemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <memory_Manager/blockMemory/data_out_13> (without init value) has a constant value of 0 in block <Nexysdemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <memory_Manager/blockMemory/data_out_14> (without init value) has a constant value of 0 in block <Nexysdemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <memory_Manager/blockMemory/data_out_15> (without init value) has a constant value of 0 in block <Nexysdemo>. This FF/Latch will be trimmed during the optimization process.
 
 Optimizing unit <Nexysdemo> ...
 
+Optimizing unit <beatsHurdleCalculator> ...
+
+Optimizing unit <note2segment> ...
+WARNING:Xst:2677 - Node <beats_Manager/beats_Hurdle_Calculator/times_of_beat_within_period_counter_31> of sequential type is unconnected in block <Nexysdemo>.
+WARNING:Xst:2677 - Node <beats_Manager/beats_Hurdle_Calculator/times_of_beat_within_period_counter_30> of sequential type is unconnected in block <Nexysdemo>.
+WARNING:Xst:2677 - Node <beats_Manager/beats_Hurdle_Calculator/times_of_beat_within_period_counter_29> of sequential type is unconnected in block <Nexysdemo>.
+WARNING:Xst:2677 - Node <beats_Manager/beats_Hurdle_Calculator/times_of_beat_within_period_counter_28> of sequential type is unconnected in block <Nexysdemo>.
+WARNING:Xst:2677 - Node <beats_Manager/beats_Hurdle_Calculator/times_of_beat_within_period_counter_27> of sequential type is unconnected in block <Nexysdemo>.
+WARNING:Xst:2677 - Node <beats_Manager/beats_Hurdle_Calculator/times_of_beat_within_period_counter_26> of sequential type is unconnected in block <Nexysdemo>.
+WARNING:Xst:2677 - Node <beats_Manager/beats_Hurdle_Calculator/times_of_beat_within_period_counter_25> of sequential type is unconnected in block <Nexysdemo>.
+WARNING:Xst:2677 - Node <beats_Manager/beats_Hurdle_Calculator/times_of_beat_within_period_counter_24> of sequential type is unconnected in block <Nexysdemo>.
+
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block Nexysdemo, actual ratio is 2.
+Found area constraint ratio of 100 (+ 5) on block Nexysdemo, actual ratio is 5.
 
 Final Macro Processing ...
 
@@ -240,8 +1084,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 59
- Flip-Flops                                            : 59
+# Registers                                            : 177
+ Flip-Flops                                            : 177
 
 =========================================================================
 
@@ -270,27 +1114,33 @@ Design Statistics
 # IOs                              : 34
 
 Cell Usage :
-# BELS                             : 267
-#      GND                         : 1
-#      INV                         : 5
-#      LUT1                        : 31
-#      LUT2                        : 33
-#      LUT3                        : 14
-#      LUT4                        : 51
-#      MUXCY                       : 70
-#      MUXF5                       : 8
+# BELS                             : 840
+#      GND                         : 2
+#      INV                         : 52
+#      LUT1                        : 95
+#      LUT2                        : 142
+#      LUT3                        : 22
+#      LUT4                        : 47
+#      LUT4_D                      : 1
+#      MUXCY                       : 248
+#      MUXF5                       : 46
+#      MUXF6                       : 18
+#      MUXF7                       : 7
 #      VCC                         : 1
-#      XORCY                       : 53
-# FlipFlops/Latches                : 59
-#      FD                          : 33
-#      FDC                         : 20
-#      FDCE                        : 1
-#      FDE                         : 1
-#      FDR                         : 4
+#      XORCY                       : 159
+# FlipFlops/Latches                : 178
+#      FDC                         : 65
+#      FDCE                        : 84
+#      FDE                         : 10
+#      FDPE                        : 1
+#      FDR                         : 17
+#      LD_1                        : 1
+# RAMS                             : 1
+#      RAMB16                      : 1
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
-# IO Buffers                       : 31
-#      IBUF                        : 10
+# IO Buffers                       : 29
+#      IBUF                        : 8
 #      OBUF                        : 21
 =========================================================================
 
@@ -299,11 +1149,12 @@ Device utilization summary:
 
 Selected Device : 3s400ft256-4 
 
- Number of Slices:                       69  out of   3584     1%  
- Number of Slice Flip Flops:             59  out of   7168     0%  
- Number of 4 input LUTs:                134  out of   7168     1%  
+ Number of Slices:                      209  out of   3584     5%  
+ Number of Slice Flip Flops:            178  out of   7168     2%  
+ Number of 4 input LUTs:                359  out of   7168     5%  
  Number of IOs:                          34
- Number of bonded IOBs:                  32  out of    173    18%  
+ Number of bonded IOBs:                  30  out of    173    17%  
+ Number of BRAMs:                         1  out of     16     6%  
  Number of GCLKs:                         1  out of      8    12%  
 
 ---------------------------
@@ -324,300 +1175,242 @@ NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
 
 Clock Information:
 ------------------
------------------------------------+------------------------+-------+
-Clock Signal                       | Clock buffer(FF name)  | Load  |
------------------------------------+------------------------+-------+
-mclk                               | BUFGP                  | 47    |
-pulse_generator/pulse              | NONE(test_pulse_0)     | 8     |
-clkdiv_24                          | NONE(cntr_0)           | 4     |
------------------------------------+------------------------+-------+
+-----------------------------------------------------------------------------+-------------------------------------------+-------+
+Clock Signal                                                                 | Clock buffer(FF name)                     | Load  |
+-----------------------------------------------------------------------------+-------------------------------------------+-------+
+beats_Manager/pulse_generator/pulse                                          | NONE(pulse_generator/note_done)           | 9     |
+mclk                                                                         | BUFGP                                     | 169   |
+signal_controller/addr_increment(signal_controller/current_state_FSM_Out21:O)| NONE(*)(signal_controller/speaker_restart)| 1     |
+-----------------------------------------------------------------------------+-------------------------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
 INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 
 Asynchronous Control Signals Information:
 ----------------------------------------
------------------------------------------------------------------------------------+--------------------------------------+-------+
-Control Signal                                                                     | Buffer(FF name)                      | Load  |
------------------------------------------------------------------------------------+--------------------------------------+-------+
-pulse_generator/noise_on_trigger_inv(pulse_generator/noise_on_trigger_inv1_INV_0:O)| NONE(pulse_generator/clock_counter_0)| 21    |
------------------------------------------------------------------------------------+--------------------------------------+-------+
+-------------------------------------------------------------------------------+-------------------------------------------------------------+-------+
+Control Signal                                                                 | Buffer(FF name)                                             | Load  |
+-------------------------------------------------------------------------------+-------------------------------------------------------------+-------+
+reset(reset1_INV_0:O)                                                          | NONE(beats_Manager/beats_Hurdle_Calculator/calculation_done)| 73    |
+pulse_generator/pulse_generator/noise_on_trigger_inv(speaker_reset1:O)         | NONE(pulse_generator/note_done)                             | 43    |
+beats_Manager/calculation_done_inv(beats_Manager/calculation_done_inv1_INV_0:O)| NONE(beats_Manager/pulse_generator/clock_counter_0)         | 34    |
+-------------------------------------------------------------------------------+-------------------------------------------------------------+-------+
 
 Timing Summary:
 ---------------
 Speed Grade: -4
 
-   Minimum period: 9.265ns (Maximum Frequency: 107.933MHz)
-   Minimum input arrival time before clock: 12.549ns
-   Maximum output required time after clock: 9.199ns
-   Maximum combinational path delay: 7.266ns
+   Minimum period: 10.970ns (Maximum Frequency: 91.155MHz)
+   Minimum input arrival time before clock: 7.834ns
+   Maximum output required time after clock: 11.510ns
+   Maximum combinational path delay: No path found
 
 Timing Detail:
 --------------
 All values displayed in nanoseconds (ns)
 
 =========================================================================
-Timing constraint: Default period analysis for Clock 'mclk'
-  Clock period: 9.265ns (frequency: 107.933MHz)
-  Total number of paths / destination ports: 5177 / 49
+Timing constraint: Default period analysis for Clock 'beats_Manager/pulse_generator/pulse'
+  Clock period: 7.012ns (frequency: 142.613MHz)
+  Total number of paths / destination ports: 180 / 17
 -------------------------------------------------------------------------
-Delay:               9.265ns (Levels of Logic = 42)
-  Source:            pulse_generator/clock_counter_0 (FF)
-  Destination:       pulse_generator/clock_counter_19 (FF)
+Delay:               7.012ns (Levels of Logic = 10)
+  Source:            pulse_generator/note_pass_length_0 (FF)
+  Destination:       pulse_generator/note_pass_length_0 (FF)
+  Source Clock:      beats_Manager/pulse_generator/pulse rising
+  Destination Clock: beats_Manager/pulse_generator/pulse rising
+
+  Data Path: pulse_generator/note_pass_length_0 to pulse_generator/note_pass_length_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             9   0.720   1.463  pulse_generator/note_pass_length_0 (pulse_generator/note_pass_length_0)
+     LUT2:I0->O            1   0.551   0.000  pulse_generator/Mcompar_note_pass_length_cmp_lt0000_lut<0> (pulse_generator/Mcompar_note_pass_length_cmp_lt0000_lut<0>)
+     MUXCY:S->O            1   0.500   0.000  pulse_generator/Mcompar_note_pass_length_cmp_lt0000_cy<0> (pulse_generator/Mcompar_note_pass_length_cmp_lt0000_cy<0>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcompar_note_pass_length_cmp_lt0000_cy<1> (pulse_generator/Mcompar_note_pass_length_cmp_lt0000_cy<1>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcompar_note_pass_length_cmp_lt0000_cy<2> (pulse_generator/Mcompar_note_pass_length_cmp_lt0000_cy<2>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcompar_note_pass_length_cmp_lt0000_cy<3> (pulse_generator/Mcompar_note_pass_length_cmp_lt0000_cy<3>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcompar_note_pass_length_cmp_lt0000_cy<4> (pulse_generator/Mcompar_note_pass_length_cmp_lt0000_cy<4>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcompar_note_pass_length_cmp_lt0000_cy<5> (pulse_generator/Mcompar_note_pass_length_cmp_lt0000_cy<5>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcompar_note_pass_length_cmp_lt0000_cy<6> (pulse_generator/Mcompar_note_pass_length_cmp_lt0000_cy<6>)
+     MUXCY:CI->O           2   0.281   0.877  pulse_generator/Mcompar_note_pass_length_cmp_lt0000_cy<7> (pulse_generator/Mcompar_note_pass_length_cmp_lt0000_cy<7>)
+     INV:I->O              8   0.551   1.083  pulse_generator/Mcompar_note_pass_length_cmp_lt0000_cy<7>_inv_INV_0 (pulse_generator/note_pass_length_cmp_lt0000)
+     FDCE:CE                   0.602          pulse_generator/note_pass_length_0
+    ----------------------------------------
+    Total                      7.012ns (3.589ns logic, 3.423ns route)
+                                       (51.2% logic, 48.8% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'mclk'
+  Clock period: 10.970ns (frequency: 91.155MHz)
+  Total number of paths / destination ports: 68637 / 266
+-------------------------------------------------------------------------
+Delay:               10.970ns (Levels of Logic = 66)
+  Source:            pulse_generator/pulse_generator/clock_counter_0 (FF)
+  Destination:       pulse_generator/pulse_generator/clock_counter_31 (FF)
   Source Clock:      mclk rising
   Destination Clock: mclk rising
 
-  Data Path: pulse_generator/clock_counter_0 to pulse_generator/clock_counter_19
+  Data Path: pulse_generator/pulse_generator/clock_counter_0 to pulse_generator/pulse_generator/clock_counter_31
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q              2   0.720   1.072  pulse_generator/clock_counter_0 (pulse_generator/clock_counter_0)
-     LUT2:I1->O            1   0.551   0.000  pulse_generator/Mcompar_clock_counter_cmp_gt0000_lut<0> (pulse_generator/Mcompar_clock_counter_cmp_gt0000_lut<0>)
-     MUXCY:S->O            1   0.500   0.000  pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<0> (pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<0>)
-     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<1> (pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<1>)
-     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<2> (pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<2>)
-     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<3> (pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<3>)
-     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<4> (pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<4>)
-     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<5> (pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<5>)
-     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<6> (pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<6>)
-     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<7> (pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<7>)
-     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<8> (pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<8>)
-     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<9> (pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<9>)
-     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<10> (pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<10>)
-     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<11> (pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<11>)
-     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<12> (pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<12>)
-     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<13> (pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<13>)
-     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<14> (pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<14>)
-     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<15> (pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<15>)
-     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<16> (pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<16>)
-     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<17> (pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<17>)
-     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<18> (pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<18>)
-     MUXCY:CI->O          23   0.064   1.896  pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<19> (pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<19>)
-     LUT2:I1->O            1   0.551   0.000  pulse_generator/Mcount_clock_counter_lut<0> (pulse_generator/Mcount_clock_counter_lut<0>)
-     MUXCY:S->O            1   0.500   0.000  pulse_generator/Mcount_clock_counter_cy<0> (pulse_generator/Mcount_clock_counter_cy<0>)
-     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcount_clock_counter_cy<1> (pulse_generator/Mcount_clock_counter_cy<1>)
-     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcount_clock_counter_cy<2> (pulse_generator/Mcount_clock_counter_cy<2>)
-     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcount_clock_counter_cy<3> (pulse_generator/Mcount_clock_counter_cy<3>)
-     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcount_clock_counter_cy<4> (pulse_generator/Mcount_clock_counter_cy<4>)
-     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcount_clock_counter_cy<5> (pulse_generator/Mcount_clock_counter_cy<5>)
-     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcount_clock_counter_cy<6> (pulse_generator/Mcount_clock_counter_cy<6>)
-     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcount_clock_counter_cy<7> (pulse_generator/Mcount_clock_counter_cy<7>)
-     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcount_clock_counter_cy<8> (pulse_generator/Mcount_clock_counter_cy<8>)
-     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcount_clock_counter_cy<9> (pulse_generator/Mcount_clock_counter_cy<9>)
-     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcount_clock_counter_cy<10> (pulse_generator/Mcount_clock_counter_cy<10>)
-     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcount_clock_counter_cy<11> (pulse_generator/Mcount_clock_counter_cy<11>)
-     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcount_clock_counter_cy<12> (pulse_generator/Mcount_clock_counter_cy<12>)
-     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcount_clock_counter_cy<13> (pulse_generator/Mcount_clock_counter_cy<13>)
-     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcount_clock_counter_cy<14> (pulse_generator/Mcount_clock_counter_cy<14>)
-     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcount_clock_counter_cy<15> (pulse_generator/Mcount_clock_counter_cy<15>)
-     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcount_clock_counter_cy<16> (pulse_generator/Mcount_clock_counter_cy<16>)
-     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcount_clock_counter_cy<17> (pulse_generator/Mcount_clock_counter_cy<17>)
-     MUXCY:CI->O           0   0.064   0.000  pulse_generator/Mcount_clock_counter_cy<18> (pulse_generator/Mcount_clock_counter_cy<18>)
-     XORCY:CI->O           1   0.904   0.000  pulse_generator/Mcount_clock_counter_xor<19> (pulse_generator/Mcount_clock_counter19)
-     FDC:D                     0.203          pulse_generator/clock_counter_19
+     FDC:C->Q              2   0.720   1.072  pulse_generator/pulse_generator/clock_counter_0 (pulse_generator/pulse_generator/clock_counter_0)
+     LUT2:I1->O            1   0.551   0.000  pulse_generator/pulse_generator/Mcompar_last_cmp_gt0000_lut<0> (pulse_generator/pulse_generator/Mcompar_last_cmp_gt0000_lut<0>)
+     MUXCY:S->O            1   0.500   0.000  pulse_generator/pulse_generator/Mcompar_last_cmp_gt0000_cy<0> (pulse_generator/pulse_generator/Mcompar_last_cmp_gt0000_cy<0>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/pulse_generator/Mcompar_last_cmp_gt0000_cy<1> (pulse_generator/pulse_generator/Mcompar_last_cmp_gt0000_cy<1>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/pulse_generator/Mcompar_last_cmp_gt0000_cy<2> (pulse_generator/pulse_generator/Mcompar_last_cmp_gt0000_cy<2>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/pulse_generator/Mcompar_last_cmp_gt0000_cy<3> (pulse_generator/pulse_generator/Mcompar_last_cmp_gt0000_cy<3>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/pulse_generator/Mcompar_last_cmp_gt0000_cy<4> (pulse_generator/pulse_generator/Mcompar_last_cmp_gt0000_cy<4>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/pulse_generator/Mcompar_last_cmp_gt0000_cy<5> (pulse_generator/pulse_generator/Mcompar_last_cmp_gt0000_cy<5>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/pulse_generator/Mcompar_last_cmp_gt0000_cy<6> (pulse_generator/pulse_generator/Mcompar_last_cmp_gt0000_cy<6>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/pulse_generator/Mcompar_last_cmp_gt0000_cy<7> (pulse_generator/pulse_generator/Mcompar_last_cmp_gt0000_cy<7>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/pulse_generator/Mcompar_last_cmp_gt0000_cy<8> (pulse_generator/pulse_generator/Mcompar_last_cmp_gt0000_cy<8>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/pulse_generator/Mcompar_last_cmp_gt0000_cy<9> (pulse_generator/pulse_generator/Mcompar_last_cmp_gt0000_cy<9>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/pulse_generator/Mcompar_last_cmp_gt0000_cy<10> (pulse_generator/pulse_generator/Mcompar_last_cmp_gt0000_cy<10>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/pulse_generator/Mcompar_last_cmp_gt0000_cy<11> (pulse_generator/pulse_generator/Mcompar_last_cmp_gt0000_cy<11>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/pulse_generator/Mcompar_last_cmp_gt0000_cy<12> (pulse_generator/pulse_generator/Mcompar_last_cmp_gt0000_cy<12>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/pulse_generator/Mcompar_last_cmp_gt0000_cy<13> (pulse_generator/pulse_generator/Mcompar_last_cmp_gt0000_cy<13>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/pulse_generator/Mcompar_last_cmp_gt0000_cy<14> (pulse_generator/pulse_generator/Mcompar_last_cmp_gt0000_cy<14>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/pulse_generator/Mcompar_last_cmp_gt0000_cy<15> (pulse_generator/pulse_generator/Mcompar_last_cmp_gt0000_cy<15>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/pulse_generator/Mcompar_last_cmp_gt0000_cy<16> (pulse_generator/pulse_generator/Mcompar_last_cmp_gt0000_cy<16>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/pulse_generator/Mcompar_last_cmp_gt0000_cy<17> (pulse_generator/pulse_generator/Mcompar_last_cmp_gt0000_cy<17>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/pulse_generator/Mcompar_last_cmp_gt0000_cy<18> (pulse_generator/pulse_generator/Mcompar_last_cmp_gt0000_cy<18>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/pulse_generator/Mcompar_last_cmp_gt0000_cy<19> (pulse_generator/pulse_generator/Mcompar_last_cmp_gt0000_cy<19>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/pulse_generator/Mcompar_last_cmp_gt0000_cy<20> (pulse_generator/pulse_generator/Mcompar_last_cmp_gt0000_cy<20>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/pulse_generator/Mcompar_last_cmp_gt0000_cy<21> (pulse_generator/pulse_generator/Mcompar_last_cmp_gt0000_cy<21>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/pulse_generator/Mcompar_last_cmp_gt0000_cy<22> (pulse_generator/pulse_generator/Mcompar_last_cmp_gt0000_cy<22>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/pulse_generator/Mcompar_last_cmp_gt0000_cy<23> (pulse_generator/pulse_generator/Mcompar_last_cmp_gt0000_cy<23>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/pulse_generator/Mcompar_last_cmp_gt0000_cy<24> (pulse_generator/pulse_generator/Mcompar_last_cmp_gt0000_cy<24>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/pulse_generator/Mcompar_last_cmp_gt0000_cy<25> (pulse_generator/pulse_generator/Mcompar_last_cmp_gt0000_cy<25>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/pulse_generator/Mcompar_last_cmp_gt0000_cy<26> (pulse_generator/pulse_generator/Mcompar_last_cmp_gt0000_cy<26>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/pulse_generator/Mcompar_last_cmp_gt0000_cy<27> (pulse_generator/pulse_generator/Mcompar_last_cmp_gt0000_cy<27>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/pulse_generator/Mcompar_last_cmp_gt0000_cy<28> (pulse_generator/pulse_generator/Mcompar_last_cmp_gt0000_cy<28>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/pulse_generator/Mcompar_last_cmp_gt0000_cy<29> (pulse_generator/pulse_generator/Mcompar_last_cmp_gt0000_cy<29>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/pulse_generator/Mcompar_last_cmp_gt0000_cy<30> (pulse_generator/pulse_generator/Mcompar_last_cmp_gt0000_cy<30>)
+     MUXCY:CI->O          35   0.064   2.065  pulse_generator/pulse_generator/Mcompar_last_cmp_gt0000_cy<31> (pulse_generator/pulse_generator/Mcompar_last_cmp_gt0000_cy<31>)
+     LUT2:I1->O            1   0.551   0.000  pulse_generator/pulse_generator/Mcount_clock_counter_lut<0> (pulse_generator/pulse_generator/Mcount_clock_counter_lut<0>)
+     MUXCY:S->O            1   0.500   0.000  pulse_generator/pulse_generator/Mcount_clock_counter_cy<0> (pulse_generator/pulse_generator/Mcount_clock_counter_cy<0>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/pulse_generator/Mcount_clock_counter_cy<1> (pulse_generator/pulse_generator/Mcount_clock_counter_cy<1>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/pulse_generator/Mcount_clock_counter_cy<2> (pulse_generator/pulse_generator/Mcount_clock_counter_cy<2>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/pulse_generator/Mcount_clock_counter_cy<3> (pulse_generator/pulse_generator/Mcount_clock_counter_cy<3>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/pulse_generator/Mcount_clock_counter_cy<4> (pulse_generator/pulse_generator/Mcount_clock_counter_cy<4>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/pulse_generator/Mcount_clock_counter_cy<5> (pulse_generator/pulse_generator/Mcount_clock_counter_cy<5>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/pulse_generator/Mcount_clock_counter_cy<6> (pulse_generator/pulse_generator/Mcount_clock_counter_cy<6>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/pulse_generator/Mcount_clock_counter_cy<7> (pulse_generator/pulse_generator/Mcount_clock_counter_cy<7>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/pulse_generator/Mcount_clock_counter_cy<8> (pulse_generator/pulse_generator/Mcount_clock_counter_cy<8>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/pulse_generator/Mcount_clock_counter_cy<9> (pulse_generator/pulse_generator/Mcount_clock_counter_cy<9>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/pulse_generator/Mcount_clock_counter_cy<10> (pulse_generator/pulse_generator/Mcount_clock_counter_cy<10>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/pulse_generator/Mcount_clock_counter_cy<11> (pulse_generator/pulse_generator/Mcount_clock_counter_cy<11>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/pulse_generator/Mcount_clock_counter_cy<12> (pulse_generator/pulse_generator/Mcount_clock_counter_cy<12>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/pulse_generator/Mcount_clock_counter_cy<13> (pulse_generator/pulse_generator/Mcount_clock_counter_cy<13>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/pulse_generator/Mcount_clock_counter_cy<14> (pulse_generator/pulse_generator/Mcount_clock_counter_cy<14>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/pulse_generator/Mcount_clock_counter_cy<15> (pulse_generator/pulse_generator/Mcount_clock_counter_cy<15>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/pulse_generator/Mcount_clock_counter_cy<16> (pulse_generator/pulse_generator/Mcount_clock_counter_cy<16>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/pulse_generator/Mcount_clock_counter_cy<17> (pulse_generator/pulse_generator/Mcount_clock_counter_cy<17>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/pulse_generator/Mcount_clock_counter_cy<18> (pulse_generator/pulse_generator/Mcount_clock_counter_cy<18>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/pulse_generator/Mcount_clock_counter_cy<19> (pulse_generator/pulse_generator/Mcount_clock_counter_cy<19>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/pulse_generator/Mcount_clock_counter_cy<20> (pulse_generator/pulse_generator/Mcount_clock_counter_cy<20>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/pulse_generator/Mcount_clock_counter_cy<21> (pulse_generator/pulse_generator/Mcount_clock_counter_cy<21>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/pulse_generator/Mcount_clock_counter_cy<22> (pulse_generator/pulse_generator/Mcount_clock_counter_cy<22>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/pulse_generator/Mcount_clock_counter_cy<23> (pulse_generator/pulse_generator/Mcount_clock_counter_cy<23>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/pulse_generator/Mcount_clock_counter_cy<24> (pulse_generator/pulse_generator/Mcount_clock_counter_cy<24>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/pulse_generator/Mcount_clock_counter_cy<25> (pulse_generator/pulse_generator/Mcount_clock_counter_cy<25>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/pulse_generator/Mcount_clock_counter_cy<26> (pulse_generator/pulse_generator/Mcount_clock_counter_cy<26>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/pulse_generator/Mcount_clock_counter_cy<27> (pulse_generator/pulse_generator/Mcount_clock_counter_cy<27>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/pulse_generator/Mcount_clock_counter_cy<28> (pulse_generator/pulse_generator/Mcount_clock_counter_cy<28>)
+     MUXCY:CI->O           1   0.064   0.000  pulse_generator/pulse_generator/Mcount_clock_counter_cy<29> (pulse_generator/pulse_generator/Mcount_clock_counter_cy<29>)
+     MUXCY:CI->O           0   0.064   0.000  pulse_generator/pulse_generator/Mcount_clock_counter_cy<30> (pulse_generator/pulse_generator/Mcount_clock_counter_cy<30>)
+     XORCY:CI->O           1   0.904   0.000  pulse_generator/pulse_generator/Mcount_clock_counter_xor<31> (pulse_generator/pulse_generator/Mcount_clock_counter31)
+     FDC:D                     0.203          pulse_generator/pulse_generator/clock_counter_31
     ----------------------------------------
-    Total                      9.265ns (6.297ns logic, 2.968ns route)
-                                       (68.0% logic, 32.0% route)
-
-=========================================================================
-Timing constraint: Default period analysis for Clock 'pulse_generator/pulse'
-  Clock period: 4.414ns (frequency: 226.552MHz)
-  Total number of paths / destination ports: 36 / 8
--------------------------------------------------------------------------
-Delay:               4.414ns (Levels of Logic = 8)
-  Source:            test_pulse_1 (FF)
-  Destination:       test_pulse_7 (FF)
-  Source Clock:      pulse_generator/pulse rising
-  Destination Clock: pulse_generator/pulse rising
-
-  Data Path: test_pulse_1 to test_pulse_7
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FD:C->Q               2   0.720   1.216  test_pulse_1 (test_pulse_1)
-     LUT1:I0->O            1   0.551   0.000  Mcount_test_pulse_cy<1>_rt (Mcount_test_pulse_cy<1>_rt)
-     MUXCY:S->O            1   0.500   0.000  Mcount_test_pulse_cy<1> (Mcount_test_pulse_cy<1>)
-     MUXCY:CI->O           1   0.064   0.000  Mcount_test_pulse_cy<2> (Mcount_test_pulse_cy<2>)
-     MUXCY:CI->O           1   0.064   0.000  Mcount_test_pulse_cy<3> (Mcount_test_pulse_cy<3>)
-     MUXCY:CI->O           1   0.064   0.000  Mcount_test_pulse_cy<4> (Mcount_test_pulse_cy<4>)
-     MUXCY:CI->O           1   0.064   0.000  Mcount_test_pulse_cy<5> (Mcount_test_pulse_cy<5>)
-     MUXCY:CI->O           0   0.064   0.000  Mcount_test_pulse_cy<6> (Mcount_test_pulse_cy<6>)
-     XORCY:CI->O           1   0.904   0.000  Mcount_test_pulse_xor<7> (Result<7>1)
-     FD:D                      0.203          test_pulse_7
-    ----------------------------------------
-    Total                      4.414ns (3.198ns logic, 1.216ns route)
-                                       (72.5% logic, 27.5% route)
-
-=========================================================================
-Timing constraint: Default period analysis for Clock 'clkdiv_24'
-  Clock period: 4.671ns (frequency: 214.087MHz)
-  Total number of paths / destination ports: 26 / 8
--------------------------------------------------------------------------
-Delay:               4.671ns (Levels of Logic = 1)
-  Source:            cntr_0 (FF)
-  Destination:       cntr_0 (FF)
-  Source Clock:      clkdiv_24 rising
-  Destination Clock: clkdiv_24 rising
-
-  Data Path: cntr_0 to cntr_0
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FDR:C->Q             12   0.720   1.457  cntr_0 (cntr_0)
-     LUT4:I0->O            4   0.551   0.917  cntr_cmp_eq00001 (cntr_cmp_eq0000)
-     FDR:R                     1.026          cntr_0
-    ----------------------------------------
-    Total                      4.671ns (2.297ns logic, 2.374ns route)
-                                       (49.2% logic, 50.8% route)
+    Total                     10.970ns (7.833ns logic, 3.137ns route)
+                                       (71.4% logic, 28.6% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'mclk'
-  Total number of paths / destination ports: 77025 / 22
+  Total number of paths / destination ports: 485 / 41
 -------------------------------------------------------------------------
-Offset:              12.549ns (Levels of Logic = 45)
-  Source:            swt<4> (PAD)
-  Destination:       pulse_generator/clock_counter_19 (FF)
+Offset:              7.834ns (Levels of Logic = 11)
+  Source:            swt<0> (PAD)
+  Destination:       beats_Manager/beats_Hurdle_Calculator/times_of_beat_within_period_counter_23 (FF)
   Destination Clock: mclk rising
 
-  Data Path: swt<4> to pulse_generator/clock_counter_19
+  Data Path: swt<0> to beats_Manager/beats_Hurdle_Calculator/times_of_beat_within_period_counter_23
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            34   0.821   2.204  swt_4_IBUF (swt_4_IBUF)
-     LUT4:I0->O            1   0.551   0.000  word_mapping/Mrom_hurdle1_F (N61)
-     MUXF5:I0->O           1   0.360   1.140  word_mapping/Mrom_hurdle1 (note_on_hurdle<0>)
-     LUT2:I0->O            1   0.551   0.000  pulse_generator/Mcompar_clock_counter_cmp_gt0000_lut<0> (pulse_generator/Mcompar_clock_counter_cmp_gt0000_lut<0>)
-     MUXCY:S->O            1   0.500   0.000  pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<0> (pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<0>)
-     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<1> (pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<1>)
-     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<2> (pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<2>)
-     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<3> (pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<3>)
-     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<4> (pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<4>)
-     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<5> (pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<5>)
-     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<6> (pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<6>)
-     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<7> (pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<7>)
-     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<8> (pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<8>)
-     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<9> (pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<9>)
-     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<10> (pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<10>)
-     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<11> (pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<11>)
-     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<12> (pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<12>)
-     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<13> (pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<13>)
-     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<14> (pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<14>)
-     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<15> (pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<15>)
-     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<16> (pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<16>)
-     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<17> (pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<17>)
-     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<18> (pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<18>)
-     MUXCY:CI->O          23   0.064   1.896  pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<19> (pulse_generator/Mcompar_clock_counter_cmp_gt0000_cy<19>)
-     LUT2:I1->O            1   0.551   0.000  pulse_generator/Mcount_clock_counter_lut<0> (pulse_generator/Mcount_clock_counter_lut<0>)
-     MUXCY:S->O            1   0.500   0.000  pulse_generator/Mcount_clock_counter_cy<0> (pulse_generator/Mcount_clock_counter_cy<0>)
-     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcount_clock_counter_cy<1> (pulse_generator/Mcount_clock_counter_cy<1>)
-     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcount_clock_counter_cy<2> (pulse_generator/Mcount_clock_counter_cy<2>)
-     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcount_clock_counter_cy<3> (pulse_generator/Mcount_clock_counter_cy<3>)
-     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcount_clock_counter_cy<4> (pulse_generator/Mcount_clock_counter_cy<4>)
-     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcount_clock_counter_cy<5> (pulse_generator/Mcount_clock_counter_cy<5>)
-     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcount_clock_counter_cy<6> (pulse_generator/Mcount_clock_counter_cy<6>)
-     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcount_clock_counter_cy<7> (pulse_generator/Mcount_clock_counter_cy<7>)
-     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcount_clock_counter_cy<8> (pulse_generator/Mcount_clock_counter_cy<8>)
-     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcount_clock_counter_cy<9> (pulse_generator/Mcount_clock_counter_cy<9>)
-     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcount_clock_counter_cy<10> (pulse_generator/Mcount_clock_counter_cy<10>)
-     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcount_clock_counter_cy<11> (pulse_generator/Mcount_clock_counter_cy<11>)
-     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcount_clock_counter_cy<12> (pulse_generator/Mcount_clock_counter_cy<12>)
-     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcount_clock_counter_cy<13> (pulse_generator/Mcount_clock_counter_cy<13>)
-     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcount_clock_counter_cy<14> (pulse_generator/Mcount_clock_counter_cy<14>)
-     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcount_clock_counter_cy<15> (pulse_generator/Mcount_clock_counter_cy<15>)
-     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcount_clock_counter_cy<16> (pulse_generator/Mcount_clock_counter_cy<16>)
-     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcount_clock_counter_cy<17> (pulse_generator/Mcount_clock_counter_cy<17>)
-     MUXCY:CI->O           0   0.064   0.000  pulse_generator/Mcount_clock_counter_cy<18> (pulse_generator/Mcount_clock_counter_cy<18>)
-     XORCY:CI->O           1   0.904   0.000  pulse_generator/Mcount_clock_counter_xor<19> (pulse_generator/Mcount_clock_counter19)
-     FDC:D                     0.203          pulse_generator/clock_counter_19
+     IBUF:I->O             1   0.821   0.996  swt_0_IBUF (swt_0_IBUF)
+     LUT2:I1->O            1   0.551   0.000  beats_Manager/beats_Hurdle_Calculator/Mcompar_frequency_runner_cmp_lt0001_lut<0> (beats_Manager/beats_Hurdle_Calculator/Mcompar_frequency_runner_cmp_lt0001_lut<0>)
+     MUXCY:S->O            1   0.500   0.000  beats_Manager/beats_Hurdle_Calculator/Mcompar_frequency_runner_cmp_lt0001_cy<0> (beats_Manager/beats_Hurdle_Calculator/Mcompar_frequency_runner_cmp_lt0001_cy<0>)
+     MUXCY:CI->O           1   0.064   0.000  beats_Manager/beats_Hurdle_Calculator/Mcompar_frequency_runner_cmp_lt0001_cy<1> (beats_Manager/beats_Hurdle_Calculator/Mcompar_frequency_runner_cmp_lt0001_cy<1>)
+     MUXCY:CI->O           1   0.064   0.000  beats_Manager/beats_Hurdle_Calculator/Mcompar_frequency_runner_cmp_lt0001_cy<2> (beats_Manager/beats_Hurdle_Calculator/Mcompar_frequency_runner_cmp_lt0001_cy<2>)
+     MUXCY:CI->O           1   0.064   0.000  beats_Manager/beats_Hurdle_Calculator/Mcompar_frequency_runner_cmp_lt0001_cy<3> (beats_Manager/beats_Hurdle_Calculator/Mcompar_frequency_runner_cmp_lt0001_cy<3>)
+     MUXCY:CI->O           1   0.064   0.000  beats_Manager/beats_Hurdle_Calculator/Mcompar_frequency_runner_cmp_lt0001_cy<4> (beats_Manager/beats_Hurdle_Calculator/Mcompar_frequency_runner_cmp_lt0001_cy<4>)
+     MUXCY:CI->O           1   0.064   0.000  beats_Manager/beats_Hurdle_Calculator/Mcompar_frequency_runner_cmp_lt0001_cy<5> (beats_Manager/beats_Hurdle_Calculator/Mcompar_frequency_runner_cmp_lt0001_cy<5>)
+     MUXCY:CI->O           1   0.064   0.000  beats_Manager/beats_Hurdle_Calculator/Mcompar_frequency_runner_cmp_lt0001_cy<6> (beats_Manager/beats_Hurdle_Calculator/Mcompar_frequency_runner_cmp_lt0001_cy<6>)
+     MUXCY:CI->O          10   0.303   1.329  beats_Manager/beats_Hurdle_Calculator/Mcompar_frequency_runner_cmp_lt0001_cy<7> (beats_Manager/beats_Hurdle_Calculator/Mcompar_frequency_runner_cmp_lt0001_cy<7>)
+     LUT2:I1->O           24   0.551   1.797  beats_Manager/beats_Hurdle_Calculator/times_of_beat_within_period_counter_not00011 (beats_Manager/beats_Hurdle_Calculator/times_of_beat_within_period_counter_not0001)
+     FDCE:CE                   0.602          beats_Manager/beats_Hurdle_Calculator/times_of_beat_within_period_counter_0
     ----------------------------------------
-    Total                     12.549ns (7.309ns logic, 5.240ns route)
-                                       (58.2% logic, 41.8% route)
+    Total                      7.834ns (3.712ns logic, 4.122ns route)
+                                       (47.4% logic, 52.6% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'mclk'
-  Total number of paths / destination ports: 1 / 1
+  Total number of paths / destination ports: 134 / 12
 -------------------------------------------------------------------------
-Offset:              7.488ns (Levels of Logic = 1)
-  Source:            pulse_generator/pulse (FF)
-  Destination:       aout (PAD)
+Offset:              11.510ns (Levels of Logic = 5)
+  Source:            memory_Manager/blockMemory/data_out_2 (FF)
+  Destination:       ssg<6> (PAD)
   Source Clock:      mclk rising
 
-  Data Path: pulse_generator/pulse to aout
+  Data Path: memory_Manager/blockMemory/data_out_2 to ssg<6>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDCE:C->Q             9   0.720   1.124  pulse_generator/pulse (pulse_generator/pulse)
-     OBUF:I->O                 5.644          aout_OBUF (aout)
+     FDE:C->Q             15   0.720   1.527  memory_Manager/blockMemory/data_out_2 (memory_Manager/blockMemory/data_out_2)
+     LUT4:I0->O            1   0.551   0.000  display_map/get_digits/segment_mapping_first_digit/ssg_6_not0000_F (N13)
+     MUXF5:I0->O           1   0.360   0.996  display_map/get_digits/segment_mapping_first_digit/ssg_6_not0000 (display_map/all_ssgs<6>)
+     LUT3:I1->O            1   0.551   0.000  display_map/Mmux_ssg_46 (display_map/Mmux_ssg_46)
+     MUXF5:I0->O           1   0.360   0.801  display_map/Mmux_ssg_2_f5_5 (ssg_6_OBUF)
+     OBUF:I->O                 5.644          ssg_6_OBUF (ssg<6>)
     ----------------------------------------
-    Total                      7.488ns (6.364ns logic, 1.124ns route)
-                                       (85.0% logic, 15.0% route)
+    Total                     11.510ns (8.186ns logic, 3.324ns route)
+                                       (71.1% logic, 28.9% route)
 
 =========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'clkdiv_24'
-  Total number of paths / destination ports: 28 / 7
+Timing constraint: Default OFFSET OUT AFTER for Clock 'beats_Manager/pulse_generator/pulse'
+  Total number of paths / destination ports: 29 / 8
 -------------------------------------------------------------------------
-Offset:              9.199ns (Levels of Logic = 2)
-  Source:            cntr_1 (FF)
-  Destination:       ssg<6> (PAD)
-  Source Clock:      clkdiv_24 rising
+Offset:              9.179ns (Levels of Logic = 2)
+  Source:            pulse_generator/note_pass_length_1 (FF)
+  Destination:       led<6> (PAD)
+  Source Clock:      beats_Manager/pulse_generator/pulse rising
 
-  Data Path: cntr_1 to ssg<6>
+  Data Path: pulse_generator/note_pass_length_1 to led<6>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDR:C->Q             11   0.720   1.483  cntr_1 (cntr_1)
-     LUT4:I0->O            1   0.551   0.801  ssg_4_not00001 (ssg_4_OBUF)
-     OBUF:I->O                 5.644          ssg_4_OBUF (ssg<4>)
+     FDCE:C->Q             9   0.720   1.463  pulse_generator/note_pass_length_1 (pulse_generator/note_pass_length_1)
+     LUT4:I0->O            1   0.551   0.801  pulse_generator/mux_to_8/Mrom_output61 (led_6_OBUF)
+     OBUF:I->O                 5.644          led_6_OBUF (led<6>)
     ----------------------------------------
-    Total                      9.199ns (6.915ns logic, 2.284ns route)
-                                       (75.2% logic, 24.8% route)
-
-=========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'pulse_generator/pulse'
-  Total number of paths / destination ports: 8 / 8
--------------------------------------------------------------------------
-Offset:              7.241ns (Levels of Logic = 1)
-  Source:            test_pulse_7 (FF)
-  Destination:       led<7> (PAD)
-  Source Clock:      pulse_generator/pulse rising
-
-  Data Path: test_pulse_7 to led<7>
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FD:C->Q               2   0.720   0.877  test_pulse_7 (test_pulse_7)
-     OBUF:I->O                 5.644          led_7_OBUF (led<7>)
-    ----------------------------------------
-    Total                      7.241ns (6.364ns logic, 0.877ns route)
-                                       (87.9% logic, 12.1% route)
-
-=========================================================================
-Timing constraint: Default path analysis
-  Total number of paths / destination ports: 4 / 4
--------------------------------------------------------------------------
-Delay:               7.266ns (Levels of Logic = 2)
-  Source:            btn<3> (PAD)
-  Destination:       an<3> (PAD)
-
-  Data Path: btn<3> to an<3>
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O             1   0.821   0.801  btn_3_IBUF (an_3_OBUF)
-     OBUF:I->O                 5.644          an_3_OBUF (an<3>)
-    ----------------------------------------
-    Total                      7.266ns (6.465ns logic, 0.801ns route)
-                                       (89.0% logic, 11.0% route)
+    Total                      9.179ns (6.915ns logic, 2.264ns route)
+                                       (75.3% logic, 24.7% route)
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 8.00 secs
-Total CPU time to Xst completion: 7.64 secs
+Total REAL time to Xst completion: 15.00 secs
+Total CPU time to Xst completion: 15.33 secs
  
 --> 
 
-Total memory usage is 256200 kilobytes
+Total memory usage is 275784 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    3 (   0 filtered)
-Number of infos    :    1 (   0 filtered)
+Number of warnings :  539 (   0 filtered)
+Number of infos    :   58 (   0 filtered)
 

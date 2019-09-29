@@ -31,24 +31,24 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 --use UNISIM.VComponents.all;
 
 entity clock2pulse is
-    Port ( hurdle : in  STD_LOGIC_VECTOR (19 downto 0);
+    Port ( clk 					: in  STD_LOGIC;
+			  hurdle 				: in  STD_LOGIC_VECTOR (31 downto 0);
 			  noise_on_trigger   : in  STD_LOGIC;
-           clock : in  STD_LOGIC;
-           pulse : out  STD_LOGIC);
+           pulse 					: out  STD_LOGIC);
 end clock2pulse;
 
 architecture Behavioral of clock2pulse is
 
-signal clock_counter        : std_logic_vector(19 downto 0);
+signal clock_counter        : std_logic_vector(31 downto 0);
 signal last						 : std_logic_vector(1 downto 0);
 
 begin
-	process(clock)
+	process(clk)
 		begin
 			if noise_on_trigger = '1' then
-				if clock = '1' and clock'Event then
+				if clk = '1' and clk'Event then
 					if clock_counter > hurdle then
-						clock_counter <= "00000000000000000000";
+						clock_counter <= X"00000000";
 						last <= last + 1;
 					else 
 						clock_counter <= clock_counter + 1;
@@ -57,7 +57,8 @@ begin
 				end if;
 			else
 				pulse <= '0';
-				clock_counter <= "00000000000000000000";
+				last <= "00";
+				clock_counter <= X"00000000";
 			end if;
 	end process;
 

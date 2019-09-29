@@ -9,35 +9,38 @@ Target Device  : xc3s400
 Target Package : ft256
 Target Speed   : -4
 Mapper Version : spartan3 -- $Revision: 1.55 $
-Mapped Date    : Thu Sep 26 11:37:11 2019
+Mapped Date    : Sun Sep 29 20:48:48 2019
 
 Design Summary
 --------------
 Number of errors:      0
-Number of warnings:    0
+Number of warnings:    1
 Logic Utilization:
-  Number of Slice Flip Flops:            59 out of   7,168    1%
-  Number of 4 input LUTs:               100 out of   7,168    1%
+  Total Number Slice Registers:         178 out of   7,168    2%
+    Number used as Flip Flops:          177
+    Number used as Latches:               1
+  Number of 4 input LUTs:               291 out of   7,168    4%
 Logic Distribution:
-  Number of occupied Slices:             69 out of   3,584    1%
-    Number of Slices containing only related logic:      69 out of      69 100%
-    Number of Slices containing unrelated logic:          0 out of      69   0%
+  Number of occupied Slices:            212 out of   3,584    5%
+    Number of Slices containing only related logic:     212 out of     212 100%
+    Number of Slices containing unrelated logic:          0 out of     212   0%
       *See NOTES below for an explanation of the effects of unrelated logic.
-  Total Number of 4 input LUTs:         131 out of   7,168    1%
-    Number used as logic:               100
-    Number used as a route-thru:         31
+  Total Number of 4 input LUTs:         387 out of   7,168    5%
+    Number used as logic:               291
+    Number used as a route-thru:         96
 
   The Slice Logic Distribution report is not meaningful if the design is
   over-mapped for a non-slice resource or if Placement fails.
 
   Number of bonded IOBs:                 34 out of     173   19%
+  Number of RAMB16s:                      1 out of      16    6%
   Number of BUFGMUXs:                     1 out of       8   12%
 
-Average Fanout of Non-Clock Nets:                2.97
+Average Fanout of Non-Clock Nets:                2.67
 
-Peak Memory Usage:  250 MB
-Total REAL time to MAP completion:  5 secs 
-Total CPU time to MAP completion:   1 secs 
+Peak Memory Usage:  254 MB
+Total REAL time to MAP completion:  7 secs 
+Total CPU time to MAP completion:   3 secs 
 
 NOTES:
 
@@ -84,6 +87,10 @@ WARNING:Security:44 - Since no license file was found,
 WARNING:Security:42 - Your software subscription period has lapsed. Your current
 version of Xilinx tools will continue to function, but you no longer qualify for
 Xilinx software updates or new releases.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   signal_controller/addr_increment is sourced by a combinatorial pin. This is
+   not good design practice. Use the CE pin to control the loading of data into
+   the flip-flop.
 
 Section 3 - Informational
 -------------------------
@@ -91,10 +98,12 @@ INFO:Security:50 - The XILINXD_LICENSE_FILE environment variable is set to
 '27000@louie.cse.unsw.edu.au'.
 INFO:Security:53 - The LM_LICENSE_FILE environment variable is not set.
 INFO:Security:54 - 'xc3s400' is a WebPack part.
-INFO:LIT:243 - Logical network swt<6>_IBUF has no load.
-INFO:LIT:395 - The above info message is repeated 1 more times for the following
+INFO:LIT:243 - Logical network btn<3>_IBUF has no load.
+INFO:LIT:395 - The above info message is repeated 3 more times for the following
    (max. 5 shown):
-   swt<5>_IBUF
+   btn<2>_IBUF,
+   btn<1>_IBUF,
+   btn<0>_IBUF
    To see the details of these info messages, please use the -detail switch.
 INFO:MapLib:562 - No environment variables are currently set.
 INFO:LIT:244 - All of the single ended outputs in this design are using slew
@@ -127,7 +136,6 @@ Section 6 - IOB Properties
 | an<1>                              | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | an<2>                              | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | an<3>                              | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| aout                               | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | btn<0>                             | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
 | btn<1>                             | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
 | btn<2>                             | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
@@ -141,6 +149,7 @@ Section 6 - IOB Properties
 | led<6>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | led<7>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | mclk                               | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| speaker_signal                     | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | ssg<0>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | ssg<1>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | ssg<2>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |

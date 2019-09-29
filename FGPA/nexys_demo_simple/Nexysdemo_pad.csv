@@ -1,7 +1,7 @@
 #Release 14.7 - par P.20131013 (nt64)
 #Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-#Thu Sep 26 11:37:31 2019
+#Sun Sep 29 20:49:14 2019
 
 #
 ## NOTE: This file is designed to be imported into a spreadsheet program
@@ -146,7 +146,7 @@ H12,,,VCCO_2,,,2,,,,,2.50,,,,
 H13,ssg<3>,IOB,IO_L39N_2,OUTPUT,LVCMOS25*,2,12,SLOW,NONE**,,,LOCATED,NO,NONE,
 H14,ssg<7>,IOB,IO_L39P_2,OUTPUT,LVCMOS25*,2,12,SLOW,NONE**,,,LOCATED,NO,NONE,
 H15,,DIFFS,IO_L40N_2,UNUSED,,2,,,,,,,,,
-H16,aout,IOB,IO_L40P_2/VREF_2,OUTPUT,LVCMOS25*,2,12,SLOW,NONE**,,,UNLOCATED,NO,NONE,
+H16,,DIFFM,IO_L40P_2/VREF_2,UNUSED,,2,,,,,,,,,
 J1,,DIFFM,IO_L40P_6/VREF_6,UNUSED,,6,,,,,,,,,
 J2,,DIFFS,IO_L40N_6,UNUSED,,6,,,,,,,,,
 J3,,DIFFM,IO_L39P_6,UNUSED,,6,,,,,,,,,
@@ -187,8 +187,8 @@ L5,,DIFFS,IO_L21N_6,UNUSED,,6,,,,,,,,,
 L6,,,GND,,,,,,,,,,,,
 L7,,,VCCO_5,,,5,,,,,any******,,,,
 L8,,,VCCO_5,,,5,,,,,any******,,,,
-L9,,,VCCO_4,,,4,,,,,any******,,,,
-L10,,,VCCO_4,,,4,,,,,any******,,,,
+L9,,,VCCO_4,,,4,,,,,2.50,,,,
+L10,,,VCCO_4,,,4,,,,,2.50,,,,
 L11,,,GND,,,,,,,,,,,,
 L12,led<3>,IOB,IO_L23P_3/VREF_3,OUTPUT,LVCMOS25*,3,12,SLOW,NONE**,,,LOCATED,NO,NONE,
 L13,led<1>,IOB,IO_L21N_3,OUTPUT,LVCMOS25*,3,12,SLOW,NONE**,,,LOCATED,NO,NONE,
@@ -203,7 +203,7 @@ M5,,,VCCINT,,,,,,,,1.2,,,,
 M6,,DIFFM,IO_L28P_5/D7,UNUSED,,5,,,,,,,,,
 M7,,DIFFM,IO_L30P_5,UNUSED,,5,,,,,,,,,
 M8,,,VCCO_5,,,5,,,,,any******,,,,
-M9,,,VCCO_4,,,4,,,,,any******,,,,
+M9,,,VCCO_4,,,4,,,,,2.50,,,,
 M10,,DIFFS,IO_L29N_4,UNUSED,,4,,,,,,,,,
 M11,,DIFFS,IO_L27N_4/DIN/D0,UNUSED,,4,,,,,,,,,
 M12,,,VCCINT,,,,,,,,1.2,,,,
@@ -272,7 +272,7 @@ T10,,IOB,IO/VREF_4,UNUSED,,4,,,,,,,,,
 T11,,,VCCAUX,,,,,,,,2.5,,,,
 T12,,IOB,IO,UNUSED,,4,,,,,,,,,
 T13,,DIFFM,IO_L01P_4/VRN_4,UNUSED,,4,,,,,,,,,
-T14,,DIFFS,IO,UNUSED,,4,,,,,,,,,
+T14,speaker_signal,IOB,IO,OUTPUT,LVCMOS25*,4,12,SLOW,NONE**,,,LOCATED,NO,NONE,
 T15,,,CCLK,,,,,,,,,,,,
 T16,,,GND,,,,,,,,,,,,
 

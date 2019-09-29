@@ -1,0 +1,4 @@
+vhdl isim_temp "clock2pulse.vhd"
+vhdl isim_temp "beatsHurdleCalculator.vhd"
+vhdl isim_temp "beatsManager.vhd"
+vhdl isim_temp "beatsManagerTest.vhd"
