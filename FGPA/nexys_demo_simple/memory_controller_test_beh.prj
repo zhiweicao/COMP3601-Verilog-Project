@@ -1,0 +1,2 @@
+vhdl work "memory_loading_controller.vhd"
+vhdl work "memory_controller_test.vhd"

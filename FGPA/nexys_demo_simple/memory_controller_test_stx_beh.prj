@@ -1,0 +1,2 @@
+vhdl isim_temp "memory_loading_controller.vhd"
+vhdl isim_temp "memory_controller_test.vhd"

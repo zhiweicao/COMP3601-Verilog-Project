@@ -1,9 +1,21 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Sun Sep 29 20:48:54 2019
+// Written by: Map P.20131013 on Tue Oct 08 17:13:27 2019
 //! **************************************************************************
 
 SCHEMATIC START;
+COMP "EppAstb" LOCATE = SITE "N8" LEVEL 1;
+COMP "EppDstb" LOCATE = SITE "P7" LEVEL 1;
+COMP "EppWait" LOCATE = SITE "N5" LEVEL 1;
+COMP "EppDB<0>" LOCATE = SITE "N12" LEVEL 1;
+COMP "EppDB<1>" LOCATE = SITE "P12" LEVEL 1;
+COMP "EppDB<2>" LOCATE = SITE "N11" LEVEL 1;
+COMP "EppDB<3>" LOCATE = SITE "P11" LEVEL 1;
 COMP "mclk" LOCATE = SITE "A8" LEVEL 1;
+COMP "EppDB<4>" LOCATE = SITE "N10" LEVEL 1;
+COMP "EppDB<5>" LOCATE = SITE "P10" LEVEL 1;
+COMP "EppDB<6>" LOCATE = SITE "M10" LEVEL 1;
+COMP "EppDB<7>" LOCATE = SITE "R10" LEVEL 1;
+COMP "EppWr" LOCATE = SITE "N7" LEVEL 1;
 COMP "an<0>" LOCATE = SITE "G14" LEVEL 1;
 COMP "an<1>" LOCATE = SITE "G12" LEVEL 1;
 COMP "an<2>" LOCATE = SITE "G13" LEVEL 1;

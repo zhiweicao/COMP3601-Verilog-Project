@@ -1,0 +1,2 @@
+vhdl work "controller.vhd"
+vhdl work "controller_test.vhd"

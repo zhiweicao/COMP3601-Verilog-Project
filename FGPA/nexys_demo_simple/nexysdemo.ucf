@@ -35,10 +35,20 @@ NET "led<5>" LOC = "M13";
 NET "led<6>" LOC = "P14";
 NET "led<7>" LOC = "R16";
 
-#NET "noise<0>" LOC = "T14";
-#NET "noise<1>" LOC = "R13";
-#NET "noise<2>" LOC = "T13";
-#NET "noise<3>" LOC = "R12";
+
+#Epp Mapping
+NET "EppAstb" LOC = "N8"; # Bank = 5, Pin name = IO_L32P_5/GCLK2, Type = GCLK, Signal name = U-FLAGA
+NET "EppDstb" LOC = "P7"; # Bank = 5, Pin name = IO, Type = I/O, Signal name = U-FLAGB
+NET "EppWr" LOC = "N7"; # Bank = 5, Pin name = IO_L30N_5, Type = I/O, Signal name = U-FLAGC
+NET "EppWait" LOC = "N5"; # Bank = , Pin name = IO, Type = I/O, Signal name = U-SLRD
+NET "EppDB<0>" LOC = "N12"; # Bank = 4, Pin name = IO/VREF_4, Type = VREF, Signal name = U-FD0
+NET "EppDB<1>" LOC = "P12"; # Bank = 4, Pin name = IO_L25N_4, Type = I/O, Signal name = U-FD1
+NET "EppDB<2>" LOC = "N11"; # Bank = 4, Pin name = IO_L27P_4/D1, Type = DUAL, Signal name = U-FD2
+NET "EppDB<3>" LOC = "P11"; # Bank = 4, Pin name = IO_L28N_4, Type = I/O, Signal name = U-FD3
+NET "EppDB<4>" LOC = "N10"; # Bank = 4, Pin name = IO_L29P_4, Type = I/O, Signal name = U-FD4
+NET "EppDB<5>" LOC = "P10"; # Bank = 4, Pin name = IO_L30N_4/D2, Type = DUAL, Signal name = U-FD5
+NET "EppDB<6>" LOC = "M10"; # Bank = 4, Pin name = IO_L29N_4, Type = I/O, Signal name = U-FD6
+NET "EppDB<7>" LOC = "R10"; # Bank = 4, Pin name = IO_L30P_4/D3, Type = DUAL, Signal name = U-FD7
 
 #The speaker output Mapping!!!
 NET "speaker_signal" LOC = "T14";

@@ -2,6 +2,8 @@ vhdl work "\\vmware-host\shared folders\home\comp3601\nexys_demo_simple\segment7
 vhdl work "\\vmware-host\shared folders\home\comp3601\nexys_demo_simple\word2hurdle.vhd"
 vhdl work "\\vmware-host\shared folders\home\comp3601\nexys_demo_simple\note2segment.vhd"
 vhdl work "\\vmware-host\shared folders\home\comp3601\nexys_demo_simple\mux_3_to_8.vhd"
+vhdl work "\\vmware-host\shared folders\home\comp3601\nexys_demo_simple\memory_access_controller.vhd"
+vhdl work "\\vmware-host\shared folders\home\comp3601\nexys_demo_simple\dpimref.vhd"
 vhdl work "\\vmware-host\shared folders\home\comp3601\nexys_demo_simple\clock2pulse.vhd"
 vhdl work "\\vmware-host\shared folders\home\comp3601\nexys_demo_simple\blockRam.vhd"
 vhdl work "\\vmware-host\shared folders\home\comp3601\nexys_demo_simple\beatsHurdleCalculator.vhd"

@@ -1,10 +1,10 @@
-Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o Z:/comp3601/nexys_demo_simple/fsm_test_isim_beh.exe -prj Z:/comp3601/nexys_demo_simple/fsm_test_beh.prj fsm_test 
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o Z:/comp3601/nexys_demo_simple/controller_test_isim_beh.exe -prj Z:/comp3601/nexys_demo_simple/controller_test_beh.prj work.controller_test 
 ISim P.20131013 (signature 0x7708f090)
 Number of CPUs detected in this system: 4
 Turning on mult-threading, number of parallel sub-compilation jobs: 8 
 Determining compilation order of HDL files
 Parsing VHDL file "Z:/comp3601/nexys_demo_simple/controller.vhd" into library work
-Parsing VHDL file "Z:/comp3601/nexys_demo_simple/fsm_test.vhd" into library work
+Parsing VHDL file "Z:/comp3601/nexys_demo_simple/controller_test.vhd" into library work
 Starting static elaboration
 Completed static elaboration
 Compiling package standard
@@ -12,10 +12,9 @@ Compiling package std_logic_1164
 Compiling package std_logic_arith
 Compiling package std_logic_unsigned
 Compiling architecture behavioral of entity controller [controller_default]
-Compiling architecture behavior of entity fsm_test
+Compiling architecture behavior of entity controller_test
 Time Resolution for simulation is 1ps.
-Waiting for 1 sub-compilation(s) to finish...
 Compiled 7 VHDL Units
-Built simulation executable Z:/comp3601/nexys_demo_simple/fsm_test_isim_beh.exe
-Fuse Memory Usage: 33560 KB
-Fuse CPU Usage: 1218 ms
+Built simulation executable Z:/comp3601/nexys_demo_simple/controller_test_isim_beh.exe
+Fuse Memory Usage: 33736 KB
+Fuse CPU Usage: 1467 ms
