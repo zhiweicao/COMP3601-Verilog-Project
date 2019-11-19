@@ -3,6 +3,7 @@ try:
 except ImportError:
     from tkinter import Tk, Frame, BOTH, Label, PhotoImage, OptionMenu, StringVar, Button, Text, Entry, Toplevel, filedialog
 from tkinter.filedialog import askopenfilename
+import os
 
 OptionList = [
 'Semiquaver',
@@ -129,17 +130,20 @@ class Piano(Frame):
         [('all files', '.*'), ('text files', '.txt')]
         filename = filedialog.asksaveasfilename(initialdir = '/',title = 'Select file')
 
+        music_string = self.music_to_string()
+        with open(filename, 'w') as text_file:
+            print(music_string, file=text_file)
+        print(music_string)
+        print(filename)
+
+    def music_to_string(self):
         inv_map_beats = {v: k for k, v in KEYS_TO_BEATS.items()}
         inv_map_notes = {v: k for k, v in KEYS_TO_NOTES.items()}
         music_string = str(chr(self.tempo))
         for note, beat in zip(self.music['note'], self.music['beat']):
             music_string += f'{inv_map_notes.get(note)}{inv_map_beats.get(beat)}'
         music_string += '@'
-        with open(filename, 'w') as text_file:
-            print(music_string, file=text_file)
-        print(music_string)
-        print(filename)
-
+        return music_string
 
     def decrease_tempo(self):
         self.tempo -= 1
@@ -154,6 +158,16 @@ class Piano(Frame):
         self.tempo_box.delete('1.0', 'end')
         self.tempo_box.insert(0.0, str(self.tempo))
         self.textbox.configure(state='disabled')
+
+    def send_to_fpga(self):
+        music_string = self.music_to_string()
+        cwd = os.getcwd()
+        filename = cwd.replace('GUI', 'loaders/output.txt')
+        with open(filename, 'w+') as text_file:
+            print(music_string, file=text_file)
+        filename.replace('output.txt', 'console.exe')
+        os.system(filename)
+
 
     def implement_me(self):
         print('Implement me')
@@ -204,7 +218,7 @@ class Piano(Frame):
         save_button = Button(self, text='Save', command=self.save_to_file, font=('Helvetica', 22))
         save_button.place(x=750, y=80, width=90, height=40)
 
-        play_button = Button(self, text='Play', command=self.implement_me, font=('Helvetica', 22))
+        play_button = Button(self, text='Play', command=self.send_to_fpga, font=('Helvetica', 22))
         play_button.place(x=750, y=120, width=90, height=40)
 
         undo_button = Button(self, text='Undo', command=self.remove_last_note, font=('Helvetica', 22))
