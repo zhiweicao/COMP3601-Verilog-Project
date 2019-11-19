@@ -165,7 +165,7 @@ class Piano(Frame):
         filename = cwd.replace('GUI', 'loaders/output.txt')
         with open(filename, 'w+') as text_file:
             print(music_string, file=text_file)
-        filename.replace('output.txt', 'console.exe')
+        filename = filename.replace('output.txt', 'console.exe')
         os.system(filename)
 
 
