@@ -118,6 +118,7 @@ class Piano(Frame):
     def extract_music(self):
         music_string = self.read_file()
         self.tempo = ord(music_string[0])
+        self.show_tempo()
         music_string = music_string[1:-1]
         self.clear_music()
         for (note, beat) in zip(music_string[0::2], music_string[1::2]):
@@ -139,6 +140,20 @@ class Piano(Frame):
         print(music_string)
         print(filename)
 
+
+    def decrease_tempo(self):
+        self.tempo -= 1
+        self.show_tempo()
+
+    def increase_tempo(self):
+        self.tempo += 1
+        self.show_tempo()
+
+    def show_tempo(self):
+        self.tempo_box.configure(state='normal')
+        self.tempo_box.delete('1.0', 'end')
+        self.tempo_box.insert(0.0, str(self.tempo))
+        self.textbox.configure(state='disabled')
 
     def implement_me(self):
         print('Implement me')
@@ -195,6 +210,12 @@ class Piano(Frame):
         undo_button = Button(self, text='Undo', command=self.remove_last_note, font=('Helvetica', 22))
         undo_button.place(x=750, y=160, width=90, height=40) 
 
+        increase_button = Button(self, text='+', command=self.increase_tempo, font=('Helvetica', 22))
+        increase_button.place(x=750, y=200, width=45, height=40) 
+
+        decrease_button = Button(self, text='-', command=self.decrease_tempo, font=('Helvetica', 22))
+        decrease_button.place(x=795, y=200, width=45, height=40) 
+
         self.beat = StringVar(self)
         self.beat.set(OptionList[0])
         opt = OptionMenu(self, self.beat, *OptionList)
@@ -202,15 +223,21 @@ class Piano(Frame):
         opt.place(x=750, y=0, height=40, width=90)
 
         self.textbox = Text(self, bg='aqua')
-        self.textbox.place(y=150, width=750)
+        self.textbox.place(y=200, width=750)
         self.textbox.insert(0.0, 'La La Laaa!')
         self.textbox.configure(state='disabled')
 
+
         self.tempo = 60
+
+        self.tempo_box = Text(self, bg='aqua')
+        self.tempo_box.place(x=750, y=240, width=90)
+        self.show_tempo()
+
         self.parent.title('Key Selector')
 
         w = 840
-        h = 200
+        h = 270
         sw = self.parent.winfo_screenwidth()
         sh = self.parent.winfo_screenheight()
         x = (sw - w) / 2
