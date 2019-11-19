@@ -162,7 +162,7 @@ class Piano(Frame):
     def send_to_fpga(self):
         music_string = self.music_to_string()
         cwd = os.getcwd()
-        filename = cwd.replace('GUI', 'loaders/output.txt')
+        filename = cwd.replace('GUI', 'GUI/output.txt')
         with open(filename, 'w+') as text_file:
             print(music_string, file=text_file)
         filename = filename.replace('output.txt', 'console.exe')
