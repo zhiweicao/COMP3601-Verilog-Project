@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Tue Nov 19 13:58:45 2019
+# Process ID: 2520
+# Log file: Z:/comp3601/nexys_demo_simple/planAhead_run_2/planAhead.log
+# Journal file: Z:/comp3601/nexys_demo_simple/planAhead_run_2/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source Z:/comp3601/nexys_demo_simple/pa.fromNetlist.tcl

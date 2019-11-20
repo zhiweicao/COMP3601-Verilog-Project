@@ -1,0 +1,11 @@
+[Inputs]
+clk
+beat_pluse
+reset
+=current_note[7:0]=
+=note_length[7:0]=
+[Outputs]
+note_done
+pulse
+=note_pass_led[7:0]=
+[BiDir]

@@ -37,14 +37,30 @@ entity controller is
 			  increase_tempo					: in 	std_logic;
 			  decrease_tempo					: in 	std_logic;
 			  raw_data_in						: in  std_logic_vector(7 downto 0);
+			  bluetooth_ready					: in 	std_logic;
+			  bluetooth_data_bus				: in  std_logic_vector(7 downto 0);
 			  data_addr							: out std_logic_vector(15 downto 0);
 			  beats_per_second				: out std_logic_vector(7 downto 0);
 			  speaker_reset					: out std_logic;
-			  tempo_reset						: out std_logic	
+			  tempo_reset						: out std_logic;
+			  led_debug							: out std_logic_vector(7 downto 0)			  
 			  );
 end controller;
 
 architecture Behavioral of controller is
+
+
+	component bluetoothDecoder is
+		 Port (clk									: in  std_logic;
+				 bluetooth_ready					: in 	std_logic;
+				 bluetooth_data_bus				: in  std_logic_vector(7 downto 0);
+				 increase_tempo					: out std_logic;
+				 decrease_tempo					: out std_logic
+				 );
+	end component;
+
+
+
 	TYPE State_type IS (S0_init, S1_predefined_tempo_reading, S1_wait, S2_addr_inc_start, S3_addr_inc_end, 
 								S5_tempo_increase_start, S6_tempo_increase_done,
 								S7_tempo_decrease_start, S8_tempo_decrease_done);
@@ -72,15 +88,30 @@ begin
 	beats_per_second(7) <= '0';
 	beats_per_second(6 downto 0) <= curr_tempo;
 	
+	led_debug(7) <= bluetooth_ready;
+	led_debug(6) <= '0';
+	led_debug(5) <= increase_tempo_reg;
+	led_debug(4) <= decrease_tempo_event;
+	
+	
 	state_syn:PROCESS (reset, clk)
 	BEGIN
 		IF (clk'EVENT AND clk = '1') THEN
 --			current_state <= next_state;
-			increase_tempo_reg <= increase_tempo;
-			decrease_tempo_reg <= decrease_tempo;
+--			increase_tempo_reg <= increase_tempo;
+--			decrease_tempo_reg <= decrease_tempo;
 			note_done_reg <= note_done;
 		end if;
 	END PROCESS;
+	bluetooth_Decoder :  bluetoothDecoder
+	 port map ( clk								=>	clk,
+					bluetooth_ready				=>	bluetooth_ready,
+					bluetooth_data_bus			=>	bluetooth_data_bus,
+					increase_tempo					=>	increase_tempo_reg,
+					decrease_tempo					=>	decrease_tempo_reg
+					);
+						
+
 
 	FSM:PROCESS (reset, clk)
 	BEGIN
@@ -140,21 +171,31 @@ begin
 			set_predefined_tempo <= '0';
 			CASE current_state IS
 				WHEN S0_init =>
+--					led_debug(3 downto 0) <= X"0";
 				WHEN S1_predefined_tempo_reading =>
+--					led_debug(3 downto 0) <= X"1";
 					set_predefined_tempo <= '1';
 					addr_increment <= '1';
 				WHEN S1_wait =>
+--					led_debug(3 downto 0) <= X"2";
+					speaker_restart <= '0';
 				WHEN S2_addr_inc_start =>
+--					led_debug(3 downto 0) <= X"3";
 					addr_increment <= '1';
 				WHEN S3_addr_inc_end =>
+--					led_debug(3 downto 0) <= X"4";
 					addr_increment <= '0';
 					speaker_restart <= '1';
 				when S5_tempo_increase_start =>
+--					led_debug(3 downto 0) <= X"5";
 					increase_tempo_event <= '1';
 				when S6_tempo_increase_done =>
+--					led_debug(3 downto 0) <= X"6";
 				when S7_tempo_decrease_start =>
+--					led_debug(3 downto 0) <= X"7";
 					decrease_tempo_event <= '1';
 				when S8_tempo_decrease_done =>
+--					led_debug(3 downto 0) <= X"8";
 			END CASE;
 	END PROCESS;	
 	

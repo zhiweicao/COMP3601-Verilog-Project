@@ -1,0 +1,1 @@
+vhdtdtfi -prj Nexysdemo -o Z:/comp3601/nexys_demo_simple/controller.tfi -module controller -template C:/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror -lib work controller.vhd 

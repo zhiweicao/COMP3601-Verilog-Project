@@ -7,7 +7,6 @@
    <ItemView engineview="SynthesisOnly" guiview="Source" compilemode="AutoCompile" >
       <ClosedNodes>
          <ClosedNodesVersion>2</ClosedNodesVersion>
-         <ClosedNode>/Nexysdemo - Behavioral Z:|comp3601|nexys_demo_simple|Nexysdemo.vhd/beats_Manager - beatsManager - Behavioral</ClosedNode>
          <ClosedNode>/Nexysdemo - Behavioral Z:|comp3601|nexys_demo_simple|Nexysdemo.vhd/display - display - Behavioral</ClosedNode>
          <ClosedNode>/Nexysdemo - Behavioral Z:|comp3601|nexys_demo_simple|Nexysdemo.vhd/display_map - display - Behavioral</ClosedNode>
          <ClosedNode>/Nexysdemo - Behavioral Z:|comp3601|nexys_demo_simple|Nexysdemo.vhd/display_mapping - display - Behavioral</ClosedNode>
@@ -18,9 +17,9 @@
       <SelectedItems>
          <SelectedItem>Nexysdemo - Behavioral (Z:/comp3601/nexys_demo_simple/Nexysdemo.vhd)</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >2</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000227000000020000000000000000000000000200000064ffffffff000000810000000300000002000002270000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000246000000020000000000000000000000000200000064ffffffff000000810000000300000002000002460000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
       <CurrentItem>Nexysdemo - Behavioral (Z:/comp3601/nexys_demo_simple/Nexysdemo.vhd)</CurrentItem>
    </ItemView>
@@ -31,13 +30,12 @@
          <ClosedNode>Implement Design/Map</ClosedNode>
          <ClosedNode>Implement Design/Place &amp; Route</ClosedNode>
          <ClosedNode>Implement Design/Translate</ClosedNode>
-         <ClosedNode>Synthesize - XST</ClosedNode>
          <ClosedNode>User Constraints</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
          <SelectedItem>Generate Programming File</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >3</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >9</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000143000000010000000100000000000000000000000064ffffffff000000810000000000000001000001430000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
@@ -62,7 +60,7 @@
       <SelectedItems/>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000154000000010001000100000000000000000000000064ffffffff000000810000000000000001000001540000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000109000000010001000100000000000000000000000064ffffffff000000810000000000000001000001090000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem>work</CurrentItem>
    </ItemView>
@@ -109,7 +107,10 @@
    <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
       <ClosedNodes>
          <ClosedNodesVersion>2</ClosedNodesVersion>
-         <ClosedNode>/beatsManagerTest - behavior Z:|comp3601|nexys_demo_simple|beatsManagerTest.vhd</ClosedNode>
+         <ClosedNode>/BeatTest - behavior Z:|comp3601|nexys_demo_simple|BeatTest.vhd/uut - Nexysdemo - Behavioral/beats_Manager - beatsManager - Behavioral</ClosedNode>
+         <ClosedNode>/BeatTest - behavior Z:|comp3601|nexys_demo_simple|BeatTest.vhd/uut - Nexysdemo - Behavioral/display_map - display - Behavioral</ClosedNode>
+         <ClosedNode>/BeatTest - behavior Z:|comp3601|nexys_demo_simple|BeatTest.vhd/uut - Nexysdemo - Behavioral/signal_controller - controller - Behavioral</ClosedNode>
+         <ClosedNode>/beatsManagerTest - behavior Z:|comp3601|nexys_demo_simple|beatsManagerTest.vhd/uut - beatsManager - Behavioral</ClosedNode>
          <ClosedNode>/calculator_test - behavior Z:|comp3601|nexys_demo_simple|calculator_test.vhd</ClosedNode>
          <ClosedNode>/fsm_test - behavior Z:|comp3601|nexys_demo_simple|fsm_test.vhd</ClosedNode>
          <ClosedNode>/memory_controller_test - behavior Z:|comp3601|nexys_demo_simple|memory_controller_test.vhd</ClosedNode>
@@ -120,18 +121,17 @@
          <ClosedNode>/pwn_Test_2 - behavior Z:|comp3601|nexys_demo_simple|pwn_Test_2.vhd</ClosedNode>
          <ClosedNode>/test - behavior Z:|comp3601|nexys_demo_simple|test.vhd/uut - Nexysdemo - Behavioral/beats_Manager - beatsManager - Behavioral</ClosedNode>
          <ClosedNode>/test - behavior Z:|comp3601|nexys_demo_simple|test.vhd/uut - Nexysdemo - Behavioral/display_map - display - Behavioral</ClosedNode>
-         <ClosedNode>/test - behavior Z:|comp3601|nexys_demo_simple|test.vhd/uut - Nexysdemo - Behavioral/memory_Manager - memoryManager - Behavioral</ClosedNode>
          <ClosedNode>/test - behavior Z:|comp3601|nexys_demo_simple|test.vhd/uut - Nexysdemo - Behavioral/pulse_generator - speakerPulseGenerator - Behavioral</ClosedNode>
          <ClosedNode>/word_mapping_test - behavior Z:|comp3601|nexys_demo_simple|word_mapping_test.vhd</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>controller_test - behavior (Z:/comp3601/nexys_demo_simple/controller_test.vhd)</SelectedItem>
+         <SelectedItem>BeatTest - behavior (Z:/comp3601/nexys_demo_simple/BeatTest.vhd)</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >36</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000021e000000020000000000000000000000000200000064ffffffff0000008100000003000000020000021e0000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000246000000020000000000000000000000000200000064ffffffff000000810000000300000002000002460000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>controller_test - behavior (Z:/comp3601/nexys_demo_simple/controller_test.vhd)</CurrentItem>
+      <CurrentItem>BeatTest - behavior (Z:/comp3601/nexys_demo_simple/BeatTest.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -139,25 +139,26 @@
          <ClosedNode>Design Utilities</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem/>
+         <SelectedItem></SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000154000000010000000100000000000000000000000064ffffffff000000810000000000000001000001540000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem/>
+      <CurrentItem></CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>Simulate Behavioral Model</SelectedItem>
+         <SelectedItem></SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000154000000010000000100000000000000000000000064ffffffff000000810000000000000001000001540000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>Simulate Behavioral Model</CurrentItem>
+      <CurrentItem></CurrentItem>
    </ItemView>
+   <CopyAdditionalFiles/>
 </Project>

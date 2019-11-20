@@ -1,59 +1,66 @@
-V3 63
+V3 75
 FL "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/beatsHurdleCalculator.vhd" 2019/09/29.17:26:00 P.20131013
-EN work/beatsHurdleCalculator 1570515171 \
+EN work/beatsHurdleCalculator 1574175577 \
       FL "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/beatsHurdleCalculator.vhd" \
       PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
       PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/beatsHurdleCalculator/Behavioral 1570515172 \
+AR work/beatsHurdleCalculator/Behavioral 1574175578 \
       FL "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/beatsHurdleCalculator.vhd" \
-      EN work/beatsHurdleCalculator 1570515171
-FL "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/beatsManager.vhd" 2019/09/29.18:55:52 P.20131013
-EN work/beatsManager 1570515193 \
+      EN work/beatsHurdleCalculator 1574175577
+FL "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/beatsManager.vhd" 2019/11/19.21:53:16 P.20131013
+EN work/beatsManager 1574175601 \
       FL "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/beatsManager.vhd" \
       PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
       PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/beatsManager/Behavioral 1570515194 \
+AR work/beatsManager/Behavioral 1574175602 \
       FL "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/beatsManager.vhd" \
-      EN work/beatsManager 1570515193 CP beatsHurdleCalculator CP clock2pulse
-FL "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/blockRam.vhd" 2019/10/04.16:51:32 P.20131013
-EN work/blockRam 1570515175 \
+      EN work/beatsManager 1574175601 CP beatsHurdleCalculator CP clock2pulse
+FL "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/blockRam.vhd" 2019/11/20.01:59:07 P.20131013
+EN work/blockRam 1574175581 \
       FL "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/blockRam.vhd" \
       PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/blockRam/syn 1570515176 \
+AR work/blockRam/syn 1574175582 \
       FL "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/blockRam.vhd" \
-      EN work/blockRam 1570515175
+      EN work/blockRam 1574175581
+FL "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/bluetoothDecoder.vhd" 2019/11/19.15:44:26 P.20131013
+EN work/bluetoothDecoder 1574175575 \
+      FL "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/bluetoothDecoder.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/bluetoothDecoder/Behavioral 1574175576 \
+      FL "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/bluetoothDecoder.vhd" \
+      EN work/bluetoothDecoder 1574175575
 FL "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/clock2pulse.vhd" 2019/09/29.18:58:29 P.20131013
-EN work/clock2pulse 1570515173 \
+EN work/clock2pulse 1574175579 \
       FL "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/clock2pulse.vhd" \
       PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
       PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/clock2pulse/Behavioral 1570515174 \
+AR work/clock2pulse/Behavioral 1574175580 \
       FL "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/clock2pulse.vhd" \
-      EN work/clock2pulse 1570515173
-FL "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/controller.vhd" 2019/10/08.17:10:14 P.20131013
-EN work/controller 1570515195 \
+      EN work/clock2pulse 1574175579
+FL "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/controller.vhd" 2019/11/20.00:27:24 P.20131013
+EN work/controller 1574175603 \
       FL "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/controller.vhd" \
       PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
       PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/controller/Behavioral 1570515196 \
+AR work/controller/Behavioral 1574175604 \
       FL "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/controller.vhd" \
-      EN work/controller 1570515195
+      EN work/controller 1574175603 CP bluetoothDecoder
 FL "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/display.vhd" 2019/09/28.21:12:03 P.20131013
-EN work/display 1570515189 \
+EN work/display 1574175597 \
       FL "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/display.vhd" \
       PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
       PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/display/Behavioral 1570515190 \
+AR work/display/Behavioral 1574175598 \
       FL "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/display.vhd" \
-      EN work/display 1570515189 CP note2segment
+      EN work/display 1574175597 CP note2segment
 FL "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/dpimref.vhd" 2019/10/04.17:26:51 P.20131013
-EN work/dpimref 1570515177 \
+EN work/dpimref 1574175583 \
       FL "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/dpimref.vhd" \
       PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
       PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/dpimref/Behavioral 1570515178 \
+AR work/dpimref/Behavioral 1574175584 \
       FL "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/dpimref.vhd" \
-      EN work/dpimref 1570515177
+      EN work/dpimref 1574175583
 FL "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/IO.vhd" 2019/09/24.21:12:27 P.20131013
 EN work/IO 1569388650 \
       FL "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/IO.vhd" \
@@ -63,65 +70,79 @@ AR work/IO/Behavioral 1569388651 \
       FL "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/IO.vhd" \
       EN work/IO 1569388650
 FL "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/memoryManager.vhd" 2019/10/04.22:01:44 P.20131013
-EN work/memoryManager 1570515191 \
+EN work/memoryManager 1574175599 \
       FL "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/memoryManager.vhd" \
       PB ieee/std_logic_1164 1381692176
-AR work/memoryManager/Behavioral 1570515192 \
+AR work/memoryManager/Behavioral 1574175600 \
       FL "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/memoryManager.vhd" \
-      EN work/memoryManager 1570515191 CP blockRam CP dpimref \
+      EN work/memoryManager 1574175599 CP blockRam CP dpimref \
       CP memory_access_controller
-FL "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/memory_access_controller.vhd" 2019/10/04.19:31:21 P.20131013
-EN work/memory_access_controller 1570515179 \
+FL "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/memory_access_controller.vhd" 2019/11/20.01:12:11 P.20131013
+EN work/memory_access_controller 1574175585 \
       FL "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/memory_access_controller.vhd" \
       PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
       PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/memory_access_controller/Behavioral 1570515180 \
+AR work/memory_access_controller/Behavioral 1574175586 \
       FL "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/memory_access_controller.vhd" \
-      EN work/memory_access_controller 1570515179
+      EN work/memory_access_controller 1574175585
 FL "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/memory_loading_controller.vhd" 2019/10/04.14:57:04 P.20131013
 FL "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/mux_3_to_8.vhd" 2019/09/29.21:48:01 P.20131013
-EN work/mux_3_to_8 1570515185 \
+EN work/mux_3_to_8 1574175591 \
       FL "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/mux_3_to_8.vhd" \
       PB ieee/std_logic_1164 1381692176
-AR work/mux_3_to_8/Behavioral 1570515186 \
+AR work/mux_3_to_8/Behavioral 1574175592 \
       FL "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/mux_3_to_8.vhd" \
-      EN work/mux_3_to_8 1570515185
-FL "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/Nexysdemo.vhd" 2019/10/08.16:58:54 P.20131013
-EN work/Nexysdemo 1570515197 \
+      EN work/mux_3_to_8 1574175591
+FL "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/Nexysdemo.vhd" 2019/11/20.01:27:09 P.20131013
+EN work/Nexysdemo 1574175607 \
       FL "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/Nexysdemo.vhd" \
       PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
       PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/Nexysdemo/Behavioral 1570515198 \
+AR work/Nexysdemo/Behavioral 1574175608 \
       FL "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/Nexysdemo.vhd" \
-      EN work/Nexysdemo 1570515197 CP speakerPulseGenerator CP display \
-      CP memoryManager CP beatsManager CP controller
+      EN work/Nexysdemo 1574175607 CP speakerPulseGenerator CP display \
+      CP memoryManager CP beatsManager CP controller CP UART_RX_CTRL
+FL "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/node_length_mapping.vhd" 2019/11/19.17:20:07 P.20131013
+EN work/nodeLengtMapping 1574175593 \
+      FL "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/node_length_mapping.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/nodeLengtMapping/Behavioral 1574175594 \
+      FL "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/node_length_mapping.vhd" \
+      EN work/nodeLengtMapping 1574175593
 FL "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/note2segment.vhd" 2019/09/28.19:54:45 P.20131013
-EN work/note2segment 1570515181 \
+EN work/note2segment 1574175587 \
       FL "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/note2segment.vhd" \
       PB ieee/std_logic_1164 1381692176
-AR work/note2segment/Behavioral 1570515182 \
+AR work/note2segment/Behavioral 1574175588 \
       FL "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/note2segment.vhd" \
-      EN work/note2segment 1570515181 CP segment7
+      EN work/note2segment 1574175587 CP segment7
 FL "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/segment7.vhd" 2019/09/28.19:46:49 P.20131013
-EN work/segment7 1570515169 \
+EN work/segment7 1574175573 \
       FL "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/segment7.vhd" \
       PB ieee/std_logic_1164 1381692176
-AR work/segment7/Behavioral 1570515170 \
+AR work/segment7/Behavioral 1574175574 \
       FL "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/segment7.vhd" \
-      EN work/segment7 1570515169
-FL "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/speakerPulseGenerator.vhd" 2019/09/29.21:48:08 P.20131013
-EN work/speakerPulseGenerator 1570515187 \
+      EN work/segment7 1574175573
+FL "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/speakerPulseGenerator.vhd" 2019/11/20.00:36:55 P.20131013
+EN work/speakerPulseGenerator 1574175595 \
       FL "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/speakerPulseGenerator.vhd" \
       PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
       PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/speakerPulseGenerator/Behavioral 1570515188 \
+AR work/speakerPulseGenerator/Behavioral 1574175596 \
       FL "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/speakerPulseGenerator.vhd" \
-      EN work/speakerPulseGenerator 1570515187 CP word2hurdle CP clock2pulse \
-      CP mux_3_to_8
+      EN work/speakerPulseGenerator 1574175595 CP word2hurdle CP clock2pulse \
+      CP mux_3_to_8 CP nodeLengtMapping
+FL "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/UART_RX_CTRL.vhd" 2019/11/19.15:58:39 P.20131013
+EN work/UART_RX_CTRL 1574175605 \
+      FL "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/UART_RX_CTRL.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/UART_RX_CTRL/Behavioral 1574175606 \
+      FL "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/UART_RX_CTRL.vhd" \
+      EN work/UART_RX_CTRL 1574175605
 FL "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/word2hurdle.vhd" 2019/09/29.21:26:21 P.20131013
-EN work/word2hurdle 1570515183 \
+EN work/word2hurdle 1574175589 \
       FL "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/word2hurdle.vhd" \
       PB ieee/std_logic_1164 1381692176
-AR work/word2hurdle/Behavioral 1570515184 \
+AR work/word2hurdle/Behavioral 1574175590 \
       FL "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/word2hurdle.vhd" \
-      EN work/word2hurdle 1570515183
+      EN work/word2hurdle 1574175589

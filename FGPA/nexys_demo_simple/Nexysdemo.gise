@@ -22,6 +22,9 @@
   <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="Nexysdemo.xise"/>
 
   <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="BeatTest_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="BeatTest_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="BeatTest_isim_beh.wdb"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="IO.bld"/>
     <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="IO.cmd_log"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="IO.lso"/>
@@ -46,7 +49,9 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="Nexysdemo.pcf" xil_pn:subbranch="Map"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Nexysdemo.prj"/>
     <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="Nexysdemo.ptwx"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="Nexysdemo.spl"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="Nexysdemo.stx"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="Nexysdemo.sym" xil_pn:origination="imported"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="Nexysdemo.syr"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="Nexysdemo.twr" xil_pn:subbranch="Par"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="Nexysdemo.twx" xil_pn:subbranch="Par"/>
@@ -56,6 +61,7 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="Nexysdemo.xst"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="Nexysdemo_envsettings.html"/>
     <file xil_pn:fileType="FILE_NCD" xil_pn:name="Nexysdemo_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="Nexysdemo_isim_beh.exe"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="Nexysdemo_map.map" xil_pn:subbranch="Map"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="Nexysdemo_map.mrp" xil_pn:subbranch="Map"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="Nexysdemo_map.ncd" xil_pn:subbranch="Map"/>
@@ -65,6 +71,7 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="Nexysdemo_pad.csv" xil_pn:subbranch="Par"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="Nexysdemo_pad.txt" xil_pn:subbranch="Par"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Nexysdemo_par.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Nexysdemo_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="Nexysdemo_summary.xml"/>
     <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="Nexysdemo_usage.xml"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Nexysdemo_vhdl.prj"/>
@@ -82,9 +89,8 @@
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="blockRam_isim_beh.exe"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="calculator_test_isim_beh.exe"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="clock2pulse_isim_beh.exe"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="controller_test_beh.prj"/>
+    <file xil_pn:fileType="FILE_VERILOG_INSTTEMPLATE" xil_pn:name="controller.tfi"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="controller_test_isim_beh.exe"/>
-    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="controller_test_isim_beh.wdb"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="controller_test_stx_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="epp_test_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="fsm_test_beh.prj"/>
@@ -105,10 +111,15 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_DRC" xil_pn:name="nexysdemo.drc" xil_pn:subbranch="FPGAConfiguration"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="nexysdemo_summary.html"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="planAhead_run_1"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="planAhead_run_2"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="pulseGeneratorTest_isim_beh.exe"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="pwm_test_isim_beh.exe"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="pwn_Test_2_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="speakerPulseGenerator.spl"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="speakerPulseGenerator.sym" xil_pn:origination="imported"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="speakerPulseGenerator_isim_beh.exe"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="testForBeats_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="testForBeats_stx_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="test_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="webtalk.log"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
@@ -124,16 +135,23 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1570515118" xil_pn:in_ck="3938242379809489376" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1570515116">
+    <transform xil_pn:end_ts="1574170368" xil_pn:in_ck="5503992154169768985" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1574170366">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="BeatTest.vhd"/>
       <outfile xil_pn:name="IO.vhd"/>
       <outfile xil_pn:name="Nexysdemo.vhd"/>
       <outfile xil_pn:name="PWM.vhd"/>
+      <outfile xil_pn:name="UART_RX_CTRL.vhd"/>
       <outfile xil_pn:name="beatsHurdleCalculator.vhd"/>
       <outfile xil_pn:name="beatsManager.vhd"/>
       <outfile xil_pn:name="beatsManagerTest.vhd"/>
       <outfile xil_pn:name="blockRam.vhd"/>
+      <outfile xil_pn:name="bluetoothDecoder.vhd"/>
       <outfile xil_pn:name="calculator_test.vhd"/>
       <outfile xil_pn:name="clock2pulse.vhd"/>
       <outfile xil_pn:name="controller.vhd"/>
@@ -148,20 +166,22 @@
       <outfile xil_pn:name="memory_test.vhd"/>
       <outfile xil_pn:name="mux_3_to_8.vhd"/>
       <outfile xil_pn:name="new_control_test.vhd"/>
+      <outfile xil_pn:name="node_length_mapping.vhd"/>
       <outfile xil_pn:name="note2segment.vhd"/>
       <outfile xil_pn:name="pulseGeneratorTest.vhd"/>
       <outfile xil_pn:name="pwn_Test_2.vhd"/>
       <outfile xil_pn:name="segment7.vhd"/>
       <outfile xil_pn:name="speakerPulseGenerator.vhd"/>
       <outfile xil_pn:name="test.vhd"/>
+      <outfile xil_pn:name="testForBeats.vhd"/>
       <outfile xil_pn:name="word2hurdle.vhd"/>
       <outfile xil_pn:name="word_mapping_test.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1570515118" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-7036369202593643293" xil_pn:start_ts="1570515118">
+    <transform xil_pn:end_ts="1574165925" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-7155099598728942660" xil_pn:start_ts="1574165925">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1570515118" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-651776543229056357" xil_pn:start_ts="1570515118">
+    <transform xil_pn:end_ts="1574165925" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="5156939415027934068" xil_pn:start_ts="1574165925">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
@@ -169,16 +189,24 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1570515121" xil_pn:in_ck="3938242379809489376" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1570515118">
+    <transform xil_pn:end_ts="1574170371" xil_pn:in_ck="5503992154169768985" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1574170368">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="BeatTest.vhd"/>
       <outfile xil_pn:name="IO.vhd"/>
       <outfile xil_pn:name="Nexysdemo.vhd"/>
       <outfile xil_pn:name="PWM.vhd"/>
+      <outfile xil_pn:name="UART_RX_CTRL.vhd"/>
       <outfile xil_pn:name="beatsHurdleCalculator.vhd"/>
       <outfile xil_pn:name="beatsManager.vhd"/>
       <outfile xil_pn:name="beatsManagerTest.vhd"/>
       <outfile xil_pn:name="blockRam.vhd"/>
+      <outfile xil_pn:name="bluetoothDecoder.vhd"/>
       <outfile xil_pn:name="calculator_test.vhd"/>
       <outfile xil_pn:name="clock2pulse.vhd"/>
       <outfile xil_pn:name="controller.vhd"/>
@@ -193,33 +221,39 @@
       <outfile xil_pn:name="memory_test.vhd"/>
       <outfile xil_pn:name="mux_3_to_8.vhd"/>
       <outfile xil_pn:name="new_control_test.vhd"/>
+      <outfile xil_pn:name="node_length_mapping.vhd"/>
       <outfile xil_pn:name="note2segment.vhd"/>
       <outfile xil_pn:name="pulseGeneratorTest.vhd"/>
       <outfile xil_pn:name="pwn_Test_2.vhd"/>
       <outfile xil_pn:name="segment7.vhd"/>
       <outfile xil_pn:name="speakerPulseGenerator.vhd"/>
       <outfile xil_pn:name="test.vhd"/>
+      <outfile xil_pn:name="testForBeats.vhd"/>
       <outfile xil_pn:name="word2hurdle.vhd"/>
       <outfile xil_pn:name="word_mapping_test.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1570515126" xil_pn:in_ck="3938242379809489376" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-1225495186105593607" xil_pn:start_ts="1570515121">
+    <transform xil_pn:end_ts="1574170383" xil_pn:in_ck="5503992154169768985" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-5062025195654841557" xil_pn:start_ts="1574170371">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="controller_test_beh.prj"/>
-      <outfile xil_pn:name="controller_test_isim_beh.exe"/>
+      <outfile xil_pn:name="BeatTest_beh.prj"/>
+      <outfile xil_pn:name="BeatTest_isim_beh.exe"/>
       <outfile xil_pn:name="fuse.log"/>
       <outfile xil_pn:name="isim"/>
       <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1570515128" xil_pn:in_ck="-738157214502290016" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="6485276990082017788" xil_pn:start_ts="1570515126">
+    <transform xil_pn:end_ts="1574170385" xil_pn:in_ck="-2751994084360853413" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="4135313409484790446" xil_pn:start_ts="1574170383">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="controller_test_isim_beh.wdb"/>
+      <outfile xil_pn:name="BeatTest_isim_beh.wdb"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="isim.log"/>
     </transform>
@@ -251,7 +285,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1570515183" xil_pn:in_ck="722269484094145770" xil_pn:name="TRANEXT_xstsynthesize_spartan3" xil_pn:prop_ck="8715295110428486895" xil_pn:start_ts="1570515155">
+    <transform xil_pn:end_ts="1574175587" xil_pn:in_ck="6453054652890566193" xil_pn:name="TRANEXT_xstsynthesize_spartan3" xil_pn:prop_ck="8715295110428486895" xil_pn:start_ts="1574175564">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -264,17 +298,18 @@
       <outfile xil_pn:name="Nexysdemo.stx"/>
       <outfile xil_pn:name="Nexysdemo.syr"/>
       <outfile xil_pn:name="Nexysdemo.xst"/>
+      <outfile xil_pn:name="Nexysdemo_stx_beh.prj"/>
       <outfile xil_pn:name="Nexysdemo_vhdl.prj"/>
       <outfile xil_pn:name="Nexysdemo_xst.xrpt"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
       <outfile xil_pn:name="xst"/>
     </transform>
-    <transform xil_pn:end_ts="1570167650" xil_pn:in_ck="4294730067136447496" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="8239889709560355860" xil_pn:start_ts="1570167650">
+    <transform xil_pn:end_ts="1574132412" xil_pn:in_ck="4294730067136447496" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="8239889709560355860" xil_pn:start_ts="1574132412">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1570515195" xil_pn:in_ck="8821212576521810984" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="6634083257316373849" xil_pn:start_ts="1570515183">
+    <transform xil_pn:end_ts="1574175599" xil_pn:in_ck="8821212576521810984" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="6634083257316373849" xil_pn:start_ts="1574175587">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="Nexysdemo.bld"/>
@@ -283,7 +318,7 @@
       <outfile xil_pn:name="_ngo"/>
       <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1570515213" xil_pn:in_ck="-4251134382542017653" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="6918683465102363066" xil_pn:start_ts="1570515195">
+    <transform xil_pn:end_ts="1574175618" xil_pn:in_ck="-4251134382542017653" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="6918683465102363066" xil_pn:start_ts="1574175599">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -299,7 +334,7 @@
       <outfile xil_pn:name="Nexysdemo_usage.xml"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1570515254" xil_pn:in_ck="-8729902874708736828" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="8251173951899154272" xil_pn:start_ts="1570515213">
+    <transform xil_pn:end_ts="1574175656" xil_pn:in_ck="-8729902874708736828" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="8251173951899154272" xil_pn:start_ts="1574175618">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -314,8 +349,9 @@
       <outfile xil_pn:name="Nexysdemo_par.xrpt"/>
       <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1570515273" xil_pn:in_ck="6262497809769575967" xil_pn:name="TRANEXT_bitFile_spartan3" xil_pn:prop_ck="1257802775646066249" xil_pn:start_ts="1570515254">
+    <transform xil_pn:end_ts="1574175677" xil_pn:in_ck="6262497809769575967" xil_pn:name="TRANEXT_bitFile_spartan3" xil_pn:prop_ck="1257802775646066249" xil_pn:start_ts="1574175656">
       <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="Nexysdemo.ut"/>
       <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
@@ -325,7 +361,7 @@
       <outfile xil_pn:name="webtalk.log"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1570515254" xil_pn:in_ck="-1560696476181171065" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416186" xil_pn:start_ts="1570515244">
+    <transform xil_pn:end_ts="1574175656" xil_pn:in_ck="-1560696476181171065" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416186" xil_pn:start_ts="1574175647">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="Nexysdemo.twr"/>

@@ -1,0 +1,15 @@
+[Inputs]
+mclk
+EppAstb
+EppDstb
+EppWr
+=btn[3:0]=
+=swt[7:0]=
+[Outputs]
+speaker_signal
+EppWait
+=led[7:0]=
+=an[3:0]=
+=ssg[7:0]=
+[BiDir]
+=EppDB[7:0]=

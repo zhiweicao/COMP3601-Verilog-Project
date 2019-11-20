@@ -1,0 +1,18 @@
+
+
+
+// Instantiate the module
+controller instance_name (
+    .clk(clk), 
+    .reset(reset), 
+    .note_done(note_done), 
+    .increase_tempo(increase_tempo), 
+    .decrease_tempo(decrease_tempo), 
+    .raw_data_in(raw_data_in), 
+    .data_addr(data_addr), 
+    .beats_per_second(beats_per_second), 
+    .speaker_reset(speaker_reset), 
+    .tempo_reset(tempo_reset)
+    );
+
+

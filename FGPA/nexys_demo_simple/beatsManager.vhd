@@ -62,20 +62,23 @@ architecture Behavioral of beatsManager is
 --	SIGNAL current_state: State_type;
 	signal clkHurdle						: std_logic_vector(31 downto 0);
 
-	signal given_period							: std_logic_vector(31 downto 0);
-	signal times_of_beat_within_period		: std_logic_vector(31 downto 0);
-	signal one_beats_taken_clk_frequency	: std_logic_vector(31 downto 0);
-	signal half_beats_taken_clk_frequency	: std_logic_vector(31 downto 0);
+	signal given_period							: std_logic_vector(31 downto 0) := (others => '0');
+	signal times_of_beat_within_period		: std_logic_vector(31 downto 0) := (others => '0');
+	signal one_beats_taken_clk_frequency	: std_logic_vector(31 downto 0) := (others => '0');
+	signal half_beats_taken_clk_frequency	: std_logic_vector(31 downto 0) := (others => '0');
 	signal calculation_done						: std_logic;
-		
+	constant sixty 								: std_logic_vector(7 downto 0) := X"3c"; --60
+	
+	
 begin
-	clkHurdle <= X"05f5e100";
-	given_period(23 downto 0)	<= clkHurdle(31 downto 8);
-	given_period(31 downto 24)	<= x"00";
-	one_beats_taken_clk_frequency(31 downto 8) 	<=  	times_of_beat_within_period(23 downto 0);
-	one_beats_taken_clk_frequency(7 downto 0)		<=		x"00";
+	clkHurdle <= X"59682f00";
+	given_period(20 downto 0)	<= clkHurdle(31 downto 11);
+	-- frequency hurdle/4
+	one_beats_taken_clk_frequency(31 downto 11) 	<=  	times_of_beat_within_period(20 downto 0);
 	half_beats_taken_clk_frequency(30 downto 0) 	<= 	one_beats_taken_clk_frequency(31 downto 1);
 	half_beats_taken_clk_frequency(31) <= '0';
+	
+	
 	-- hurdle_calculation
 	beats_Hurdle_Calculator : beatsHurdleCalculator
     port map  (  clk												=> clk,

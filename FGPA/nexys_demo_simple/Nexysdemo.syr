@@ -3,14 +3,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 2.00 secs
-Total CPU time to Xst completion: 2.30 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.91 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 2.00 secs
-Total CPU time to Xst completion: 2.30 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.91 secs
  
 --> Reading design: Nexysdemo.prj
 
@@ -106,12 +106,15 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 Compiling vhdl file "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/segment7.vhd" in Library work.
 Architecture behavioral of Entity segment7 is up to date.
+Compiling vhdl file "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/bluetoothDecoder.vhd" in Library work.
+Architecture behavioral of Entity bluetoothdecoder is up to date.
 Compiling vhdl file "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/beatsHurdleCalculator.vhd" in Library work.
 Architecture behavioral of Entity beatshurdlecalculator is up to date.
 Compiling vhdl file "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/clock2pulse.vhd" in Library work.
 Architecture behavioral of Entity clock2pulse is up to date.
 Compiling vhdl file "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/blockRam.vhd" in Library work.
-Architecture syn of Entity blockram is up to date.
+Entity <blockram> compiled.
+Entity <blockram> (Architecture <syn>) compiled.
 Compiling vhdl file "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/dpimref.vhd" in Library work.
 Architecture behavioral of Entity dpimref is up to date.
 Compiling vhdl file "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/memory_access_controller.vhd" in Library work.
@@ -122,6 +125,8 @@ Compiling vhdl file "//vmware-host/shared folders/home/comp3601/nexys_demo_simpl
 Architecture behavioral of Entity word2hurdle is up to date.
 Compiling vhdl file "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/mux_3_to_8.vhd" in Library work.
 Architecture behavioral of Entity mux_3_to_8 is up to date.
+Compiling vhdl file "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/node_length_mapping.vhd" in Library work.
+Architecture behavioral of Entity nodelengtmapping is up to date.
 Compiling vhdl file "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/speakerPulseGenerator.vhd" in Library work.
 Architecture behavioral of Entity speakerpulsegenerator is up to date.
 Compiling vhdl file "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/display.vhd" in Library work.
@@ -131,10 +136,12 @@ Architecture behavioral of Entity memorymanager is up to date.
 Compiling vhdl file "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/beatsManager.vhd" in Library work.
 Architecture behavioral of Entity beatsmanager is up to date.
 Compiling vhdl file "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/controller.vhd" in Library work.
-Entity <controller> compiled.
-Entity <controller> (Architecture <behavioral>) compiled.
+Architecture behavioral of Entity controller is up to date.
+Compiling vhdl file "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/UART_RX_CTRL.vhd" in Library work.
+Architecture behavioral of Entity uart_rx_ctrl is up to date.
 Compiling vhdl file "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/Nexysdemo.vhd" in Library work.
-Architecture behavioral of Entity nexysdemo is up to date.
+Entity <nexysdemo> compiled.
+Entity <nexysdemo> (Architecture <behavioral>) compiled.
 
 =========================================================================
 *                     Design Hierarchy Analysis                         *
@@ -151,11 +158,15 @@ Analyzing hierarchy for entity <beatsManager> in library <work> (architecture <b
 
 Analyzing hierarchy for entity <controller> in library <work> (architecture <behavioral>).
 
+Analyzing hierarchy for entity <UART_RX_CTRL> in library <work> (architecture <behavioral>).
+
 Analyzing hierarchy for entity <word2hurdle> in library <work> (architecture <behavioral>).
 
 Analyzing hierarchy for entity <clock2pulse> in library <work> (architecture <behavioral>).
 
 Analyzing hierarchy for entity <mux_3_to_8> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <nodeLengtMapping> in library <work> (architecture <behavioral>).
 
 Analyzing hierarchy for entity <note2segment> in library <work> (architecture <behavioral>).
 
@@ -167,6 +178,8 @@ Analyzing hierarchy for entity <memory_access_controller> in library <work> (arc
 
 Analyzing hierarchy for entity <beatsHurdleCalculator> in library <work> (architecture <behavioral>).
 
+Analyzing hierarchy for entity <bluetoothDecoder> in library <work> (architecture <behavioral>).
+
 Analyzing hierarchy for entity <segment7> in library <work> (architecture <behavioral>).
 
 
@@ -174,12 +187,10 @@ Analyzing hierarchy for entity <segment7> in library <work> (architecture <behav
 *                            HDL Analysis                               *
 =========================================================================
 Analyzing Entity <Nexysdemo> in library <work> (Architecture <behavioral>).
-WARNING:Xst:753 - "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/Nexysdemo.vhd" line 152: Unconnected output port 'note_pass_led' of component 'speakerPulseGenerator'.
+WARNING:Xst:753 - "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/Nexysdemo.vhd" line 216: Unconnected output port 'led_debug' of component 'controller'.
 Entity <Nexysdemo> analyzed. Unit <Nexysdemo> generated.
 
 Analyzing Entity <speakerPulseGenerator> in library <work> (Architecture <behavioral>).
-WARNING:Xst:819 - "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/speakerPulseGenerator.vhd" line 93: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
-   <reset>
 Entity <speakerPulseGenerator> analyzed. Unit <speakerPulseGenerator> generated.
 
 Analyzing Entity <word2hurdle> in library <work> (Architecture <behavioral>).
@@ -192,6 +203,9 @@ Entity <clock2pulse> analyzed. Unit <clock2pulse> generated.
 
 Analyzing Entity <mux_3_to_8> in library <work> (Architecture <behavioral>).
 Entity <mux_3_to_8> analyzed. Unit <mux_3_to_8> generated.
+
+Analyzing Entity <nodeLengtMapping> in library <work> (Architecture <behavioral>).
+Entity <nodeLengtMapping> analyzed. Unit <nodeLengtMapping> generated.
 
 Analyzing Entity <display> in library <work> (Architecture <behavioral>).
 INFO:Xst:1561 - "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/display.vhd" line 91: Mux is complete : default of case is discarded
@@ -209,21 +223,17 @@ Analyzing Entity <memoryManager> in library <work> (Architecture <behavioral>).
 Entity <memoryManager> analyzed. Unit <memoryManager> generated.
 
 Analyzing Entity <blockRam> in library <work> (Architecture <syn>).
-WARNING:Xst:790 - "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/blockRam.vhd" line 54: Index value(s) does not match array range, simulation mismatch.
-INFO:Xst:1433 - Contents of array <RAM> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
-WARNING:Xst:790 - "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/blockRam.vhd" line 56: Index value(s) does not match array range, simulation mismatch.
-INFO:Xst:1433 - Contents of array <RAM> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
 Entity <blockRam> analyzed. Unit <blockRam> generated.
 
 Analyzing Entity <dpimref> in library <work> (Architecture <behavioral>).
 Entity <dpimref> analyzed. Unit <dpimref> generated.
 
 Analyzing Entity <memory_access_controller> in library <work> (Architecture <behavioral>).
-WARNING:Xst:819 - "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/memory_access_controller.vhd" line 90: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
-   <data_in_buffer>, <current_addr>, <data_read_addr>
-WARNING:Xst:819 - "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/memory_access_controller.vhd" line 118: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+WARNING:Xst:819 - "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/memory_access_controller.vhd" line 91: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <data_in_buffer>
+WARNING:Xst:819 - "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/memory_access_controller.vhd" line 119: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
    <clk>
-WARNING:Xst:819 - "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/memory_access_controller.vhd" line 115: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+WARNING:Xst:819 - "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/memory_access_controller.vhd" line 116: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
    <addr_reset_trigger>
 Entity <memory_access_controller> analyzed. Unit <memory_access_controller> generated.
 
@@ -236,9 +246,15 @@ WARNING:Xst:819 - "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/
 Entity <beatsHurdleCalculator> analyzed. Unit <beatsHurdleCalculator> generated.
 
 Analyzing Entity <controller> in library <work> (Architecture <behavioral>).
-WARNING:Xst:819 - "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/controller.vhd" line 192: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+WARNING:Xst:819 - "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/controller.vhd" line 233: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
    <reset>
 Entity <controller> analyzed. Unit <controller> generated.
+
+Analyzing Entity <bluetoothDecoder> in library <work> (Architecture <behavioral>).
+Entity <bluetoothDecoder> analyzed. Unit <bluetoothDecoder> generated.
+
+Analyzing Entity <UART_RX_CTRL> in library <work> (Architecture <behavioral>).
+Entity <UART_RX_CTRL> analyzed. Unit <UART_RX_CTRL> generated.
 
 
 =========================================================================
@@ -247,40 +263,38 @@ Entity <controller> analyzed. Unit <controller> generated.
 
 Performing bidirectional port resolution...
 
-Synthesizing Unit <controller>.
-    Related source file is "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/controller.vhd".
-WARNING:Xst:647 - Input <raw_data_in<7>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:1780 - Signal <next_tempo> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
-    Found finite state machine <FSM_0> for signal <current_state>.
+Synthesizing Unit <UART_RX_CTRL>.
+    Related source file is "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/UART_RX_CTRL.vhd".
+WARNING:Xst:646 - Signal <rxData<15:9>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <rxData<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found finite state machine <FSM_0> for signal <rxState>.
     -----------------------------------------------------------------------
-    | States             | 9                                              |
-    | Transitions        | 15                                             |
+    | States             | 5                                              |
+    | Transitions        | 9                                              |
     | Inputs             | 3                                              |
     | Outputs            | 5                                              |
-    | Clock              | clk                       (rising_edge)        |
-    | Reset              | reset                     (positive)           |
-    | Reset type         | asynchronous                                   |
-    | Reset State        | s0_init                                        |
-    | Power Up State     | s0_init                                        |
+    | Clock              | CLK                       (rising_edge)        |
+    | Power Up State     | s0_reset                                       |
     | Encoding           | automatic                                      |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 7-bit updown counter for signal <curr_tempo>.
-    Found 7-bit comparator greatequal for signal <curr_tempo$cmp_le0000> created at line 172.
-    Found 7-bit comparator lessequal for signal <curr_tempo$cmp_le0001> created at line 179.
-    Found 1-bit register for signal <decrease_tempo_reg>.
-    Found 1-bit register for signal <increase_tempo_reg>.
-    Found 16-bit up counter for signal <next_addr>.
-    Found 1-bit register for signal <note_done_reg>.
-    Found 1-bit register for signal <tempo_change_event>.
-    Found 7-bit comparator less for signal <tempo_change_event$cmp_gt0000> created at line 172.
-    Found 7-bit comparator greater for signal <tempo_change_event$cmp_gt0001> created at line 179.
+WARNING:Xst:737 - Found 1-bit latch for signal <READY>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+    Found 4-bit up counter for signal <bitIndex>.
+    Found 14-bit up counter for signal <bitTmr>.
+    Found 1-bit register for signal <rx_bit>.
+    Found 14-bit comparator greater for signal <rx_bit$cmp_gt0000> created at line 128.
+    Found 16-bit register for signal <rxData>.
+    Found 14-bit register for signal <stable_value_counter>.
+    Found 14-bit adder for signal <stable_value_counter$addsub0000> created at line 126.
+    Found 1-bit register for signal <UART_RX_Reg>.
     Summary:
 	inferred   1 Finite State Machine(s).
 	inferred   2 Counter(s).
-	inferred   4 D-type flip-flop(s).
-	inferred   4 Comparator(s).
-Unit <controller> synthesized.
+	inferred  32 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   1 Comparator(s).
+Unit <UART_RX_CTRL> synthesized.
 
 
 Synthesizing Unit <word2hurdle>.
@@ -312,6 +326,11 @@ Synthesizing Unit <mux_3_to_8>.
 Unit <mux_3_to_8> synthesized.
 
 
+Synthesizing Unit <nodeLengtMapping>.
+    Related source file is "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/node_length_mapping.vhd".
+Unit <nodeLengtMapping> synthesized.
+
+
 Synthesizing Unit <segment7>.
     Related source file is "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/segment7.vhd".
     Found 16x7-bit ROM for signal <temp>.
@@ -322,9 +341,8 @@ Unit <segment7> synthesized.
 
 Synthesizing Unit <blockRam>.
     Related source file is "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/blockRam.vhd".
-WARNING:Xst:647 - Input <addr<7:6>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <reset> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-    Found 64x16-bit single-port RAM <Mram_RAM> for signal <RAM>.
+    Found 256x16-bit single-port RAM <Mram_RAM> for signal <RAM>.
     Found 16-bit register for signal <data_out>.
     Summary:
 	inferred   1 RAM(s).
@@ -378,8 +396,6 @@ WARNING:Xst:647 - Input <data_read_addr<15:8>> is never used. This port will be 
     | Encoding           | automatic                                      |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-WARNING:Xst:737 - Found 8-bit latch for signal <ready_memory_addr>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
     Found 8-bit up counter for signal <current_addr>.
     Found 8-bit register for signal <data_in_buffer>.
     Summary:
@@ -405,13 +421,40 @@ Synthesizing Unit <beatsHurdleCalculator>.
 Unit <beatsHurdleCalculator> synthesized.
 
 
+Synthesizing Unit <bluetoothDecoder>.
+    Related source file is "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/bluetoothDecoder.vhd".
+    Found 1-bit register for signal <decrease_tempo_reg>.
+    Found 1-bit register for signal <increase_tempo_reg>.
+    Summary:
+	inferred   2 D-type flip-flop(s).
+Unit <bluetoothDecoder> synthesized.
+
+
 Synthesizing Unit <speakerPulseGenerator>.
     Related source file is "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/speakerPulseGenerator.vhd".
 WARNING:Xst:647 - Input <current_note<7:5>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1305 - Output <note_pass_led<7:4>> is never assigned. Tied to value 0000.
+WARNING:Xst:646 - Signal <note_pass_out> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <next_length> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Found finite state machine <FSM_3> for signal <current_state>.
+    -----------------------------------------------------------------------
+    | States             | 5                                              |
+    | Transitions        | 7                                              |
+    | Inputs             | 1                                              |
+    | Outputs            | 4                                              |
+    | Clock              | clk                       (rising_edge)        |
+    | Reset              | reset                     (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | s0_init                                        |
+    | Power Up State     | s0_init                                        |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
     Found 1-bit register for signal <note_done>.
+    Found 8-bit comparator greatequal for signal <note_done$cmp_ge0000> created at line 154.
     Found 8-bit up counter for signal <note_pass_length>.
-    Found 8-bit comparator less for signal <note_pass_length$cmp_lt0000> created at line 99.
     Summary:
+	inferred   1 Finite State Machine(s).
 	inferred   1 Counter(s).
 	inferred   1 D-type flip-flop(s).
 	inferred   1 Comparator(s).
@@ -425,10 +468,49 @@ Unit <memoryManager> synthesized.
 
 Synthesizing Unit <beatsManager>.
     Related source file is "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/beatsManager.vhd".
-WARNING:Xst:646 - Signal <times_of_beat_within_period<31:24>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:646 - Signal <one_beats_taken_clk_frequency<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <times_of_beat_within_period<31:21>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <one_beats_taken_clk_frequency<10:1>> is used but never assigned. This sourceless signal will be automatically connected to value 0000000000.
+WARNING:Xst:1780 - Signal <one_beats_taken_clk_frequency<0>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <given_period<31:21>> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000.
 WARNING:Xst:646 - Signal <clkHurdle> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 Unit <beatsManager> synthesized.
+
+
+Synthesizing Unit <controller>.
+    Related source file is "//vmware-host/shared folders/home/comp3601/nexys_demo_simple/controller.vhd".
+WARNING:Xst:1305 - Output <led_debug<3:0>> is never assigned. Tied to value 0000.
+WARNING:Xst:647 - Input <raw_data_in<7>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <decrease_tempo> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <increase_tempo> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1780 - Signal <next_tempo> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Found finite state machine <FSM_4> for signal <current_state>.
+    -----------------------------------------------------------------------
+    | States             | 9                                              |
+    | Transitions        | 15                                             |
+    | Inputs             | 3                                              |
+    | Outputs            | 5                                              |
+    | Clock              | clk                       (rising_edge)        |
+    | Reset              | reset                     (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | s0_init                                        |
+    | Power Up State     | s0_init                                        |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 7-bit updown counter for signal <curr_tempo>.
+    Found 7-bit comparator greatequal for signal <curr_tempo$cmp_le0000> created at line 213.
+    Found 7-bit comparator lessequal for signal <curr_tempo$cmp_le0001> created at line 220.
+    Found 16-bit up counter for signal <next_addr>.
+    Found 1-bit register for signal <note_done_reg>.
+    Found 1-bit register for signal <tempo_change_event>.
+    Found 7-bit comparator less for signal <tempo_change_event$cmp_gt0000> created at line 213.
+    Found 7-bit comparator greater for signal <tempo_change_event$cmp_gt0001> created at line 220.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   2 Counter(s).
+	inferred   2 D-type flip-flop(s).
+	inferred   4 Comparator(s).
+Unit <controller> synthesized.
 
 
 Synthesizing Unit <note2segment>.
@@ -462,41 +544,48 @@ WARNING:Xst:647 - Input <swt<6:4>> is never used. This port will be preserved an
 WARNING:Xst:647 - Input <swt<2:1>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:1780 - Signal <temp_led> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:1780 - Signal <ready_memory_addr_led> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <note_pass_led> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
     Found 25-bit up counter for signal <clkdiv>.
     Found 4-bit up counter for signal <cntr>.
     Summary:
 	inferred   2 Counter(s).
 Unit <Nexysdemo> synthesized.
 
+WARNING:Xst:524 - All outputs of the instance <mux_to_8> of the block <mux_3_to_8> are unconnected in block <speakerPulseGenerator>.
+   This instance will be removed from the design along with all underlying logic
 
 =========================================================================
 HDL Synthesis Report
 
 Macro Statistics
 # RAMs                                                 : 1
- 64x16-bit single-port RAM                             : 1
-# ROMs                                                 : 7
+ 256x16-bit single-port RAM                            : 1
+# ROMs                                                 : 6
  16x7-bit ROM                                          : 4
- 16x8-bit ROM                                          : 1
  32x32-bit ROM                                         : 1
  32x8-bit ROM                                          : 1
-# Counters                                             : 15
+# Adders/Subtractors                                   : 1
+ 14-bit adder                                          : 1
+# Counters                                             : 17
+ 14-bit up counter                                     : 1
  16-bit up counter                                     : 1
  17-bit up counter                                     : 1
  2-bit up counter                                      : 3
  25-bit up counter                                     : 1
  32-bit up counter                                     : 4
- 4-bit up counter                                      : 1
+ 4-bit up counter                                      : 2
  7-bit updown counter                                  : 1
  8-bit up counter                                      : 3
-# Registers                                            : 20
- 1-bit register                                        : 9
+# Registers                                            : 39
+ 1-bit register                                        : 27
+ 14-bit register                                       : 1
  16-bit register                                       : 1
  4-bit register                                        : 1
  8-bit register                                        : 9
 # Latches                                              : 1
- 8-bit latch                                           : 1
-# Comparators                                          : 11
+ 1-bit latch                                           : 1
+# Comparators                                          : 12
+ 14-bit comparator greater                             : 1
  17-bit comparator greatequal                          : 1
  32-bit comparator greatequal                          : 1
  32-bit comparator greater                             : 2
@@ -505,7 +594,8 @@ Macro Statistics
  7-bit comparator greater                              : 1
  7-bit comparator less                                 : 1
  7-bit comparator lessequal                            : 1
- 8-bit comparator less                                 : 2
+ 8-bit comparator greatequal                           : 1
+ 8-bit comparator less                                 : 1
 # Multiplexers                                         : 1
  8-bit 4-to-1 multiplexer                              : 1
 # Decoders                                             : 1
@@ -519,6 +609,32 @@ Macro Statistics
 *                       Advanced HDL Synthesis                          *
 =========================================================================
 
+Analyzing FSM <FSM_4> for best encoding.
+Optimizing FSM <signal_controller/current_state/FSM> on signal <current_state[1:9]> with one-hot encoding.
+------------------------------------------
+ State                       | Encoding
+------------------------------------------
+ s0_init                     | 000000001
+ s1_predefined_tempo_reading | 000000010
+ s1_wait                     | 000000100
+ s2_addr_inc_start           | 000100000
+ s3_addr_inc_end             | 001000000
+ s5_tempo_increase_start     | 000001000
+ s6_tempo_increase_done      | 010000000
+ s7_tempo_decrease_start     | 000010000
+ s8_tempo_decrease_done      | 100000000
+------------------------------------------
+Analyzing FSM <FSM_3> for best encoding.
+Optimizing FSM <pulse_generator/current_state/FSM> on signal <current_state[1:3]> with user encoding.
+--------------------------------------
+ State                    | Encoding
+--------------------------------------
+ s0_init                  | 000
+ s1_wait_pulse            | 001
+ s2_get_pulse             | 010
+ s3_pulse_length_increase | 011
+ s4_pulse_done            | 100
+--------------------------------------
 Analyzing FSM <FSM_2> for best encoding.
 Optimizing FSM <memory_Manager/controller/state/FSM> on signal <state[1:2]> with user encoding.
 -----------------------------
@@ -545,24 +661,16 @@ Optimizing FSM <memory_Manager/epp_data_transfer/stEppCur/FSM> on signal <stEppC
  10000011 | 1100
 ----------------------
 Analyzing FSM <FSM_0> for best encoding.
-Optimizing FSM <signal_controller/current_state/FSM> on signal <current_state[1:9]> with one-hot encoding.
-------------------------------------------
- State                       | Encoding
-------------------------------------------
- s0_init                     | 000000001
- s1_predefined_tempo_reading | 000000010
- s1_wait                     | 000000100
- s2_addr_inc_start           | 000100000
- s3_addr_inc_end             | 001000000
- s5_tempo_increase_start     | 000001000
- s6_tempo_increase_done      | 010000000
- s7_tempo_decrease_start     | 000010000
- s8_tempo_decrease_done      | 100000000
-------------------------------------------
-WARNING:Xst:1290 - Hierarchical block <mux_to_8> is unconnected in block <pulse_generator>.
-   It will be removed from the design.
-WARNING:Xst:524 - All outputs of the instance <pulse_generator/mux_to_8> of the block <mux_3_to_8> are unconnected in block <Nexysdemo>.
-   This instance will be removed from the design along with all underlying logic
+Optimizing FSM <Bluetooth_receiver/rxState/FSM> on signal <rxState[1:5]> with one-hot encoding.
+------------------------
+ State      | Encoding
+------------------------
+ s0_reset   | 00001
+ load       | 00010
+ stable     | 00100
+ save       | 01000
+ data_ready | 10000
+------------------------
 
 Synthesizing (advanced) Unit <blockRam>.
 INFO:Xst:3226 - The RAM <Mram_RAM> will be implemented as a BLOCK RAM, absorbing the following register(s): <data_out>
@@ -570,7 +678,7 @@ INFO:Xst:3226 - The RAM <Mram_RAM> will be implemented as a BLOCK RAM, absorbing
     | ram_type           | Block                               |          |
     -----------------------------------------------------------------------
     | Port A                                                              |
-    |     aspect ratio   | 64-word x 16-bit                    |          |
+    |     aspect ratio   | 256-word x 16-bit                   |          |
     |     mode           | read-first                          |          |
     |     clkA           | connected to signal <clk>           | rise     |
     |     weA            | connected to signal <write_enable>  | high     |
@@ -587,23 +695,28 @@ Advanced HDL Synthesis Report
 
 Macro Statistics
 # RAMs                                                 : 1
- 64x16-bit single-port block RAM                       : 1
+ 256x16-bit single-port block RAM                      : 1
 # ROMs                                                 : 6
  16x7-bit ROM                                          : 4
  32x32-bit ROM                                         : 1
  32x8-bit ROM                                          : 1
-# Counters                                             : 13
+# Adders/Subtractors                                   : 1
+ 14-bit adder                                          : 1
+# Counters                                             : 15
+ 14-bit up counter                                     : 1
  16-bit up counter                                     : 1
  17-bit up counter                                     : 1
  2-bit up counter                                      : 3
  32-bit up counter                                     : 4
+ 4-bit up counter                                      : 1
  7-bit updown counter                                  : 1
  8-bit up counter                                      : 3
-# Registers                                            : 100
- Flip-Flops                                            : 100
+# Registers                                            : 132
+ Flip-Flops                                            : 132
 # Latches                                              : 1
- 8-bit latch                                           : 1
-# Comparators                                          : 11
+ 1-bit latch                                           : 1
+# Comparators                                          : 12
+ 14-bit comparator greater                             : 1
  17-bit comparator greatequal                          : 1
  32-bit comparator greatequal                          : 1
  32-bit comparator greater                             : 2
@@ -612,7 +725,8 @@ Macro Statistics
  7-bit comparator greater                              : 1
  7-bit comparator less                                 : 1
  7-bit comparator lessequal                            : 1
- 8-bit comparator less                                 : 2
+ 8-bit comparator greatequal                           : 1
+ 8-bit comparator less                                 : 1
 # Multiplexers                                         : 1
  8-bit 4-to-1 multiplexer                              : 1
 # Decoders                                             : 1
@@ -623,16 +737,18 @@ Macro Statistics
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
-WARNING:Xst:2677 - Node <pulse_generator/pulse_generator/last_1> of sequential type is unconnected in block <Nexysdemo>.
 WARNING:Xst:2677 - Node <beats_Manager/pulse_generator/last_1> of sequential type is unconnected in block <Nexysdemo>.
+WARNING:Xst:2677 - Node <pulse_generator/pulse_generator/last_1> of sequential type is unconnected in block <Nexysdemo>.
 
 Optimizing unit <Nexysdemo> ...
 
-Optimizing unit <controller> ...
+Optimizing unit <UART_RX_CTRL> ...
+
+Optimizing unit <memory_access_controller> ...
 
 Optimizing unit <beatsHurdleCalculator> ...
 
-Optimizing unit <memory_access_controller> ...
+Optimizing unit <controller> ...
 
 Optimizing unit <note2segment> ...
 WARNING:Xst:2716 - In unit Nexysdemo, both signals memory_Manager/data_write_bus<15> and memory_Manager/data_write_bus<11> have a KEEP attribute, signal memory_Manager/data_write_bus<11> will be lost.
@@ -642,16 +758,6 @@ WARNING:Xst:2716 - In unit Nexysdemo, both signals memory_Manager/data_write_bus
 WARNING:Xst:2716 - In unit Nexysdemo, both signals memory_Manager/data_write_bus<7> and memory_Manager/data_write_bus<11> have a KEEP attribute, signal memory_Manager/data_write_bus<11> will be lost.
 WARNING:Xst:2716 - In unit Nexysdemo, both signals memory_Manager/data_write_bus<6> and memory_Manager/data_write_bus<11> have a KEEP attribute, signal memory_Manager/data_write_bus<11> will be lost.
 WARNING:Xst:2716 - In unit Nexysdemo, both signals memory_Manager/data_write_bus<5> and memory_Manager/data_write_bus<11> have a KEEP attribute, signal memory_Manager/data_write_bus<11> will be lost.
-WARNING:Xst:2677 - Node <signal_controller/next_addr_15> of sequential type is unconnected in block <Nexysdemo>.
-WARNING:Xst:2677 - Node <signal_controller/next_addr_14> of sequential type is unconnected in block <Nexysdemo>.
-WARNING:Xst:2677 - Node <signal_controller/next_addr_13> of sequential type is unconnected in block <Nexysdemo>.
-WARNING:Xst:2677 - Node <signal_controller/next_addr_12> of sequential type is unconnected in block <Nexysdemo>.
-WARNING:Xst:2677 - Node <signal_controller/next_addr_11> of sequential type is unconnected in block <Nexysdemo>.
-WARNING:Xst:2677 - Node <signal_controller/next_addr_10> of sequential type is unconnected in block <Nexysdemo>.
-WARNING:Xst:2677 - Node <signal_controller/next_addr_9> of sequential type is unconnected in block <Nexysdemo>.
-WARNING:Xst:2677 - Node <signal_controller/next_addr_8> of sequential type is unconnected in block <Nexysdemo>.
-WARNING:Xst:2677 - Node <signal_controller/next_addr_7> of sequential type is unconnected in block <Nexysdemo>.
-WARNING:Xst:2677 - Node <signal_controller/next_addr_6> of sequential type is unconnected in block <Nexysdemo>.
 WARNING:Xst:2677 - Node <beats_Manager/beats_Hurdle_Calculator/times_of_beat_within_period_counter_31> of sequential type is unconnected in block <Nexysdemo>.
 WARNING:Xst:2677 - Node <beats_Manager/beats_Hurdle_Calculator/times_of_beat_within_period_counter_30> of sequential type is unconnected in block <Nexysdemo>.
 WARNING:Xst:2677 - Node <beats_Manager/beats_Hurdle_Calculator/times_of_beat_within_period_counter_29> of sequential type is unconnected in block <Nexysdemo>.
@@ -660,14 +766,21 @@ WARNING:Xst:2677 - Node <beats_Manager/beats_Hurdle_Calculator/times_of_beat_wit
 WARNING:Xst:2677 - Node <beats_Manager/beats_Hurdle_Calculator/times_of_beat_within_period_counter_26> of sequential type is unconnected in block <Nexysdemo>.
 WARNING:Xst:2677 - Node <beats_Manager/beats_Hurdle_Calculator/times_of_beat_within_period_counter_25> of sequential type is unconnected in block <Nexysdemo>.
 WARNING:Xst:2677 - Node <beats_Manager/beats_Hurdle_Calculator/times_of_beat_within_period_counter_24> of sequential type is unconnected in block <Nexysdemo>.
-WARNING:Xst:2677 - Node <memory_Manager/controller/ready_memory_addr_7> of sequential type is unconnected in block <Nexysdemo>.
-WARNING:Xst:2677 - Node <memory_Manager/controller/ready_memory_addr_6> of sequential type is unconnected in block <Nexysdemo>.
-WARNING:Xst:2677 - Node <memory_Manager/controller/current_addr_7> of sequential type is unconnected in block <Nexysdemo>.
-WARNING:Xst:2677 - Node <memory_Manager/controller/current_addr_6> of sequential type is unconnected in block <Nexysdemo>.
+WARNING:Xst:2677 - Node <beats_Manager/beats_Hurdle_Calculator/times_of_beat_within_period_counter_23> of sequential type is unconnected in block <Nexysdemo>.
+WARNING:Xst:2677 - Node <beats_Manager/beats_Hurdle_Calculator/times_of_beat_within_period_counter_22> of sequential type is unconnected in block <Nexysdemo>.
+WARNING:Xst:2677 - Node <beats_Manager/beats_Hurdle_Calculator/times_of_beat_within_period_counter_21> of sequential type is unconnected in block <Nexysdemo>.
+WARNING:Xst:2677 - Node <signal_controller/next_addr_15> of sequential type is unconnected in block <Nexysdemo>.
+WARNING:Xst:2677 - Node <signal_controller/next_addr_14> of sequential type is unconnected in block <Nexysdemo>.
+WARNING:Xst:2677 - Node <signal_controller/next_addr_13> of sequential type is unconnected in block <Nexysdemo>.
+WARNING:Xst:2677 - Node <signal_controller/next_addr_12> of sequential type is unconnected in block <Nexysdemo>.
+WARNING:Xst:2677 - Node <signal_controller/next_addr_11> of sequential type is unconnected in block <Nexysdemo>.
+WARNING:Xst:2677 - Node <signal_controller/next_addr_10> of sequential type is unconnected in block <Nexysdemo>.
+WARNING:Xst:2677 - Node <signal_controller/next_addr_9> of sequential type is unconnected in block <Nexysdemo>.
+WARNING:Xst:2677 - Node <signal_controller/next_addr_8> of sequential type is unconnected in block <Nexysdemo>.
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block Nexysdemo, actual ratio is 7.
+Found area constraint ratio of 100 (+ 5) on block Nexysdemo, actual ratio is 9.
 
 Final Macro Processing ...
 
@@ -675,8 +788,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 276
- Flip-Flops                                            : 276
+# Registers                                            : 327
+ Flip-Flops                                            : 327
 
 =========================================================================
 
@@ -702,41 +815,43 @@ Optimization Goal                  : Speed
 Keep Hierarchy                     : No
 
 Design Statistics
-# IOs                              : 46
+# IOs                              : 49
 
 Cell Usage :
-# BELS                             : 946
+# BELS                             : 1104
 #      GND                         : 2
-#      INV                         : 26
-#      LUT1                        : 94
-#      LUT2                        : 155
+#      INV                         : 33
+#      LUT1                        : 125
+#      LUT2                        : 160
 #      LUT2_D                      : 1
-#      LUT3                        : 59
+#      LUT3                        : 82
 #      LUT3_D                      : 8
-#      LUT4                        : 153
-#      LUT4_D                      : 3
-#      LUT4_L                      : 8
-#      MUXCY                       : 253
-#      MUXF5                       : 18
+#      LUT4                        : 178
+#      LUT4_D                      : 4
+#      LUT4_L                      : 9
+#      MUXCY                       : 288
+#      MUXF5                       : 19
 #      VCC                         : 1
-#      XORCY                       : 165
-# FlipFlops/Latches                : 282
-#      FD                          : 15
-#      FDC                         : 72
+#      XORCY                       : 194
+# FlipFlops/Latches                : 328
+#      FD                          : 32
+#      FDC                         : 76
 #      FDCE                        : 97
-#      FDE                         : 70
+#      FDE                         : 79
 #      FDP                         : 2
-#      FDR                         : 18
+#      FDR                         : 34
+#      FDRE                        : 4
 #      FDS                         : 2
-#      LD_1                        : 6
+#      FDSE                        : 1
+#      LD                          : 1
 # RAMS                             : 1
 #      RAMB16                      : 1
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
-# IO Buffers                       : 36
-#      IBUF                        : 6
+# IO Buffers                       : 37
+#      IBUF                        : 5
 #      IOBUF                       : 8
-#      OBUF                        : 22
+#      OBUF                        : 24
 =========================================================================
 
 Device utilization summary:
@@ -744,11 +859,11 @@ Device utilization summary:
 
 Selected Device : 3s400ft256-4 
 
- Number of Slices:                      262  out of   3584     7%  
- Number of Slice Flip Flops:            282  out of   7168     3%  
- Number of 4 input LUTs:                507  out of   7168     7%  
- Number of IOs:                          46
- Number of bonded IOBs:                  37  out of    173    21%  
+ Number of Slices:                      314  out of   3584     8%  
+ Number of Slice Flip Flops:            328  out of   7168     4%  
+ Number of 4 input LUTs:                600  out of   7168     8%  
+ Number of IOs:                          49
+ Number of bonded IOBs:                  38  out of    173    21%  
  Number of BRAMs:                         1  out of     16     6%  
  Number of GCLKs:                         1  out of      8    12%  
 
@@ -770,13 +885,15 @@ NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
 
 Clock Information:
 ------------------
-----------------------------------------+----------------------------------------------------+-------+
-Clock Signal                            | Clock buffer(FF name)                              | Load  |
-----------------------------------------+----------------------------------------------------+-------+
-beats_Manager/pulse_generator/pulse     | NONE(pulse_generator/note_done)                    | 9     |
-mclk                                    | BUFGP                                              | 268   |
-memory_Manager/controller/state_FSM_FFd1| NONE(memory_Manager/controller/ready_memory_addr_5)| 6     |
-----------------------------------------+----------------------------------------------------+-------+
+-------------------------------------------------------------------+----------------------------------+-------+
+Clock Signal                                                       | Clock buffer(FF name)            | Load  |
+-------------------------------------------------------------------+----------------------------------+-------+
+mclk                                                               | BUFGP                            | 328   |
+Bluetooth_receiver/READY_or0000(Bluetooth_receiver/READY_or00001:O)| NONE(*)(Bluetooth_receiver/READY)| 1     |
+-------------------------------------------------------------------+----------------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
 INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 
 Asynchronous Control Signals Information:
@@ -784,11 +901,11 @@ Asynchronous Control Signals Information:
 -----------------------------------------------------------------------------------------+-------------------------------------------------------------+-------+
 Control Signal                                                                           | Buffer(FF name)                                             | Load  |
 -----------------------------------------------------------------------------------------+-------------------------------------------------------------+-------+
-tempo_reset(signal_controller/tempo_reset1:O)                                            | NONE(beats_Manager/beats_Hurdle_Calculator/calculation_done)| 65    |
-pulse_generator/pulse_generator/noise_on_trigger_inv(signal_controller/speaker_reset1:O) | NONE(pulse_generator/note_done)                             | 43    |
+tempo_reset(signal_controller/tempo_reset1:O)                                            | NONE(beats_Manager/beats_Hurdle_Calculator/calculation_done)| 62    |
+pulse_generator/pulse_generator/noise_on_trigger_inv(signal_controller/speaker_reset1:O) | NONE(pulse_generator/current_state_FSM_FFd1)                | 46    |
 beats_Manager/calculation_done_inv(beats_Manager/calculation_done_inv1_INV_0:O)          | NONE(beats_Manager/pulse_generator/clock_counter_0)         | 34    |
-reset(reset1_INV_0:O)                                                                    | NONE(signal_controller/curr_tempo_0)                        | 23    |
-memory_Manager/controller/addr_reset_trigger(memory_Manager/controller/state_FSM_Out01:O)| NONE(memory_Manager/controller/current_addr_0)              | 6     |
+reset(reset1_INV_0:O)                                                                    | NONE(signal_controller/curr_tempo_0)                        | 25    |
+memory_Manager/controller/addr_reset_trigger(memory_Manager/controller/state_FSM_Out11:O)| NONE(memory_Manager/controller/current_addr_0)              | 8     |
 -----------------------------------------------------------------------------------------+-------------------------------------------------------------+-------+
 
 Timing Summary:
@@ -805,40 +922,9 @@ Timing Detail:
 All values displayed in nanoseconds (ns)
 
 =========================================================================
-Timing constraint: Default period analysis for Clock 'beats_Manager/pulse_generator/pulse'
-  Clock period: 6.765ns (frequency: 147.820MHz)
-  Total number of paths / destination ports: 180 / 17
--------------------------------------------------------------------------
-Delay:               6.765ns (Levels of Logic = 10)
-  Source:            pulse_generator/note_pass_length_0 (FF)
-  Destination:       pulse_generator/note_pass_length_0 (FF)
-  Source Clock:      beats_Manager/pulse_generator/pulse rising
-  Destination Clock: beats_Manager/pulse_generator/pulse rising
-
-  Data Path: pulse_generator/note_pass_length_0 to pulse_generator/note_pass_length_0
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FDCE:C->Q             2   0.720   1.216  pulse_generator/note_pass_length_0 (pulse_generator/note_pass_length_0)
-     LUT2:I0->O            1   0.551   0.000  pulse_generator/Mcompar_note_pass_length_cmp_lt0000_lut<0> (pulse_generator/Mcompar_note_pass_length_cmp_lt0000_lut<0>)
-     MUXCY:S->O            1   0.500   0.000  pulse_generator/Mcompar_note_pass_length_cmp_lt0000_cy<0> (pulse_generator/Mcompar_note_pass_length_cmp_lt0000_cy<0>)
-     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcompar_note_pass_length_cmp_lt0000_cy<1> (pulse_generator/Mcompar_note_pass_length_cmp_lt0000_cy<1>)
-     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcompar_note_pass_length_cmp_lt0000_cy<2> (pulse_generator/Mcompar_note_pass_length_cmp_lt0000_cy<2>)
-     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcompar_note_pass_length_cmp_lt0000_cy<3> (pulse_generator/Mcompar_note_pass_length_cmp_lt0000_cy<3>)
-     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcompar_note_pass_length_cmp_lt0000_cy<4> (pulse_generator/Mcompar_note_pass_length_cmp_lt0000_cy<4>)
-     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcompar_note_pass_length_cmp_lt0000_cy<5> (pulse_generator/Mcompar_note_pass_length_cmp_lt0000_cy<5>)
-     MUXCY:CI->O           1   0.064   0.000  pulse_generator/Mcompar_note_pass_length_cmp_lt0000_cy<6> (pulse_generator/Mcompar_note_pass_length_cmp_lt0000_cy<6>)
-     MUXCY:CI->O           2   0.281   0.877  pulse_generator/Mcompar_note_pass_length_cmp_lt0000_cy<7> (pulse_generator/Mcompar_note_pass_length_cmp_lt0000_cy<7>)
-     INV:I->O              8   0.551   1.083  pulse_generator/Mcompar_note_pass_length_cmp_lt0000_cy<7>_inv_INV_0 (pulse_generator/note_pass_length_cmp_lt0000)
-     FDCE:CE                   0.602          pulse_generator/note_pass_length_0
-    ----------------------------------------
-    Total                      6.765ns (3.589ns logic, 3.176ns route)
-                                       (53.1% logic, 46.9% route)
-
-=========================================================================
 Timing constraint: Default period analysis for Clock 'mclk'
   Clock period: 10.970ns (frequency: 91.155MHz)
-  Total number of paths / destination ports: 69936 / 378
+  Total number of paths / destination ports: 67166 / 489
 -------------------------------------------------------------------------
 Delay:               10.970ns (Levels of Logic = 66)
   Source:            pulse_generator/pulse_generator/clock_counter_0 (FF)
@@ -924,7 +1010,7 @@ Delay:               10.970ns (Levels of Logic = 66)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'mclk'
-  Total number of paths / destination ports: 83 / 77
+  Total number of paths / destination ports: 82 / 76
 -------------------------------------------------------------------------
 Offset:              5.135ns (Levels of Logic = 4)
   Source:            EppAstb (PAD)
@@ -936,8 +1022,8 @@ Offset:              5.135ns (Levels of Logic = 4)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      IBUF:I->O            13   0.821   1.509  EppAstb_IBUF (EppAstb_IBUF)
-     LUT4:I0->O            1   0.551   0.000  memory_Manager/epp_data_transfer/stEppCur_FSM_FFd2-In302 (memory_Manager/epp_data_transfer/stEppCur_FSM_FFd2-In302)
-     MUXF5:I0->O           1   0.360   1.140  memory_Manager/epp_data_transfer/stEppCur_FSM_FFd2-In30_f5 (memory_Manager/epp_data_transfer/stEppCur_FSM_FFd2-In30)
+     LUT4:I0->O            1   0.551   0.000  memory_Manager/epp_data_transfer/stEppCur_FSM_FFd2-In301 (memory_Manager/epp_data_transfer/stEppCur_FSM_FFd2-In301)
+     MUXF5:I1->O           1   0.360   1.140  memory_Manager/epp_data_transfer/stEppCur_FSM_FFd2-In30_f5 (memory_Manager/epp_data_transfer/stEppCur_FSM_FFd2-In30)
      LUT2:I0->O            1   0.551   0.000  memory_Manager/epp_data_transfer/stEppCur_FSM_FFd2-In441 (memory_Manager/epp_data_transfer/stEppCur_FSM_FFd2-In44)
      FDS:D                     0.203          memory_Manager/epp_data_transfer/stEppCur_FSM_FFd2
     ----------------------------------------
@@ -949,19 +1035,19 @@ Timing constraint: Default OFFSET OUT AFTER for Clock 'mclk'
   Total number of paths / destination ports: 363 / 28
 -------------------------------------------------------------------------
 Offset:              14.598ns (Levels of Logic = 5)
-  Source:            memory_Manager/epp_data_transfer/regEppAdr_0 (FF)
+  Source:            memory_Manager/epp_data_transfer/regEppAdr_2 (FF)
   Destination:       EppDB<6> (PAD)
   Source Clock:      mclk rising
 
-  Data Path: memory_Manager/epp_data_transfer/regEppAdr_0 to EppDB<6>
+  Data Path: memory_Manager/epp_data_transfer/regEppAdr_2 to EppDB<6>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDE:C->Q             18   0.720   1.756  memory_Manager/epp_data_transfer/regEppAdr_0 (memory_Manager/epp_data_transfer/regEppAdr_0)
-     LUT3_D:I0->O          7   0.551   1.405  memory_Manager/epp_data_transfer/busEppData_cmp_eq00021 (memory_Manager/epp_data_transfer/busEppData_cmp_eq0002)
+     FDE:C->Q             18   0.720   1.612  memory_Manager/epp_data_transfer/regEppAdr_2 (memory_Manager/epp_data_transfer/regEppAdr_2)
+     LUT3_D:I1->O          7   0.551   1.405  memory_Manager/epp_data_transfer/busEppData_cmp_eq00021 (memory_Manager/epp_data_transfer/busEppData_cmp_eq0002)
      LUT4:I0->O            1   0.551   0.996  memory_Manager/epp_data_transfer/busEppData<6>9 (memory_Manager/epp_data_transfer/busEppData<6>9)
-     LUT4:I1->O            2   0.551   1.072  memory_Manager/epp_data_transfer/busEppData<6>36 (memory_Manager/epp_data_transfer/busEppData<6>36)
-     LUT3:I1->O            1   0.551   0.801  memory_Manager/epp_data_transfer/busEppOut<6>1 (memory_Manager/epp_data_transfer/busEppOut<6>)
+     LUT4:I1->O            2   0.551   1.216  memory_Manager/epp_data_transfer/busEppData<6>36 (memory_Manager/epp_data_transfer/busEppData<6>36)
+     LUT3:I0->O            1   0.551   0.801  memory_Manager/epp_data_transfer/busEppOut<6>1 (memory_Manager/epp_data_transfer/busEppOut<6>)
      IOBUF:I->IO               5.644          EppDB_6_IOBUF (EppDB<6>)
     ----------------------------------------
     Total                     14.598ns (8.568ns logic, 6.030ns route)
@@ -990,14 +1076,14 @@ Delay:               9.691ns (Levels of Logic = 4)
 =========================================================================
 
 
-Total REAL time to Xst completion: 20.00 secs
-Total CPU time to Xst completion: 20.17 secs
+Total REAL time to Xst completion: 18.00 secs
+Total CPU time to Xst completion: 17.63 secs
  
 --> 
 
-Total memory usage is 276040 kilobytes
+Total memory usage is 282184 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   61 (   0 filtered)
-Number of infos    :    6 (   0 filtered)
+Number of warnings :   64 (   0 filtered)
+Number of infos    :    4 (   0 filtered)
 

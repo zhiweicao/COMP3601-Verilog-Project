@@ -60,18 +60,28 @@ architecture Behavioral of speakerPulseGenerator is
            output : out  STD_LOGIC_VECTOR (7 downto 0));
 	end component;
 
+	component nodeLengtMapping is
+    Port ( note_length					: in  std_logic_vector(7 downto 0);
+			  note_length_beats			: out  std_logic_vector(7 downto 0)
+			  );
+	end component;
+
 	------------------------------------------------------------------------
 	-- signal Declarations
 	------------------------------------------------------------------------
+	
+	TYPE State_types IS (S0_init, S1_wait_pulse, S2_get_pulse, S3_pulse_length_increase, S4_pulse_done);
+	SIGNAL current_state				: State_types;
+	
 	signal note_pass_length 		: std_logic_vector(7 downto 0);
+	signal next_length		 		: std_logic_vector(7 downto 0);
+	signal note_length_beats 		: std_logic_vector(7 downto 0);
 	signal note_pass_out	 		: std_logic_vector(7 downto 0);
 	signal note_on_hurdle			: STD_LOGIC_VECTOR(31 downto 0);
 	signal pulse_on					: std_logic;
-	
+	signal pulse_increase					: std_logic;
 begin
 	pulse_on	 <= not reset;
-	note_pass_led <= note_pass_out;
-	
 	-- Hurdle Mapping of Note
 	word_mapping :  word2hurdle
 	port map ( word      			   	=> current_note(4 downto 0),
@@ -89,20 +99,76 @@ begin
 	port map ( input							=> note_pass_length(3 downto 0),
 				  output 						=> note_pass_out
 				);	
-	
-	process(beat_pluse)
-		begin
-			if reset ='1' then
-				note_pass_length <= X"00";
+	node_lengt_mapping:  nodeLengtMapping
+	port map ( note_length							=> note_length,
+				  note_length_beats 					=> note_length_beats
+				);	
+				
+	FSM:PROCESS (reset, clk)
+	BEGIN
+		IF reset = '1' THEN
+			current_state 	<= S0_init;
+		ELSIF (clk'EVENT AND clk = '1') THEN
+			CASE current_state IS
+				WHEN S0_init =>
+					current_state <= S1_wait_pulse;
+				WHEN S1_wait_pulse =>
+					if beat_pluse = '1' then
+						current_state <= S2_get_pulse;
+					end if;
+				WHEN S2_get_pulse =>
+					if beat_pluse = '0' then
+						current_state <= S3_pulse_length_increase;
+					end if;
+				WHEN S3_pulse_length_increase =>
+					current_state <= S4_pulse_done;
+				WHEN S4_pulse_done =>
+					current_state <= S1_wait_pulse;
+			END CASE;
+		END IF;
+	END PROCESS;
+--				note_pass_led(3 downto 0) <= X"1";
+	FSM_OUT:PROCESS (current_state)
+	BEGIN
+		pulse_increase <= '0';
+		CASE current_state IS
+			WHEN S0_init =>
+				note_pass_led(3 downto 0) <= X"1";
+			WHEN S1_wait_pulse =>
+				note_pass_led(3 downto 0) <= X"2";
+			WHEN S2_get_pulse =>
+				note_pass_led(3 downto 0) <= X"3";
+			WHEN S3_pulse_length_increase =>
+				note_pass_led(3 downto 0) <= X"4";
+				pulse_increase <= '1';
+			WHEN S4_pulse_done =>
+				note_pass_led(3 downto 0) <= X"5";
+
+			END CASE;
+	END PROCESS;
+	node_done_process:PROCESS (reset, clk)
+	BEGIN
+		IF reset = '1' THEN
+			note_done <= '0';
+		ELSIF (clk'EVENT AND clk = '1') THEN
+			if note_pass_length >= note_length_beats then
+				note_done <= '1';
+			else 
 				note_done <= '0';
-			elsif beat_pluse = '1' and beat_pluse'Event then
-				if note_pass_length < note_length then
-					note_pass_length <= note_pass_length + 1;
-				else 
-					note_done <= '1';
-				end if;
 			end if;
-	end process;
+		END IF;
+	END PROCESS;
+
+	pulse_increase_process:PROCESS (reset, clk)
+	BEGIN
+		IF reset = '1' THEN
+			note_pass_length <= X"00";
+		ELSIF (clk'EVENT AND clk = '1') THEN
+			if pulse_increase = '1' then
+				note_pass_length <= note_pass_length + 1;
+			end if;
+		END IF;
+	END PROCESS;
 
 end Behavioral;
 

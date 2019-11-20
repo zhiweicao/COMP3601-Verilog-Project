@@ -14,13 +14,13 @@ END blockRam;
 
 ARCHITECTURE syn OF blockRam IS
 -- signals
-	TYPE ram_type IS array (63 downto 0) OF std_logic_vector (15 downto 0);
+	TYPE ram_type IS array (255 downto 0) OF std_logic_vector (15 downto 0);
 	SIGNAL RAM: ram_type;
 BEGIN
 	PROCESS (clk)
 	BEGIN
 --		IF reset = '1' THEN
---			RAM(0)  <= X"0000";
+--			RAM(0)  <= X"0078";
 --			RAM(1)  <= X"0101";
 --			RAM(2)  <= X"0202";
 --			RAM(3)  <= X"0303";
@@ -47,7 +47,7 @@ BEGIN
 --			RAM(24)  <= X"0618";
 --			RAM(25)  <= X"0119";
 --
---			ELS
+--		ELSIF rising_edge(clk) THEN
 		IF rising_edge(clk) THEN
 			IF memory_access_enable = '1' THEN
 				IF write_enable = '1' THEN

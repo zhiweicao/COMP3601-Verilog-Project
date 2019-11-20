@@ -45,20 +45,19 @@ Setup/Hold to clock mclk
             |Max Setup to|Max Hold to |                  | Clock  |
 Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
 ------------+------------+------------+------------------+--------+
-EppAstb     |    3.793(R)|    0.286(R)|mclk_BUFGP        |   0.000|
-EppDB<0>    |    1.785(R)|    0.609(R)|mclk_BUFGP        |   0.000|
-EppDB<1>    |    1.169(R)|    0.915(R)|mclk_BUFGP        |   0.000|
-EppDB<2>    |    1.561(R)|    0.779(R)|mclk_BUFGP        |   0.000|
-EppDB<3>    |    1.744(R)|    0.639(R)|mclk_BUFGP        |   0.000|
-EppDB<4>    |    1.476(R)|    0.609(R)|mclk_BUFGP        |   0.000|
-EppDB<5>    |    1.702(R)|    0.666(R)|mclk_BUFGP        |   0.000|
-EppDB<6>    |    1.448(R)|    0.870(R)|mclk_BUFGP        |   0.000|
-EppDB<7>    |    1.363(R)|    1.208(R)|mclk_BUFGP        |   0.000|
-EppDstb     |    1.117(R)|    0.830(R)|mclk_BUFGP        |   0.000|
-EppWr       |    2.290(R)|    0.549(R)|mclk_BUFGP        |   0.000|
-swt<0>      |    1.209(R)|    0.502(R)|mclk_BUFGP        |   0.000|
-swt<3>      |    0.395(R)|    1.153(R)|mclk_BUFGP        |   0.000|
-swt<7>      |    2.146(R)|    0.105(R)|mclk_BUFGP        |   0.000|
+EppAstb     |    2.385(R)|    1.018(R)|mclk_BUFGP        |   0.000|
+EppDB<0>    |    1.475(R)|    0.900(R)|mclk_BUFGP        |   0.000|
+EppDB<1>    |    1.199(R)|    1.237(R)|mclk_BUFGP        |   0.000|
+EppDB<2>    |    1.788(R)|    0.614(R)|mclk_BUFGP        |   0.000|
+EppDB<3>    |    1.729(R)|    0.658(R)|mclk_BUFGP        |   0.000|
+EppDB<4>    |    1.922(R)|    0.475(R)|mclk_BUFGP        |   0.000|
+EppDB<5>    |    1.431(R)|    0.644(R)|mclk_BUFGP        |   0.000|
+EppDB<6>    |    1.437(R)|    0.879(R)|mclk_BUFGP        |   0.000|
+EppDB<7>    |    1.862(R)|    0.673(R)|mclk_BUFGP        |   0.000|
+EppDstb     |    1.129(R)|    1.029(R)|mclk_BUFGP        |   0.000|
+EppWr       |    1.847(R)|    0.481(R)|mclk_BUFGP        |   0.000|
+UART_RXD    |    1.668(R)|    0.140(R)|mclk_BUFGP        |   0.000|
+swt<7>      |    2.729(R)|    0.137(R)|mclk_BUFGP        |   0.000|
 ------------+------------+------------+------------------+--------+
 
 Clock mclk to Pad
@@ -66,34 +65,34 @@ Clock mclk to Pad
               | clk (edge) |                  | Clock  |
 Destination   |   to PAD   |Internal Clock(s) | Phase  |
 --------------+------------+------------------+--------+
-EppDB<0>      |   16.190(R)|mclk_BUFGP        |   0.000|
-EppDB<1>      |   15.976(R)|mclk_BUFGP        |   0.000|
-EppDB<2>      |   15.248(R)|mclk_BUFGP        |   0.000|
-EppDB<3>      |   14.582(R)|mclk_BUFGP        |   0.000|
-EppDB<4>      |   16.173(R)|mclk_BUFGP        |   0.000|
-EppDB<5>      |   14.720(R)|mclk_BUFGP        |   0.000|
-EppDB<6>      |   14.827(R)|mclk_BUFGP        |   0.000|
-EppDB<7>      |   15.386(R)|mclk_BUFGP        |   0.000|
-EppWait       |   10.405(R)|mclk_BUFGP        |   0.000|
-an<0>         |   11.144(R)|mclk_BUFGP        |   0.000|
-an<1>         |   10.259(R)|mclk_BUFGP        |   0.000|
-an<2>         |   10.269(R)|mclk_BUFGP        |   0.000|
-an<3>         |   10.515(R)|mclk_BUFGP        |   0.000|
-led<0>        |    9.301(R)|mclk_BUFGP        |   0.000|
-led<1>        |    8.449(R)|mclk_BUFGP        |   0.000|
-led<2>        |    9.549(R)|mclk_BUFGP        |   0.000|
-led<3>        |    9.213(R)|mclk_BUFGP        |   0.000|
-led<4>        |    9.600(R)|mclk_BUFGP        |   0.000|
-led<5>        |    9.672(R)|mclk_BUFGP        |   0.000|
-led<6>        |    9.928(R)|mclk_BUFGP        |   0.000|
-speaker_signal|   10.077(R)|mclk_BUFGP        |   0.000|
-ssg<0>        |   16.357(R)|mclk_BUFGP        |   0.000|
-ssg<1>        |   16.067(R)|mclk_BUFGP        |   0.000|
-ssg<2>        |   16.175(R)|mclk_BUFGP        |   0.000|
-ssg<3>        |   16.428(R)|mclk_BUFGP        |   0.000|
-ssg<4>        |   15.248(R)|mclk_BUFGP        |   0.000|
-ssg<5>        |   17.075(R)|mclk_BUFGP        |   0.000|
-ssg<6>        |   16.889(R)|mclk_BUFGP        |   0.000|
+EppDB<0>      |   15.732(R)|mclk_BUFGP        |   0.000|
+EppDB<1>      |   16.141(R)|mclk_BUFGP        |   0.000|
+EppDB<2>      |   16.359(R)|mclk_BUFGP        |   0.000|
+EppDB<3>      |   16.661(R)|mclk_BUFGP        |   0.000|
+EppDB<4>      |   15.775(R)|mclk_BUFGP        |   0.000|
+EppDB<5>      |   16.248(R)|mclk_BUFGP        |   0.000|
+EppDB<6>      |   14.779(R)|mclk_BUFGP        |   0.000|
+EppDB<7>      |   14.342(R)|mclk_BUFGP        |   0.000|
+EppWait       |   11.471(R)|mclk_BUFGP        |   0.000|
+an<0>         |    9.463(R)|mclk_BUFGP        |   0.000|
+an<1>         |    9.516(R)|mclk_BUFGP        |   0.000|
+an<2>         |    9.481(R)|mclk_BUFGP        |   0.000|
+an<3>         |   10.163(R)|mclk_BUFGP        |   0.000|
+led<0>        |    9.593(R)|mclk_BUFGP        |   0.000|
+led<1>        |    9.656(R)|mclk_BUFGP        |   0.000|
+led<2>        |   10.047(R)|mclk_BUFGP        |   0.000|
+led<3>        |    9.253(R)|mclk_BUFGP        |   0.000|
+led<4>        |   10.382(R)|mclk_BUFGP        |   0.000|
+led<5>        |   10.076(R)|mclk_BUFGP        |   0.000|
+led<6>        |   10.443(R)|mclk_BUFGP        |   0.000|
+speaker_signal|   11.242(R)|mclk_BUFGP        |   0.000|
+ssg<0>        |   15.797(R)|mclk_BUFGP        |   0.000|
+ssg<1>        |   17.201(R)|mclk_BUFGP        |   0.000|
+ssg<2>        |   17.344(R)|mclk_BUFGP        |   0.000|
+ssg<3>        |   15.389(R)|mclk_BUFGP        |   0.000|
+ssg<4>        |   16.911(R)|mclk_BUFGP        |   0.000|
+ssg<5>        |   16.645(R)|mclk_BUFGP        |   0.000|
+ssg<6>        |   16.962(R)|mclk_BUFGP        |   0.000|
 --------------+------------+------------------+--------+
 
 Clock to Setup on destination clock mclk
@@ -101,40 +100,40 @@ Clock to Setup on destination clock mclk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-mclk           |   13.265|         |         |         |
+mclk           |   13.008|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Pad to Pad
 ---------------+---------------+---------+
 Source Pad     |Destination Pad|  Delay  |
 ---------------+---------------+---------+
-EppAstb        |EppDB<0>       |    9.997|
-EppAstb        |EppDB<1>       |    9.669|
-EppAstb        |EppDB<2>       |    9.290|
-EppAstb        |EppDB<3>       |    9.000|
-EppAstb        |EppDB<4>       |   10.068|
-EppAstb        |EppDB<5>       |    8.837|
-EppAstb        |EppDB<6>       |    9.762|
-EppAstb        |EppDB<7>       |    9.404|
-EppWr          |EppDB<0>       |    9.702|
-EppWr          |EppDB<1>       |    9.702|
-EppWr          |EppDB<2>       |    9.932|
-EppWr          |EppDB<3>       |    9.942|
-EppWr          |EppDB<4>       |    9.575|
-EppWr          |EppDB<5>       |    9.317|
-EppWr          |EppDB<6>       |    9.658|
-EppWr          |EppDB<7>       |    9.202|
+EppAstb        |EppDB<0>       |   10.422|
+EppAstb        |EppDB<1>       |   10.315|
+EppAstb        |EppDB<2>       |    9.469|
+EppAstb        |EppDB<3>       |    9.474|
+EppAstb        |EppDB<4>       |   10.191|
+EppAstb        |EppDB<5>       |   10.307|
+EppAstb        |EppDB<6>       |    9.706|
+EppAstb        |EppDB<7>       |    8.628|
+EppWr          |EppDB<0>       |    9.828|
+EppWr          |EppDB<1>       |   10.673|
+EppWr          |EppDB<2>       |    9.487|
+EppWr          |EppDB<3>       |   11.011|
+EppWr          |EppDB<4>       |    9.797|
+EppWr          |EppDB<5>       |    9.662|
+EppWr          |EppDB<6>       |    9.663|
+EppWr          |EppDB<7>       |    9.456|
 ---------------+---------------+---------+
 
 
-Analysis completed Tue Oct 08 17:14:11 2019 
+Analysis completed Wed Nov 20 02:00:54 2019 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 152 MB
+Peak Memory Usage: 154 MB
 
 
 

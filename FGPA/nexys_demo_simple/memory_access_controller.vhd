@@ -82,6 +82,7 @@ begin
 					else
 						state <= S3_reading_wait;				
 					end if;
+					
 			END CASE;
 		end if;
 	END PROCESS;
@@ -106,12 +107,12 @@ begin
 				data_write_bus(15 downto 11) <= "00000";
 				write_on <= '1';
 				addr_add_trigger <= '1';
-				ready_memory_addr <= current_addr;
 			WHEN S3_reading_wait =>
-				ready_memory_addr <= data_read_addr(7 downto 0);
 			END CASE;
 	END PROCESS;
-	
+ready_memory_addr <= current_addr when state = S2_data_write else
+				data_read_addr(7 downto 0);
+
 	address_change: PROCESS(state)
 	BEGIN
 		if addr_reset_trigger = '1' then

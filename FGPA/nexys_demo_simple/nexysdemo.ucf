@@ -51,5 +51,10 @@ NET "EppDB<6>" LOC = "M10"; # Bank = 4, Pin name = IO_L29N_4, Type = I/O, Signal
 NET "EppDB<7>" LOC = "R10"; # Bank = 4, Pin name = IO_L30P_4/D3, Type = DUAL, Signal name = U-FD7
 
 #The speaker output Mapping!!!
-NET "speaker_signal" LOC = "T14";
+NET "speaker_signal" LOC = "A9";
+NET "UART_RXD" LOC = "P8";
+NET "PMODBT_CTS" LOC = "T10";
+NET "PMODBT_RST" LOC = "R13";
+
+
 

@@ -1,5 +1,5 @@
 ISim log file
-Running: Z:\comp3601\nexys_demo_simple\controller_test_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb Z:/comp3601/nexys_demo_simple/controller_test_isim_beh.wdb 
+Running: Z:\comp3601\nexys_demo_simple\BeatTest_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb Z:/comp3601/nexys_demo_simple/BeatTest_isim_beh.wdb 
 ISim P.20131013 (signature 0x7708f090)
 ----------------------------------------------------------------------
 INFO:Security:50 - The XILINXD_LICENSE_FILE environment variable is set to '27000@louie.cse.unsw.edu.au'.
@@ -20,3 +20,5 @@ Time resolution is 1 ps
 # run 1000 ns
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
+at 5 ns(1), Instance /beattest/uut/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# run all

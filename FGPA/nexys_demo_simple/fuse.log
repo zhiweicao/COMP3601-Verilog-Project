@@ -1,20 +1,55 @@
-Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o Z:/comp3601/nexys_demo_simple/controller_test_isim_beh.exe -prj Z:/comp3601/nexys_demo_simple/controller_test_beh.prj work.controller_test 
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o Z:/comp3601/nexys_demo_simple/BeatTest_isim_beh.exe -prj Z:/comp3601/nexys_demo_simple/BeatTest_beh.prj work.BeatTest 
 ISim P.20131013 (signature 0x7708f090)
 Number of CPUs detected in this system: 4
 Turning on mult-threading, number of parallel sub-compilation jobs: 8 
 Determining compilation order of HDL files
+Parsing VHDL file "Z:/comp3601/nexys_demo_simple/segment7.vhd" into library work
+Parsing VHDL file "Z:/comp3601/nexys_demo_simple/word2hurdle.vhd" into library work
+Parsing VHDL file "Z:/comp3601/nexys_demo_simple/note2segment.vhd" into library work
+Parsing VHDL file "Z:/comp3601/nexys_demo_simple/node_length_mapping.vhd" into library work
+Parsing VHDL file "Z:/comp3601/nexys_demo_simple/mux_3_to_8.vhd" into library work
+Parsing VHDL file "Z:/comp3601/nexys_demo_simple/memory_access_controller.vhd" into library work
+Parsing VHDL file "Z:/comp3601/nexys_demo_simple/dpimref.vhd" into library work
+Parsing VHDL file "Z:/comp3601/nexys_demo_simple/clock2pulse.vhd" into library work
+Parsing VHDL file "Z:/comp3601/nexys_demo_simple/bluetoothDecoder.vhd" into library work
+Parsing VHDL file "Z:/comp3601/nexys_demo_simple/blockRam.vhd" into library work
+Parsing VHDL file "Z:/comp3601/nexys_demo_simple/beatsHurdleCalculator.vhd" into library work
+Parsing VHDL file "Z:/comp3601/nexys_demo_simple/UART_RX_CTRL.vhd" into library work
+Parsing VHDL file "Z:/comp3601/nexys_demo_simple/speakerPulseGenerator.vhd" into library work
+Parsing VHDL file "Z:/comp3601/nexys_demo_simple/memoryManager.vhd" into library work
+Parsing VHDL file "Z:/comp3601/nexys_demo_simple/display.vhd" into library work
 Parsing VHDL file "Z:/comp3601/nexys_demo_simple/controller.vhd" into library work
-Parsing VHDL file "Z:/comp3601/nexys_demo_simple/controller_test.vhd" into library work
+Parsing VHDL file "Z:/comp3601/nexys_demo_simple/beatsManager.vhd" into library work
+Parsing VHDL file "Z:/comp3601/nexys_demo_simple/Nexysdemo.vhd" into library work
+Parsing VHDL file "Z:/comp3601/nexys_demo_simple/BeatTest.vhd" into library work
 Starting static elaboration
 Completed static elaboration
 Compiling package standard
 Compiling package std_logic_1164
 Compiling package std_logic_arith
 Compiling package std_logic_unsigned
+Compiling architecture behavioral of entity word2hurdle [word2hurdle_default]
+Compiling architecture behavioral of entity clock2pulse [clock2pulse_default]
+Compiling architecture behavioral of entity mux_3_to_8 [mux_3_to_8_default]
+Compiling architecture behavioral of entity nodeLengtMapping [nodelengtmapping_default]
+Compiling architecture behavioral of entity speakerPulseGenerator [speakerpulsegenerator_default]
+Compiling architecture behavioral of entity segment7 [segment7_default]
+Compiling architecture behavioral of entity note2segment [note2segment_default]
+Compiling architecture behavioral of entity display [display_default]
+Compiling architecture syn of entity blockRam [blockram_default]
+Compiling architecture behavioral of entity dpimref [dpimref_default]
+Compiling architecture behavioral of entity memory_access_controller [memory_access_controller_default]
+Compiling architecture behavioral of entity memoryManager [memorymanager_default]
+Compiling architecture behavioral of entity beatsHurdleCalculator [beatshurdlecalculator_default]
+Compiling architecture behavioral of entity beatsManager [beatsmanager_default]
+Compiling architecture behavioral of entity bluetoothDecoder [bluetoothdecoder_default]
 Compiling architecture behavioral of entity controller [controller_default]
-Compiling architecture behavior of entity controller_test
+Compiling architecture behavioral of entity UART_RX_CTRL [uart_rx_ctrl_default]
+Compiling architecture behavioral of entity Nexysdemo [nexysdemo_default]
+Compiling architecture behavior of entity beattest
 Time Resolution for simulation is 1ps.
-Compiled 7 VHDL Units
-Built simulation executable Z:/comp3601/nexys_demo_simple/controller_test_isim_beh.exe
-Fuse Memory Usage: 33736 KB
-Fuse CPU Usage: 1467 ms
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 41 VHDL Units
+Built simulation executable Z:/comp3601/nexys_demo_simple/BeatTest_isim_beh.exe
+Fuse Memory Usage: 34676 KB
+Fuse CPU Usage: 5499 ms

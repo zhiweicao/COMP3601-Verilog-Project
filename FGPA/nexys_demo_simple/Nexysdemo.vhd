@@ -40,7 +40,10 @@ entity Nexysdemo is
 	     EppAstb 						: in std_logic;
 		  EppDstb 						: in std_logic;
 	 	  EppWr 							: in std_logic;
-		  EppWait 						: out std_logic
+		  EppWait 						: out std_logic;
+        UART_RXD 						: in  STD_LOGIC;
+        PMODBT_RST 					: out  STD_LOGIC;
+        PMODBT_CTS 					: out  STD_LOGIC
 		  );
 end Nexysdemo;
 
@@ -99,12 +102,24 @@ architecture Behavioral of Nexysdemo is
 			  increase_tempo					: in 	std_logic;
 			  decrease_tempo					: in 	std_logic;
 			  raw_data_in						: in  std_logic_vector(7 downto 0);
+			  bluetooth_ready					: in 	std_logic;
+			  bluetooth_data_bus				: in  std_logic_vector(7 downto 0);
 			  data_addr							: out std_logic_vector(15 downto 0);
 			  beats_per_second				: out std_logic_vector(7 downto 0);
 			  speaker_reset					: out std_logic;
-			  tempo_reset						: out std_logic			
+			  tempo_reset						: out std_logic;
+			  led_debug							: out std_logic_vector(7 downto 0)			  			  
 			  );
 	end component;
+	
+
+	component UART_RX_CTRL is
+		 Port ( UART_RX : in  STD_LOGIC;
+				  CLK : in  STD_LOGIC;
+				  READY : out  STD_LOGIC;
+				  DATA : out  STD_LOGIC_VECTOR (7 downto 0));
+	end component;
+
 	------------------------------------------------------------------------
 	-- Signal Declarations
 	------------------------------------------------------------------------
@@ -127,14 +142,21 @@ architecture Behavioral of Nexysdemo is
 	signal data_addr				 : std_logic_vector(15 downto 0);
 	signal temp_led				 : STD_LOGIC_VECTOR(7 downto 0);
 	signal ready_memory_addr_led: STD_LOGIC_VECTOR(7 downto 0);
+	signal note_pass_led: STD_LOGIC_VECTOR(7 downto 0);
+	signal tempo_data_merge		 : STD_LOGIC_VECTOR(7 downto 0);
+	signal bluetooth_ready		 : std_logic;
+	signal bluetooth_data_bus	 : std_logic_vector(7 downto 0);	
   ------------------------------------------------------------------------
 	-- Module Implementation
 	------------------------------------------------------------------------
-
 	begin
 
 	reset <= not swt(7);
-	led			<= beats_per_second;
+	led		<= beats_per_second;
+	tempo_data_merge(4 downto 0) <= current_note(4 downto 0);
+	tempo_data_merge(7 downto 5) <= note_length(2 downto 0);
+
+--	led <= note_pass_led;
 	-- Divide the master clock (100Mhz) down to a lower frequency.
 	process (mclk)
 		begin
@@ -142,6 +164,10 @@ architecture Behavioral of Nexysdemo is
 				clkdiv <= clkdiv + 1;
 			end if;
 	end process;
+
+	--	Bluetooth Initialiation
+	PMODBT_RST <= '1';
+	PMODBT_CTS <= '0';
 
 	------------------------------------------------------------------------
 	-- load module
@@ -155,7 +181,7 @@ architecture Behavioral of Nexysdemo is
 					reset							=>	speaker_reset,
 					current_note				=>	current_note,
 					note_length					=>	note_length,
-					note_pass_led				=>	open,
+					note_pass_led				=>	note_pass_led,
 					note_done					=> note_done,
 					pulse 						=>	speaker_signal 
 					);
@@ -194,15 +220,23 @@ architecture Behavioral of Nexysdemo is
 					increase_tempo				=> swt(0),
 					decrease_tempo				=> swt(3),
 					data_addr					=> data_addr,
-					raw_data_in					=> current_note,
+					raw_data_in					=> tempo_data_merge,
+				   bluetooth_ready			=> bluetooth_ready,
+					bluetooth_data_bus		=> bluetooth_data_bus,
 					beats_per_second			=> beats_per_second,
 					speaker_reset				=> speaker_reset,
-					tempo_reset					=> tempo_reset
+					tempo_reset					=> tempo_reset,
+					led_debug					=> open
 					);
 			  
+	 Bluetooth_receiver: UART_RX_CTRL
+    port map  (UART_RX						=> UART_RXD,
+					CLK							=> mclk,
+					READY							=> bluetooth_ready,
+					DATA							=> bluetooth_data_bus
+					);
 
 
-	
 	cclk <= clkdiv(24);
 	process (cclk)
 		begin

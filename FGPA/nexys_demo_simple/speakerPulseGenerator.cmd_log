@@ -1,0 +1,2 @@
+vhdtdtfi -lib work word2hurdle.vhd -lib work mux_3_to_8.vhd -lib work clock2pulse.vhd -lib work speakerPulseGenerator.vhd -prj Nexysdemo -o speakerPulseGenerator.spl -module speakerPulseGenerator -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3 speakerPulseGenerator.spl Z:/comp3601/nexys_demo_simple/speakerPulseGenerator.sym 
